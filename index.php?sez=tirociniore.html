@@ -1,0 +1,1186 @@
+<html>
+
+<head>
+<title>A.G.S.P.</title>
+
+<META NAME="DESCRIPTION" CONTENT="Storiapatriaguastalla.it ï¿½ il sito entro il quale Guastalla, capitale dello Stato sovrano che tra i minori piï¿½ si addentrï¿½ nel XVIII secolo, sino alla ricostituzione napoleonica del 1806, trova le coordinate per una corretta lettura e collocazione storiografica">
+<META NAME="KEYWORDS" CONTENT="archivi, archivistica, biblioteca, archivio, archivio di stato, asmo, aspr, asre, asmn, asmi, soprintendenza archivistica, unipr, unimore, gonzaga, este, sforza, visconti, farnese, venezia, serenissima, superba, ducato, granducato, regno, repubblica, guastalla, parma, manova, modena, ferrara, reggio emilia, mirandola, pico, sabbioneta, bozzolo, novellara, carpi, pio, gualtieri, comune di guastalla, guastalla cultura, maldotti, biblioteca maldotti, genova, doria, molfetta, campobasso, orsini, di capua, vicere, viceregno, madrid, vienna, impero, sri, sacro romano impero, stato pontificio, lucca, stmoderna, storia moderna, storia contemporanea, deputazione, deputazione di storia patria, societï¿½ storica lombarda, milano, ferrante gonzaga, abbazia, diocesi di reggio guastalla, duca, principe, conte, gualtieri, brescello, po, fiume po, massa carrara, papa, pontefice, serviti, cappuccine, mantellate, gesuiti, francescani, cappuccini, agostiniane, correggio, maria luigia, parma piacenza e guastalla, borbone, mbac, peppone, don camillo, guareschi, smeg, gazzetta di reggio, gazzetta di mantova, gazzetta di parma">
+<META HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<link rel="StyleSheet" type="text/css" href="storiapatria.css">
+<link media="print" rel="stylesheet" href="stampa.css" type="text/css">
+<script type="text/javascript">
+
+/***********************************************
+* Disable select-text script- ï¿½ Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+//form tags to omit in NS6+:
+var omitformtags=["input", "textarea", "select"]
+
+omitformtags=omitformtags.join("|")
+
+function disableselect(e){
+if (omitformtags.indexOf(e.target.tagName.toLowerCase())==-1)
+return false
+}
+
+function reEnable(){
+return true
+}
+
+if (typeof document.onselectstart!="undefined")
+document.onselectstart=new Function ("return false")
+else{
+document.onmousedown=disableselect
+document.onmouseup=reEnable
+}
+
+</script>
+
+<script language="javascript" type="text/javascript">
+<!--
+
+/*
+Image w/ description tooltip- By Dynamic Web Coding (www.dyn-web.com)
+Copyright 2002 by Sharon Paine
+Visit http://www.dynamicdrive.com for this script
+*/
+
+/* IMPORTANT: Put script after tooltip div or 
+	 put tooltip div just before </BODY>. */
+
+var dom = (document.getElementById) ? true : false;
+var ns5 = ((navigator.userAgent.indexOf("Gecko")>-1) && dom) ? true: false;
+var ie5 = ((navigator.userAgent.indexOf("MSIE")>-1) && dom) ? true : false;
+var ns4 = (document.layers && !dom) ? true : false;
+var ie4 = (document.all && !dom) ? true : false;
+var nodyn = (!ns5 && !ns4 && !ie4 && !ie5) ? true : false;
+
+// resize fix for ns4
+var origWidth, origHeight;
+if (ns4) {
+	origWidth = window.innerWidth; origHeight = window.innerHeight;
+	window.onresize = function() { if (window.innerWidth != origWidth || window.innerHeight != origHeight) history.go(0); }
+}
+
+// avoid error of passing event object in older browsers
+if (nodyn) { event = "nope" }
+
+///////////////////////  CUSTOMIZE HERE   ////////////////////
+// settings for tooltip 
+// Do you want tip to move when mouse moves over link?
+var tipFollowMouse= true;	
+// Be sure to set tipWidth wide enough for widest image
+var tipWidth= 302;
+var offX= 20;	// how far from mouse to show tip
+var offY= 12; 
+var tipFontFamily= "Verdana, arial, helvetica, sans-serif";
+var tipFontSize= "8pt";
+// set default text color and background color for tooltip here
+// individual tooltips can have their own (set in messages arrays)
+// but don't have to
+var tipFontColor= "#000000";
+var tipBgColor= "#FFFFFF"; 
+var tipBorderColor= "#000080";
+var tipBorderWidth= 0;
+var tipBorderStyle= "ridge";
+var tipPadding= 0;
+
+// tooltip content goes here (image, description, optional bgColor, optional textcolor)
+var messages = new Array();
+// multi-dimensional arrays containing: 
+// image and text for tooltip
+// optional: bgColor and color to be sent to tooltip
+messages[0] = new Array('linkimg/paralupi.jpg','',"#FFFFFF");
+messages[1] = new Array('linkimg/micheli.jpg','',"#FFFFFF");
+messages[2] = new Array('linkimg/dutillot.jpg','');
+messages[3] = new Array('linkimg/tranmoss.jpg','');
+messages[4] = new Array('linkimg/patrioti.jpg','');
+messages[5] = new Array('linkimg/tirelli.jpg','');
+messages[6] = new Array('linkimg/mariotti.jpg','');
+messages[7] = new Array('linkimg/rerum.jpg','');
+messages[8] = new Array('linkimg/maldotti.jpg','');
+messages[9] = new Array('linkimg/affo.jpg','');
+messages[10] = new Array('linkimg/baldi.jpg','');
+messages[11] = new Array('linkimg/lbaldi.jpg','');
+messages[12] = new Array('linkimg/lteodora.jpg','');
+
+////////////////////  END OF CUSTOMIZATION AREA  ///////////////////
+
+// preload images that are to appear in tooltip
+// from arrays above
+if (document.images) {
+	var theImgs = new Array();
+	for (var i=0; i<messages.length; i++) {
+  	theImgs[i] = new Image();
+		theImgs[i].src = messages[i][0];
+  }
+}
+
+// to layout image and text, 2-row table, image centered in top cell
+// these go in var tip in doTooltip function
+// startStr goes before image, midStr goes between image and text
+var startStr = '<table width="' + tipWidth + '"><tr><td align="center" width="100%"><img src="';
+var midStr = '" border="0"></td></tr><tr><td valign="top">';
+var endStr = '</td></tr></table>';
+
+////////////////////////////////////////////////////////////
+//  initTip	- initialization for tooltip.
+//		Global variables for tooltip. 
+//		Set styles for all but ns4. 
+//		Set up mousemove capture if tipFollowMouse set true.
+////////////////////////////////////////////////////////////
+var tooltip, tipcss;
+function initTip() {
+	if (nodyn) return;
+	tooltip = (ns4)? document.tipDiv.document: (ie4)? document.all['tipDiv']: (ie5||ns5)? document.getElementById('tipDiv'): null;
+	tipcss = (ns4)? document.tipDiv: tooltip.style;
+	if (ie4||ie5||ns5) {	// ns4 would lose all this on rewrites
+		tipcss.width = tipWidth+"px";
+		tipcss.fontFamily = tipFontFamily;
+		tipcss.fontSize = tipFontSize;
+		tipcss.color = tipFontColor;
+		tipcss.backgroundColor = tipBgColor;
+		tipcss.borderColor = tipBorderColor;
+		tipcss.borderWidth = tipBorderWidth+"px";
+		tipcss.padding = tipPadding+"px";
+		tipcss.borderStyle = tipBorderStyle;
+	}
+	if (tooltip&&tipFollowMouse) {
+		if (ns4) document.captureEvents(Event.MOUSEMOVE);
+		document.onmousemove = trackMouse;
+	}
+}
+
+window.onload = initTip;
+
+/////////////////////////////////////////////////
+//  doTooltip function
+//			Assembles content for tooltip and writes 
+//			it to tipDiv
+/////////////////////////////////////////////////
+var t1,t2;	// for setTimeouts
+var tipOn = false;	// check if over tooltip link
+function doTooltip(evt,num) {
+	if (!tooltip) return;
+	if (t1) clearTimeout(t1);	if (t2) clearTimeout(t2);
+	tipOn = true;
+	// set colors if included in messages array
+	if (messages[num][2])	var curBgColor = messages[num][2];
+	else curBgColor = tipBgColor;
+	if (messages[num][3])	var curFontColor = messages[num][3];
+	else curFontColor = tipFontColor;
+	if (ns4) {
+		var tip = '<table bgcolor="' + tipBorderColor + '" width="' + tipWidth + '" cellspacing="0" cellpadding="' + tipBorderWidth + '" border="0"><tr><td><table bgcolor="' + curBgColor + '" width="100%" cellspacing="0" cellpadding="' + tipPadding + '" border="0"><tr><td>'+ startStr + messages[num][0] + midStr + '<span style="font-family:' + tipFontFamily + '; font-size:' + tipFontSize + '; color:' + curFontColor + ';">' + messages[num][1] + '</span>' + endStr + '</td></tr></table></td></tr></table>';
+		tooltip.write(tip);
+		tooltip.close();
+	} else if (ie4||ie5||ns5) {
+		var tip = startStr + messages[num][0] + midStr + '<span style="font-family:' + tipFontFamily + '; font-size:' + tipFontSize + '; color:' + curFontColor + ';">' + messages[num][1] + '</span>' + endStr;
+		tipcss.backgroundColor = curBgColor;
+	 	tooltip.innerHTML = tip;
+	}
+	if (!tipFollowMouse) positionTip(evt);
+	else t1=setTimeout("tipcss.visibility='visible'",100);
+}
+
+var mouseX, mouseY;
+function trackMouse(evt) {
+	mouseX = (ns4||ns5)? evt.pageX: window.event.clientX + document.body.scrollLeft;
+	mouseY = (ns4||ns5)? evt.pageY: window.event.clientY + document.body.scrollTop;
+	if (tipOn) positionTip(evt);
+}
+
+/////////////////////////////////////////////////////////////
+//  positionTip function
+//		If tipFollowMouse set false, so trackMouse function
+//		not being used, get position of mouseover event.
+//		Calculations use mouseover event position, 
+//		offset amounts and tooltip width to position
+//		tooltip within window.
+/////////////////////////////////////////////////////////////
+function positionTip(evt) {
+	if (!tipFollowMouse) {
+		mouseX = (ns4||ns5)? evt.pageX: window.event.clientX + document.body.scrollLeft;
+		mouseY = (ns4||ns5)? evt.pageY: window.event.clientY + document.body.scrollTop;
+	}
+	// tooltip width and height
+	var tpWd = (ns4)? tooltip.width: (ie4||ie5)? tooltip.clientWidth: tooltip.offsetWidth;
+	var tpHt = (ns4)? tooltip.height: (ie4||ie5)? tooltip.clientHeight: tooltip.offsetHeight;
+	// document area in view (subtract scrollbar width for ns)
+	var winWd = (ns4||ns5)? window.innerWidth-20+window.pageXOffset: document.body.clientWidth+document.body.scrollLeft;
+	var winHt = (ns4||ns5)? window.innerHeight-20+window.pageYOffset: document.body.clientHeight+document.body.scrollTop;
+	// check mouse position against tip and window dimensions
+	// and position the tooltip 
+	if ((mouseX+offX+tpWd)>winWd) 
+		tipcss.left = (ns4)? mouseX-(tpWd+offX): mouseX-(tpWd+offX)+"px";
+	else tipcss.left = (ns4)? mouseX+offX: mouseX+offX+"px";
+	if ((mouseY+offY+tpHt)>winHt) 
+		tipcss.top = (ns4)? winHt-(tpHt+offY): winHt-(tpHt+offY)+"px";
+	else tipcss.top = (ns4)? mouseY+offY: mouseY+offY+"px";
+	if (!tipFollowMouse) t1=setTimeout("tipcss.visibility='visible'",100);
+}
+
+function hideTip() {
+	if (!tooltip) return;
+	t2=setTimeout("tipcss.visibility='hidden'",100);
+	tipOn = false;
+}
+
+//-->
+</script>
+
+</head>
+
+<body oncontextmenu="return false" link="344f85" vlink="344f85" alink="dcdcdc">
+
+<SCRIPT LANGUAGE="JavaScript">
+if (window != top) top.location.href = location.href;
+</SCRIPT>
+
+
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td width="2%" rowspan="3" class=sx></td>
+      <td width="16%" bgcolor="#344f85"><div align="center"><a href="http://www.unesco.org/webworld/portal_archives" target="_top"><img src="grafica/archives_logo_sm.gif" width=98 height=44 alt="UNESCO Archives Portal" border="0"></a><br><br><a href="http://www.unesco.org/webworld/portal_bib" target="_top"><img src="grafica/logo_bib.gif" width=98 height=44 alt="UNESCO Libraries Portal" border="0"></a></div></td>
+      <td width="2%" rowspan="3" class=dx></td>
+      <td width="60%"><p align="center"><a href="index.php%3Fsez=home.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;"><img border="0" src="grafica/logo.jpg" width="186" height="179"></a></td>
+      <td width="2%" rowspan="3" class=sx></td>
+      <td width="16%" bgcolor="#344f85"> <div align="center"><a class=menu href="index.php%3Fsez=500enario.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;"><img border="0" src="grafica/ferranteId.jpg" width="100" height="180"></a></div></td>
+      <td width="2%" rowspan="3" class=dx></td>
+    </tr>
+    <tr>
+      <td width="16%" valign=top bgcolor="#344f85"><br><font color="#efefef">
+        <h5 align="center"><a class=menu href="index.php%3Fsez=sodalizio.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">STORIA DEL SODALIZIO</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=tradizione.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">TRADIZIONE STORIOGRAFICA</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=stato_di_guastalla.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">LO STATO DI GUASTALLA</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=erratacorrige.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">ERRATA CORRIGE</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=guastallarchivi.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">GUASTALLA <br>E GLI ARCHIVI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=guidaluoghistato.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">GUIDA AI LUOGHI<br> DELLO STATO</a></h5>
+        <h5 align="center">AUTORI & COLLABORATORI</h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=excerpta.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">EXCERPTA GUASTALLAE</a></h5></font>
+        <p>&nbsp;</p>
+        <br>
+        <p>&nbsp;</td>
+      <td valign=top width="60%"><div id="contenuto">
+              <br>
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="https://www.storiapatriaguastalla.it/tirocini_files/filelist.xml">
+<title>ASSOCIAZIONE  GUASTALLESE DI  STORIA  PATRIA</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Catalogo</o:Author>
+  <o:LastAuthor>Emanuele Bartoli</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>23</o:TotalTime>
+  <o:Created>2005-07-16T09:12:00Z</o:Created>
+  <o:LastSaved>2005-07-16T09:12:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1855</o:Words>
+  <o:Characters>10575</o:Characters>
+  <o:Company>Storiapatriaguastalla</o:Company>
+  <o:Lines>88</o:Lines>
+  <o:Paragraphs>24</o:Paragraphs>
+  <o:CharactersWithSpaces>12406</o:CharactersWithSpaces>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:HyphenationZone>14</w:HyphenationZone>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:SelectEntireFieldWithStartOrEnd/>
+   <w:UseWord2002TableStyleRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1627421319 -2147483648 8 0 66047 0;}
+@font-face
+	{font-family:"Decotura ICG";
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:131 0 0 0 9 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Normal;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:12.0pt;
+	font-family:Tahoma;
+	font-variant:small-caps;
+	mso-font-kerning:0pt;
+	mso-bidi-font-weight:normal;}
+h3
+	{mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:14.2pt;
+	margin-bottom:0cm;
+	margin-left:14.2pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:14.15pt;
+	line-height:150%;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	tab-stops:15.0cm;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	font-weight:normal;}
+h4
+	{mso-style-next:Normal;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:22.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Decotura ICG";
+	font-weight:normal;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:-.1pt;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:8;
+	tab-stops:15.0cm;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 240.95pt right 481.9pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 240.95pt right 481.9pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:16.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Tahoma;
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Tahoma;
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:3.6pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+p.MsoBodyText3, li.MsoBodyText3, div.MsoBodyText3
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+ /* Page Definitions */
+ @page
+	{mso-footnote-separator:url("https://www.storiapatriaguastalla.it/tirocini_files/header.htm") fs;
+	mso-footnote-continuation-separator:url("https://www.storiapatriaguastalla.it/tirocini_files/header.htm") fcs;
+	mso-endnote-separator:url("https://www.storiapatriaguastalla.it/tirocini_files/header.htm") es;
+	mso-endnote-continuation-separator:url("https://www.storiapatriaguastalla.it/tirocini_files/header.htm") ecs;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 2.0cm 2.0cm 2.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-header:url("https://www.storiapatriaguastalla.it/tirocini_files/header.htm") h1;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1900676584;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1957785794 -1892012212 68157443 68157445 68157441 68157443 68157445 68157441 68157443 68157445;}
+@list l0:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:17.0pt;
+	text-indent:-17.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=IT link=blue vlink=purple style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<h4><span style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:"Times New Roman";
+color:maroon'>ASSOCIAZIONE<span style='mso-spacerun:yes'>  </span>GUASTALLESE
+DI<span style='mso-spacerun:yes'>  </span>STORIA<span
+style='mso-spacerun:yes'>  </span>PATRIA<o:p></o:p></span></h4>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:14.0pt;mso-bidi-font-size:12.0pt;color:maroon'>1933<o:p></o:p></span></p>
+
+<p class=MsoTitle align=left style='text-align:left'><span style='font-size:
+14.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";font-weight:
+normal'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoTitle><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";font-weight:normal'>in convenzione con<o:p></o:p></span></p>
+
+<p class=MsoTitle><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;
+font-family:"Times New Roman";font-weight:normal'><o:p>&nbsp;</o:p></span></p>
+
+<h1><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;font-family:"Times New Roman";
+font-variant:normal !important;color:maroon;text-transform:uppercase;
+font-weight:normal'>Università degli Studi di Modena e Reggio Emilia<o:p></o:p></span></h1>
+
+<p class=MsoNormal><span style='color:maroon'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoCaption><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;
+color:maroon'>Facoltà di Scienze della Comunicazione e dell’Economia<o:p></o:p></span></p>
+
+<p class=MsoSubtitle align=left style='text-align:left'><span style='mso-bidi-font-size:
+10.0pt;color:maroon'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><o:p>&nbsp;</o:p></p>
+
+<h3 style='margin-top:0cm;margin-right:-.1pt;margin-bottom:0cm;margin-left:
+0cm;margin-bottom:.0001pt;text-indent:0cm;line-height:normal'><b><span
+style='mso-fareast-font-family:"Arial Unicode MS"'>Azienda ospitante: </span></b><span
+style='mso-fareast-font-family:"Arial Unicode MS"'>Associazione Guastallese di
+Storia Patria<o:p></o:p></span></h3>
+
+<h3 style='margin-top:0cm;margin-right:-.1pt;margin-bottom:0cm;margin-left:
+0cm;margin-bottom:.0001pt;text-indent:0cm;line-height:normal'><b><span
+style='mso-fareast-font-family:"Arial Unicode MS"'>con sede legale in:</span></b><span
+style='mso-fareast-font-family:"Arial Unicode MS"'> 42016 Guastalla – RE, via
+I. Davoli 3<o:p></o:p></span></h3>
+
+<p class=MsoCaption style='text-align:justify'><b><span style='font-size:12.0pt;
+mso-fareast-font-family:"Arial Unicode MS"'>Breve presentazione dell’azienda:</span></b><span
+style='font-size:12.0pt;mso-fareast-font-family:"Arial Unicode MS"'> A.G.S.P.
+svolge attività di ricerca storico – archivistica, organizzazione di convegni
+scientifici su temi coerenti, prevalentemente con riferimento all’età moderna e
+contemporanea, realizza e promuove la pubblicazione degli esiti delle proprie
+ricerche. È in rapporto con similari associazioni e centri di ricerca,
+dipartimenti universitari afferenti alle discipline storiche e con gli uffici e
+funzioni dello Stato preposti alla conservazione e salvaguardia degli archivi e
+del patrimonio documentario. Raccoglie, organizza e rende disponibile, tramite
+la propria biblioteca, la pubblicistica specializzata in temi storico –
+archivistici riferita alle realtà locali declinate però sull’intero territorio
+nazionale.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><b><span style='mso-fareast-font-family:
+"Arial Unicode MS"'>Sito aziendale:</span></b><span style='mso-fareast-font-family:
+"Arial Unicode MS"'> <a href="index.html">www.storiapatriaguastalla.it</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='mso-fareast-font-family:
+"Arial Unicode MS"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyTextIndent style='margin-left:17.0pt;text-align:justify;
+text-indent:-17.0pt;mso-list:l0 level1 lfo1;tab-stops:list 18.0pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;mso-bidi-font-size:
+8.0pt;mso-fareast-font-family:"Arial Unicode MS"'>Sede del tirocinio: via I.
+Davoli 3, 42016 Guastalla – RE<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoBodyTextIndent style='margin-left:17.0pt;text-align:justify;
+text-indent:-17.0pt;mso-list:l0 level1 lfo1;tab-stops:list 18.0pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;mso-bidi-font-size:
+8.0pt;mso-fareast-font-family:"Arial Unicode MS"'>(10’ a piedi dalle stazioni
+FER/ACT e Autobus di Guastalla)<o:p></o:p></span></p>
+
+<p class=MsoBodyTextIndent style='margin-left:17.0pt;text-align:justify;
+text-indent:-17.0pt;mso-list:l0 level1 lfo1;tab-stops:list 18.0pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;mso-bidi-font-size:
+8.0pt;mso-fareast-font-family:"Arial Unicode MS"'>Reparto/ufficio: sviluppo
+organizzativo <o:p></o:p></span></p>
+
+<p class=MsoBodyTextIndent style='margin-left:17.0pt;text-align:justify;
+text-indent:-17.0pt;mso-list:l0 level1 lfo1;tab-stops:list 18.0pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;mso-bidi-font-size:
+8.0pt;mso-fareast-font-family:"Arial Unicode MS"'>Tempi di accesso ai locali
+aziendali: dal lunedì al venerdì, 8.30 – 12.30 + 14.30 – 18.30<b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><o:p></o:p></i></b></span></p>
+
+<p class=MsoBodyTextIndent style='margin-left:17.0pt;text-align:justify;
+text-indent:-17.0pt;mso-list:l0 level1 lfo1;tab-stops:list 18.0pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;mso-bidi-font-size:
+8.0pt;mso-fareast-font-family:"Arial Unicode MS"'>Giorni e orari effettivi di
+stage: dal lunedì al venerdì 8.30 – 12.30 oppure 14.30 – 18.30 (si possono
+anche considerare 4 gg. X 5 h./g.)<b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'><o:p></o:p></i></b></span></p>
+
+<p class=MsoBodyTextIndent style='margin-left:17.0pt;text-align:justify;
+text-indent:-17.0pt;mso-list:l0 level1 lfo1;tab-stops:list 18.0pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:12.0pt;mso-bidi-font-size:
+8.0pt;mso-fareast-font-family:"Arial Unicode MS"'>Per un totale settimanale di
+ore: 20<b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'><o:p></o:p></i></b></span></p>
+
+<p class=MsoHeading8 style='margin-left:17.0pt;text-align:justify;text-indent:
+-17.0pt;mso-list:l0 level1 lfo1;tab-stops:list 18.0pt left 15.0cm'><![if !supportLists]><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='mso-fareast-font-family:"Arial Unicode MS"'>Periodo
+di tirocinio: n. mesi = ca. 3 mesi (250 ore), dal … al … = da concordare con lo
+studente<o:p></o:p></span></p>
+
+<p class=MsoHeading8 style='margin-left:17.0pt;text-align:justify;text-indent:
+-17.0pt;mso-list:l0 level1 lfo1;tab-stops:list 18.0pt left 15.0cm'><![if !supportLists]><span
+style='font-size:10.0pt;mso-bidi-font-size:12.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='mso-fareast-font-family:"Arial Unicode MS"'>Tutor
+Aziendale: specifici a seconda dei Tirocini<o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid windowtext 1.0pt;
+mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 0cm 1.0pt 0cm;
+margin-left:0cm;margin-right:-.1pt'>
+
+<h3 style='margin:0cm;margin-bottom:.0001pt;text-indent:0cm;line-height:normal;
+border:none;mso-border-bottom-alt:solid windowtext .5pt;padding:0cm;mso-padding-alt:
+0cm 0cm 1.0pt 0cm'><b><span style='mso-fareast-font-family:"Arial Unicode MS"'><o:p>&nbsp;</o:p></span></b></h3>
+
+</div>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='mso-fareast-font-family:"Arial Unicode MS"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='mso-fareast-font-family:"Arial Unicode MS"'>*<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-fareast-font-family:"Arial Unicode MS"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoTitle><span style='font-size:12.0pt;font-family:"Times New Roman"'>Scheda
+Proposta Tirocinio<o:p></o:p></span></p>
+
+<p class=MsoTitle><span style='font-size:12.0pt;font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoSubtitle><span style='color:maroon'>“Organizzazione editoriale”</span><span
+style='mso-bidi-font-size:10.0pt;color:maroon'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-fareast-font-family:"Arial Unicode MS"'><o:p>&nbsp;</o:p></span></p>
+
+<h3 style='margin-top:0cm;margin-right:-.1pt;margin-bottom:0cm;margin-left:
+0cm;margin-bottom:.0001pt;text-indent:0cm;line-height:normal'><b><span
+style='mso-fareast-font-family:"Arial Unicode MS"'>Obiettivi e modalità del
+tirocinio <o:p></o:p></span></b></h3>
+
+<p class=MsoNormal style='text-align:justify'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify'>Requisiti richiesti:</p>
+
+<p class=MsoNormal style='text-align:justify'>conoscenza base di soluzioni
+software open source o disponibilità ad apprenderle, inglese, conoscenze o
+almeno predisposizione soggettiva per l’applicazione di coerenti principi di
+grafica sul supporto cartaceo</p>
+
+<p class=MsoBodyText3 style='text-align:justify'><span style='mso-fareast-font-family:
+"Arial Unicode MS"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText3 style='text-align:justify'><span style='mso-fareast-font-family:
+"Arial Unicode MS"'>Facilitazioni previste: <o:p></o:p></span></p>
+
+<p class=MsoBodyText3 style='text-align:justify'><span style='mso-fareast-font-family:
+"Arial Unicode MS"'>contributo alle spese di viaggio ACT Reggio Emilia –
+Guastalla e ritorno e sulla tratta FER Parma - Suzzara <o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid windowtext 1.0pt;
+mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<p class=MsoNormal style='text-align:justify;border:none;mso-border-bottom-alt:
+solid windowtext .5pt;padding:0cm;mso-padding-alt:0cm 0cm 1.0pt 0cm'><b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><span
+style='mso-fareast-font-family:"Arial Unicode MS";text-transform:uppercase'><o:p>&nbsp;</o:p></span></i></b></p>
+
+</div>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='mso-fareast-font-family:"Arial Unicode MS";text-transform:uppercase;
+mso-bidi-font-style:italic'>Attività’ previste:</span><span style='mso-bidi-font-style:
+italic'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify'><b>“Organizzazione editoriale”</b><b><span
+style='mso-bidi-font-size:10.0pt'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'>Lo stage prevede che lo studente
+segua in modo autonomo la realizzazione di un volume (Atti di convegni,
+pubblicazioni miscellanee, esiti di ricerche) dalla fase di raccolta dei
+materiali presso gli autori (file di testo e immagini), da attuare sempre via E
+- Mail sino alla stampa del libro. Ciò comporta la organizzazione del file
+secondo i criteri tipografici stabiliti, il controllo delle bozze preventivo a
+file costruito e la verifica con gli autori mediante l’invio della stampa di
+prova, la preparazione del file per la tipografia, il suo invio previa
+determinazione del preventivo di costo, la verifica dei tempi di stampa e
+consegna, lo svolgimento degli adempimenti editoriali (comunicazioni SIAE,
+ISBN, invio copie di legge) sino a giungere alla fase della diffusione mediante
+l’invio di copie saggio, l’invio di copie in libreria, la presentazione al
+distributore editoriale. Questo percorso standard potrà essere aggiornato o
+adeguato nel caso in cui si proceda all’edizione di tirature speciali o con
+destinatari non standard. La fase di assistenza prevede la spiegazione del percorso
+in dettaglio, un momento settimanale di valutazione in progress, la verifica
+del conseguimento di ogni singolo step ed una verifica finale sul prodotto
+realizzato. <span style='mso-bidi-font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify'><b><span style='mso-fareast-font-family:
+"Arial Unicode MS"'>OBIETTIVI:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><b><span style='mso-fareast-font-family:
+"Arial Unicode MS";mso-bidi-font-style:italic'><o:p>&nbsp;</o:p></span></b></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid windowtext 1.0pt;
+mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<p class=MsoBodyTextIndent style='margin-left:0cm;text-align:justify;
+border:none;mso-border-bottom-alt:solid windowtext .5pt;padding:0cm;mso-padding-alt:
+0cm 0cm 1.0pt 0cm'><span style='font-size:12.0pt;mso-bidi-font-size:8.0pt;
+mso-fareast-font-family:"Arial Unicode MS"'>Porre in grado lo studente di
+comprendere e realizzare tutti i passaggi fondamentali che presiedano alla
+realizzazione materiale di un prodotto editoriale monografico o periodico, con
+esclusione della fase, iniziale, di determinazione scientifica dei temi. Questo
+con tempi aziendali certi e con riferimenti operativi e legali solitamente non
+applicati nell’editoria locale.<o:p></o:p></span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'>*</p>
+
+<p class=MsoNormal style='text-align:justify'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoTitle><span style='font-size:12.0pt;font-family:"Times New Roman"'>Scheda
+Proposta Tirocinio<o:p></o:p></span></p>
+
+<p class=MsoTitle><span style='font-size:12.0pt;font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoSubtitle><span style='color:maroon'>“Organizzazione tecnica
+convegni”</span><span style='mso-bidi-font-size:10.0pt;color:maroon'><o:p></o:p></span></p>
+
+<h3 style='margin-top:0cm;margin-right:-.1pt;margin-bottom:0cm;margin-left:
+0cm;margin-bottom:.0001pt;text-indent:0cm;line-height:normal'><b><span
+style='mso-fareast-font-family:"Arial Unicode MS"'><o:p>&nbsp;</o:p></span></b></h3>
+
+<h3 style='margin-top:0cm;margin-right:-.1pt;margin-bottom:0cm;margin-left:
+0cm;margin-bottom:.0001pt;text-indent:0cm;line-height:normal'><b><span
+style='mso-fareast-font-family:"Arial Unicode MS"'>Obiettivi e modalità del
+tirocinio </span><o:p></o:p></b></h3>
+
+<p class=MsoNormal style='text-align:justify'>Requisiti richiesti:</p>
+
+<p class=MsoBodyText3 style='text-align:justify'>conoscenza base di soluzioni
+software open source o disponibilità ad apprenderle, inglese, capacità
+dialettiche e di composizione scrittoria, nell’utilizzare repertori
+bibliografici e sistemi di ricerca in rete<span style='mso-fareast-font-family:
+"Arial Unicode MS"'><o:p></o:p></span></p>
+
+<p class=MsoBodyText3 style='text-align:justify'><span style='mso-fareast-font-family:
+"Arial Unicode MS"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText3 style='text-align:justify'><span style='mso-fareast-font-family:
+"Arial Unicode MS"'>Facilitazioni previste:<o:p></o:p></span></p>
+
+<p class=MsoBodyText3 style='text-align:justify'><span style='mso-fareast-font-family:
+"Arial Unicode MS"'>contributo alle spese di viaggio ACT Reggio Emilia –
+Guastalla e ritorno e sulla tratta FER Parma - Suzzara <o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid windowtext 1.0pt;
+mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<p class=MsoNormal style='text-align:justify;border:none;mso-border-bottom-alt:
+solid windowtext .5pt;padding:0cm;mso-padding-alt:0cm 0cm 1.0pt 0cm'><b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><span
+style='mso-fareast-font-family:"Arial Unicode MS";text-transform:uppercase'><o:p>&nbsp;</o:p></span></i></b></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span style='mso-fareast-font-family:"Arial Unicode MS";text-transform:
+uppercase;mso-bidi-font-style:italic'>Attivita’ previste</span></b><span
+style='mso-fareast-font-family:"Arial Unicode MS";text-transform:uppercase;
+mso-bidi-font-style:italic'>:</span><span style='mso-bidi-font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:12.0pt;font-family:"Times New Roman"'>L’organizzazione
+di un convegno tradizionalmente si articola in due fasi, quella più
+propriamente scientifica e quella relativa alla connessione di relatori,
+luoghi, tempi, abstracts, comunicazione. Una volta definito a cura di A.G.S.P.
+tema e modalità di svolgimento, fissando una data solitamente nell’arco di 8 –
+12 mesi a seconda della complessità della materia, lo studente dovrà
+organizzare il progressivo rapporto con i relatori (lettere di proposta alla
+partecipazione, invito formale, aggiornamento su temi e organizzazione), gli
+Enti co – organizzatori, qualora siano previsti (costante aggiornamento dei
+referenti), i mezzi di comunicazione (preparazione di informative e note stampa
+secondo un progressivo ampliamento dei contenuti comunicati), la logistica
+(ricerca e determinazione locali, ospitalità, eventuali attrezzature tecniche),
+la stesura del programma e la preparazione per il suo inoltro/diffusione via PT
+e mail, la sollecitazione alla partecipazione ai momenti del convegno da parte
+dei soggetti individuati come opinion makers locali o categoriali. Inoltre sarà
+compito dello studente individuare la pubblicistica scientifica in relazione al
+tema definito per il convegno, sia essa editoriale, giornalistica o collocata
+in rete, al fine di costituire una ‘rassegna stampa’ sullo stato dell’arte in
+materia. Questo stage dovrebbe prevedere da parte dello studente la
+disponibilità a dedicare le quattro ore di una giornata standard ogni mese per
+il costante aggiornamento del percorso organizzativo. Questo dal momento della
+conclusione dello stage (i tre mesi ordinari svolti con modalità part time
+dedotti del tempo definito sopra) sino a che si tenga il convegno.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span style='mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-style:
+italic'>OBIETTIVI:</span></b><span style='mso-fareast-font-family:"Arial Unicode MS"'><o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:12.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"Arial Unicode MS"'>Porre in grado lo studente di
+predisporre un prodotto immateriale ‘finito’ in tutte le sue componenti,
+complesso in quanto comprende differenti modalità e contenuti di comunicazione,
+abituandolo a relazionarsi con soggetti la cui matrice formativa, le
+aspettative rispetto al ‘prodotto convegno’, le modalità con le quali
+affrontano i rapporti con soggetti terzi sono le più diverse. <o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid windowtext 1.0pt;
+mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<p class=MsoBodyText style='border:none;mso-border-bottom-alt:solid windowtext .5pt;
+padding:0cm;mso-padding-alt:0cm 0cm 1.0pt 0cm'><span style='font-size:12.0pt;
+font-family:"Times New Roman";mso-fareast-font-family:"Arial Unicode MS"'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'>*</p>
+
+<p class=MsoNormal style='text-align:justify'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoTitle><span style='font-size:12.0pt;font-family:"Times New Roman"'>Scheda
+Proposta Tirocinio<o:p></o:p></span></p>
+
+<p class=MsoTitle><span style='font-size:12.0pt;font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoSubtitle><span style='color:maroon'>“B o o k s<span
+style='mso-spacerun:yes'>   </span>r a i s i n g”</span><span style='mso-bidi-font-size:
+10.0pt;color:maroon'><o:p></o:p></span></p>
+
+<h3 style='margin-top:0cm;margin-right:-.1pt;margin-bottom:0cm;margin-left:
+0cm;margin-bottom:.0001pt;text-indent:0cm;line-height:normal'><b><span
+style='mso-fareast-font-family:"Arial Unicode MS"'><o:p>&nbsp;</o:p></span></b></h3>
+
+<h3 style='margin-top:0cm;margin-right:-.1pt;margin-bottom:0cm;margin-left:
+0cm;margin-bottom:.0001pt;text-indent:0cm;line-height:normal'><b><span
+style='mso-fareast-font-family:"Arial Unicode MS"'>Obiettivi e modalità del
+tirocinio <o:p></o:p></span></b></h3>
+
+<p class=MsoNormal style='text-align:justify'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify'>Requisiti richiesti:</p>
+
+<p class=MsoNormal style='text-align:justify'>conoscenza base di soluzioni
+software open source o disponibilità ad apprenderle, inglese o tedesco,
+capacità scrittoria e comunicazionale, di navigazione in rete, sistematica
+nell’ordinare i risultati delle ricerche </p>
+
+<p class=MsoBodyText3 style='text-align:justify'><span style='mso-fareast-font-family:
+"Arial Unicode MS"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText3 style='text-align:justify'><span style='mso-fareast-font-family:
+"Arial Unicode MS"'>Facilitazioni previste:<o:p></o:p></span></p>
+
+<p class=MsoBodyText3 style='text-align:justify'><span style='mso-fareast-font-family:
+"Arial Unicode MS"'>contributo alle spese di viaggio ACT Reggio Emilia –
+Guastalla e ritorno e sulla tratta FER Parma - Suzzara <o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid windowtext 1.0pt;
+mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<p class=MsoNormal style='text-align:justify;border:none;mso-border-bottom-alt:
+solid windowtext .5pt;padding:0cm;mso-padding-alt:0cm 0cm 1.0pt 0cm'><b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><span
+style='mso-fareast-font-family:"Arial Unicode MS";text-transform:uppercase'><o:p>&nbsp;</o:p></span></i></b></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span style='mso-fareast-font-family:"Arial Unicode MS";text-transform:
+uppercase;mso-bidi-font-style:italic'>Attività’ previste</span></b><span
+style='mso-fareast-font-family:"Arial Unicode MS";text-transform:uppercase;
+mso-bidi-font-style:italic'>:</span><span style='mso-bidi-font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:12.0pt;font-family:"Times New Roman"'>Lo
+svolgimento dell’attività di stage proposta consta del ricercare e porre in
+atto, mantenerli dove esistano, incrementarli dove necessitino i rapporti di
+scambio editoriale tra A.G.S.P. ed i soggetti produttori di editoria storica e
+archivistica locale. I soggetti di riferimento sono: Regioni – Province –
+Comuni capoluogo regionale – Comuni capoluogo provinciale – Comuni
+significativi, rapportati direttamente (assessorati – direzioni cultura) o
+tramite le apposite strutture culturali (istituti culturali, biblioteche).
+Inoltre Istituti culturali indipendenti, Accademie, Deputazioni e Società di
+storia patria, Centri di ricerca. Rientrano in questa ultima categoria anche
+istituzioni appartenenti all’area tedesca, per le connessioni storiche tra
+Italia e S.R.I.<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:12.0pt;font-family:"Times New Roman"'>Per
+queste categorie di soggetti dovranno essere elaborati i più congruenti schemi
+comunicazionali e giustificativi dell’iniziativa, con il costante riferimento
+al sito di A.G.S.P. quale elemento identitario, dovranno essere poste in atto
+le azioni di richiesta/sollecito, verifica dell’attenzione e del ritorno,
+riconoscimento e contraccambio. <b>Ogni singola categoria di enti individuati
+costituisce l’obiettivo di uno specifico progetto, quindi di uno specifico
+stage</b>. Una volta che gli start up abbiano dato i risultati che si volevano
+conseguire subentrerà la fase del mantenimento dei rapporti, a quel punto
+consolidando in un unico progetto le azioni riferite a tutti i (o a
+macrocategorie di) soggetti.<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span style='mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-style:
+italic'>OBIETTIVI:<o:p></o:p></span></b></p>
+
+<p class=MsoBodyText><span style='font-size:12.0pt;font-family:"Times New Roman"'>Porre
+in grado lo studente di relazionarsi con soggetti, professionalità, metodi di
+lavoro degli Enti sia territoriali sia culturali nello specifico ambito
+dell’editoria di committenza pubblica. Acquisire il valore dello scambio
+editoriale ai fini della coerente individuazione delle sinergie tra Enti vocati
+alla produzione – divulgazione culturale. Abituarsi a strutturare le proprie
+modalità operative (applicabili anche e comunque in diversi ambiti di merito)
+su una griglia stretta di azione e feed back, in ragione dell’approccio in
+genere fortemente burocratizzato della maggior parte delle strutture di
+riferimento.<o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid windowtext 1.0pt;
+mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<p class=MsoNormal style='text-align:justify;border:none;mso-border-bottom-alt:
+solid windowtext .5pt;padding:0cm;mso-padding-alt:0cm 0cm 1.0pt 0cm'><o:p>&nbsp;</o:p></p>
+
+</div>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'>*</p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoTitle><span style='font-size:12.0pt;font-family:"Times New Roman"'>Scheda
+Proposta Tirocinio<o:p></o:p></span></p>
+
+<p class=MsoTitle><span style='font-size:12.0pt;font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText align=center style='text-align:center'><b><span
+style='font-size:12.0pt;font-family:"Times New Roman";color:maroon'>“Comunicazione
+web”</span></b><span style='font-size:12.0pt;font-family:"Times New Roman";
+color:maroon'><o:p></o:p></span></p>
+
+<h3 style='margin-top:0cm;margin-right:-.1pt;margin-bottom:0cm;margin-left:
+0cm;margin-bottom:.0001pt;text-indent:0cm;line-height:normal'><b><span
+style='mso-fareast-font-family:"Arial Unicode MS"'><o:p>&nbsp;</o:p></span></b></h3>
+
+<h3 style='margin-top:0cm;margin-right:-.1pt;margin-bottom:0cm;margin-left:
+0cm;margin-bottom:.0001pt;text-indent:0cm;line-height:normal'><b><span
+style='mso-fareast-font-family:"Arial Unicode MS"'>Obiettivi e modalità del
+tirocinio <o:p></o:p></span></b></h3>
+
+<p class=MsoNormal style='text-align:justify'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify'>Requisiti richiesti:</p>
+
+<p class=MsoNormal style='text-align:justify'>conoscenza base di soluzioni
+software open source o disponibilità ad apprenderle, inglese, capacità di
+navigazione in rete, sistematica nell’ordinare i risultati delle ricerche,
+attenzione ai layout grafici</p>
+
+<p class=MsoBodyText3 style='text-align:justify'><span style='mso-fareast-font-family:
+"Arial Unicode MS"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoBodyText3 style='text-align:justify'><span style='mso-fareast-font-family:
+"Arial Unicode MS"'>Facilitazioni previste:<o:p></o:p></span></p>
+
+<p class=MsoBodyText3 style='text-align:justify'><span style='mso-fareast-font-family:
+"Arial Unicode MS"'>contributo alle spese di viaggio ACT Reggio Emilia –
+Guastalla e ritorno e sulla tratta FER Parma - Suzzara <o:p></o:p></span></p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid windowtext 1.0pt;
+mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<p class=MsoNormal style='text-align:justify;border:none;mso-border-bottom-alt:
+solid windowtext .5pt;padding:0cm;mso-padding-alt:0cm 0cm 1.0pt 0cm'><b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><span
+style='mso-fareast-font-family:"Arial Unicode MS";text-transform:uppercase'><o:p>&nbsp;</o:p></span></i></b></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify'><b><span style='mso-fareast-font-family:
+"Arial Unicode MS"'>ATTIVITÀ’ PREVISTE:</span><o:p></o:p></b></p>
+
+<p class=MsoBodyText><span style='font-size:12.0pt;font-family:"Times New Roman"'>È
+realtà assodata che la prima identificazione qualitativa di un soggetto, per lo
+più Ente, privato o pubblico, avvenga tramite l’idea che di questi emerga dalla
+visione e consultazione del sito proposto in rete. Conseguentemente è un
+passaggio fondamentale per la formazione e diffusione delle relazioni tra Enti
+e soggetti essere costantemente adeguati su questo versante della
+comunicazione. A.G.S.P. ha ritenuto di perseguire tale obiettivo implementando
+costantemente <a href="index.html">www.storiapatriaguastalla.it</a>
+che si configura come un sito di servizio. La prospettiva definita da A.G.S.P.
+consta del giungere a strutturarlo come un vero e proprio portale inerente sia
+le tematiche originarie dell’associazione sia il più ampio contesto degli studi
+e della ricerca archivistica sull’idea del ‘piccolo Stato’ in età moderna. In
+questo senso si terrà conto dei possibili rapporti con i sistemi informativi
+archivistici in via di definizione quali SIUSA (Sistema Informativo Unificato
+Soprintendenze Archivistiche), SIAS (Sistema Informativo Archivi di Stato)
+nonché con sistemi tematici o di settore (Titulus, Ecumene, CUM ...). Lo
+svolgimento dello stage avverrà mediante le seguenti attività:<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:12.0pt;font-family:"Times New Roman"'>1)
+definire il dove e come dei materiali che siano indicati dal tutor aziendale o
+messi a disposizione da A.G.S.P. o che provengano da idee di merito elaborate
+dallo studente.<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:12.0pt;font-family:"Times New Roman"'>2)
+organizzare logicamente i materiali e strutturarli per il sito mediante
+l’utilizzo di sistemi Front Page, acquisizione immagini, elaborazione PDF,
+avendo previamente verificato, se del caso, le condizioni legali d’uso, i
+diritti da corrispondere, gli obblighi da adempiere.<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:12.0pt;font-family:"Times New Roman"'>3)
+comunicare ai destinatari secondo gli schemi di riferimento di A.G.S.P. gli
+incrementi intervenuti, prospettando loro il valore e le opportunità
+nell’utilizzo del sito.<o:p></o:p></span></p>
+
+<p class=MsoBodyText><span style='font-size:12.0pt;font-family:"Times New Roman"'>Tutto
+ciò avverrà secondo schemi progressivi predisposti da A.G.S.P., ossia per nuove
+sezioni del sito o incremento di quelle esistenti, con verifica del feed back
+dei destinatari relazionati. Ogni singola fase di implementazione programmata
+costituisce l’obiettivo di uno specifico progetto, quindi di uno specifico
+stage.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-align:justify'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-align:justify'><b style='mso-bidi-font-weight:
+normal'><span style='mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-style:
+italic'>OBIETTIVI:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-align:justify'>Acquisire la capacità di porre in
+connessione le modalità operative inerenti la gestione di un sito web e la
+valutazione dei contenuti di merito. Questo percorso è da riferire sia ai
+contenuti predisposti dal soggetto committente sia a quanto possa essere
+elaborato dallo studente, anche in risposta a specifici input. Acquisire la
+consapevolezza del valore dinamico dei siti – servizio in contrapposizione ai
+siti – vetrina per essere in grado, nell’esercizio della professione, di
+motivare il committente (sia pubblico sia privato) ad un approccio
+contenutistico alle possibilità di espressione sul web. Acquisire l’attenzione
+per la componente formale – grafica di un sito web.</p>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid windowtext 1.0pt;
+mso-border-bottom-alt:solid windowtext .5pt;padding:0cm 0cm 1.0pt 0cm'>
+
+<p class=MsoNormal style='text-align:justify;border:none;mso-border-bottom-alt:
+solid windowtext .5pt;padding:0cm;mso-padding-alt:0cm 0cm 1.0pt 0cm'><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
+</div></td>
+      <td width="16%" valign=top bgcolor="#344f85"><br><font color="#efefef">
+        <h5 align="center"><a class=menu href="index.php%3Fsez=convegni.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">CONVEGNI SVOLTI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=programmi.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">PROGRAMMI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=search&amp;query=all.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">BIBLIOTECA</a></h5>
+<h5 align="center"> <a class=menu href="index.php%3Fsez=iarda.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">  PROGETTO I.A.R.D.A  </a>  </h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=scambiolibrario.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">SCAMBIO LIBRARIO</a></h5>        
+        <h5 align="center"><a class=menu href="index.php%3Fsez=bibliografia.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">BIBLIOGRAFIA</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=links.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">LINK</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=contatti.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">CONTATTI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=conv_part.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">CONVENZIONI E PARTNERSHIP</a></h5>
+        <p>&nbsp;</p>
+        <br>
+        <p>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="16%" bgcolor="#344f85">
+</td>
+      <td width="60%"><br><br><br><br><br><p align="center"><center>
+  <br>
+<font size="3">Propriet&agrave; e Copyright del sito: Associazione Guastallese di Storia Patria<br>
+Copyright A.G.S.P. 2001 - 2005</font>
+  </center></td>
+      <td width="16%" bgcolor="#344f85"></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<div id="tipDiv" style="position:absolute; visibility:hidden; z-index:100"></div>
+</body>
+
+</html>

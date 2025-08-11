@@ -1,0 +1,482 @@
+<html>
+
+<head>
+<title>A.G.S.P.</title>
+
+<META NAME="DESCRIPTION" CONTENT="Storiapatriaguastalla.it ï¿½ il sito entro il quale Guastalla, capitale dello Stato sovrano che tra i minori piï¿½ si addentrï¿½ nel XVIII secolo, sino alla ricostituzione napoleonica del 1806, trova le coordinate per una corretta lettura e collocazione storiografica">
+<META NAME="KEYWORDS" CONTENT="archivi, archivistica, biblioteca, archivio, archivio di stato, asmo, aspr, asre, asmn, asmi, soprintendenza archivistica, unipr, unimore, gonzaga, este, sforza, visconti, farnese, venezia, serenissima, superba, ducato, granducato, regno, repubblica, guastalla, parma, manova, modena, ferrara, reggio emilia, mirandola, pico, sabbioneta, bozzolo, novellara, carpi, pio, gualtieri, comune di guastalla, guastalla cultura, maldotti, biblioteca maldotti, genova, doria, molfetta, campobasso, orsini, di capua, vicere, viceregno, madrid, vienna, impero, sri, sacro romano impero, stato pontificio, lucca, stmoderna, storia moderna, storia contemporanea, deputazione, deputazione di storia patria, societï¿½ storica lombarda, milano, ferrante gonzaga, abbazia, diocesi di reggio guastalla, duca, principe, conte, gualtieri, brescello, po, fiume po, massa carrara, papa, pontefice, serviti, cappuccine, mantellate, gesuiti, francescani, cappuccini, agostiniane, correggio, maria luigia, parma piacenza e guastalla, borbone, mbac, peppone, don camillo, guareschi, smeg, gazzetta di reggio, gazzetta di mantova, gazzetta di parma">
+<META HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<link rel="StyleSheet" type="text/css" href="storiapatria.css">
+<link media="print" rel="stylesheet" href="stampa.css" type="text/css">
+<script type="text/javascript">
+
+/***********************************************
+* Disable select-text script- ï¿½ Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+//form tags to omit in NS6+:
+var omitformtags=["input", "textarea", "select"]
+
+omitformtags=omitformtags.join("|")
+
+function disableselect(e){
+if (omitformtags.indexOf(e.target.tagName.toLowerCase())==-1)
+return false
+}
+
+function reEnable(){
+return true
+}
+
+if (typeof document.onselectstart!="undefined")
+document.onselectstart=new Function ("return false")
+else{
+document.onmousedown=disableselect
+document.onmouseup=reEnable
+}
+
+</script>
+
+<script language="javascript" type="text/javascript">
+<!--
+
+/*
+Image w/ description tooltip- By Dynamic Web Coding (www.dyn-web.com)
+Copyright 2002 by Sharon Paine
+Visit http://www.dynamicdrive.com for this script
+*/
+
+/* IMPORTANT: Put script after tooltip div or 
+	 put tooltip div just before </BODY>. */
+
+var dom = (document.getElementById) ? true : false;
+var ns5 = ((navigator.userAgent.indexOf("Gecko")>-1) && dom) ? true: false;
+var ie5 = ((navigator.userAgent.indexOf("MSIE")>-1) && dom) ? true : false;
+var ns4 = (document.layers && !dom) ? true : false;
+var ie4 = (document.all && !dom) ? true : false;
+var nodyn = (!ns5 && !ns4 && !ie4 && !ie5) ? true : false;
+
+// resize fix for ns4
+var origWidth, origHeight;
+if (ns4) {
+	origWidth = window.innerWidth; origHeight = window.innerHeight;
+	window.onresize = function() { if (window.innerWidth != origWidth || window.innerHeight != origHeight) history.go(0); }
+}
+
+// avoid error of passing event object in older browsers
+if (nodyn) { event = "nope" }
+
+///////////////////////  CUSTOMIZE HERE   ////////////////////
+// settings for tooltip 
+// Do you want tip to move when mouse moves over link?
+var tipFollowMouse= true;	
+// Be sure to set tipWidth wide enough for widest image
+var tipWidth= 302;
+var offX= 20;	// how far from mouse to show tip
+var offY= 12; 
+var tipFontFamily= "Verdana, arial, helvetica, sans-serif";
+var tipFontSize= "8pt";
+// set default text color and background color for tooltip here
+// individual tooltips can have their own (set in messages arrays)
+// but don't have to
+var tipFontColor= "#000000";
+var tipBgColor= "#FFFFFF"; 
+var tipBorderColor= "#000080";
+var tipBorderWidth= 0;
+var tipBorderStyle= "ridge";
+var tipPadding= 0;
+
+// tooltip content goes here (image, description, optional bgColor, optional textcolor)
+var messages = new Array();
+// multi-dimensional arrays containing: 
+// image and text for tooltip
+// optional: bgColor and color to be sent to tooltip
+messages[0] = new Array('linkimg/paralupi.jpg','',"#FFFFFF");
+messages[1] = new Array('linkimg/micheli.jpg','',"#FFFFFF");
+messages[2] = new Array('linkimg/dutillot.jpg','');
+messages[3] = new Array('linkimg/tranmoss.jpg','');
+messages[4] = new Array('linkimg/patrioti.jpg','');
+messages[5] = new Array('linkimg/tirelli.jpg','');
+messages[6] = new Array('linkimg/mariotti.jpg','');
+messages[7] = new Array('linkimg/rerum.jpg','');
+messages[8] = new Array('linkimg/maldotti.jpg','');
+messages[9] = new Array('linkimg/affo.jpg','');
+messages[10] = new Array('linkimg/baldi.jpg','');
+messages[11] = new Array('linkimg/lbaldi.jpg','');
+messages[12] = new Array('linkimg/lteodora.jpg','');
+
+////////////////////  END OF CUSTOMIZATION AREA  ///////////////////
+
+// preload images that are to appear in tooltip
+// from arrays above
+if (document.images) {
+	var theImgs = new Array();
+	for (var i=0; i<messages.length; i++) {
+  	theImgs[i] = new Image();
+		theImgs[i].src = messages[i][0];
+  }
+}
+
+// to layout image and text, 2-row table, image centered in top cell
+// these go in var tip in doTooltip function
+// startStr goes before image, midStr goes between image and text
+var startStr = '<table width="' + tipWidth + '"><tr><td align="center" width="100%"><img src="';
+var midStr = '" border="0"></td></tr><tr><td valign="top">';
+var endStr = '</td></tr></table>';
+
+////////////////////////////////////////////////////////////
+//  initTip	- initialization for tooltip.
+//		Global variables for tooltip. 
+//		Set styles for all but ns4. 
+//		Set up mousemove capture if tipFollowMouse set true.
+////////////////////////////////////////////////////////////
+var tooltip, tipcss;
+function initTip() {
+	if (nodyn) return;
+	tooltip = (ns4)? document.tipDiv.document: (ie4)? document.all['tipDiv']: (ie5||ns5)? document.getElementById('tipDiv'): null;
+	tipcss = (ns4)? document.tipDiv: tooltip.style;
+	if (ie4||ie5||ns5) {	// ns4 would lose all this on rewrites
+		tipcss.width = tipWidth+"px";
+		tipcss.fontFamily = tipFontFamily;
+		tipcss.fontSize = tipFontSize;
+		tipcss.color = tipFontColor;
+		tipcss.backgroundColor = tipBgColor;
+		tipcss.borderColor = tipBorderColor;
+		tipcss.borderWidth = tipBorderWidth+"px";
+		tipcss.padding = tipPadding+"px";
+		tipcss.borderStyle = tipBorderStyle;
+	}
+	if (tooltip&&tipFollowMouse) {
+		if (ns4) document.captureEvents(Event.MOUSEMOVE);
+		document.onmousemove = trackMouse;
+	}
+}
+
+window.onload = initTip;
+
+/////////////////////////////////////////////////
+//  doTooltip function
+//			Assembles content for tooltip and writes 
+//			it to tipDiv
+/////////////////////////////////////////////////
+var t1,t2;	// for setTimeouts
+var tipOn = false;	// check if over tooltip link
+function doTooltip(evt,num) {
+	if (!tooltip) return;
+	if (t1) clearTimeout(t1);	if (t2) clearTimeout(t2);
+	tipOn = true;
+	// set colors if included in messages array
+	if (messages[num][2])	var curBgColor = messages[num][2];
+	else curBgColor = tipBgColor;
+	if (messages[num][3])	var curFontColor = messages[num][3];
+	else curFontColor = tipFontColor;
+	if (ns4) {
+		var tip = '<table bgcolor="' + tipBorderColor + '" width="' + tipWidth + '" cellspacing="0" cellpadding="' + tipBorderWidth + '" border="0"><tr><td><table bgcolor="' + curBgColor + '" width="100%" cellspacing="0" cellpadding="' + tipPadding + '" border="0"><tr><td>'+ startStr + messages[num][0] + midStr + '<span style="font-family:' + tipFontFamily + '; font-size:' + tipFontSize + '; color:' + curFontColor + ';">' + messages[num][1] + '</span>' + endStr + '</td></tr></table></td></tr></table>';
+		tooltip.write(tip);
+		tooltip.close();
+	} else if (ie4||ie5||ns5) {
+		var tip = startStr + messages[num][0] + midStr + '<span style="font-family:' + tipFontFamily + '; font-size:' + tipFontSize + '; color:' + curFontColor + ';">' + messages[num][1] + '</span>' + endStr;
+		tipcss.backgroundColor = curBgColor;
+	 	tooltip.innerHTML = tip;
+	}
+	if (!tipFollowMouse) positionTip(evt);
+	else t1=setTimeout("tipcss.visibility='visible'",100);
+}
+
+var mouseX, mouseY;
+function trackMouse(evt) {
+	mouseX = (ns4||ns5)? evt.pageX: window.event.clientX + document.body.scrollLeft;
+	mouseY = (ns4||ns5)? evt.pageY: window.event.clientY + document.body.scrollTop;
+	if (tipOn) positionTip(evt);
+}
+
+/////////////////////////////////////////////////////////////
+//  positionTip function
+//		If tipFollowMouse set false, so trackMouse function
+//		not being used, get position of mouseover event.
+//		Calculations use mouseover event position, 
+//		offset amounts and tooltip width to position
+//		tooltip within window.
+/////////////////////////////////////////////////////////////
+function positionTip(evt) {
+	if (!tipFollowMouse) {
+		mouseX = (ns4||ns5)? evt.pageX: window.event.clientX + document.body.scrollLeft;
+		mouseY = (ns4||ns5)? evt.pageY: window.event.clientY + document.body.scrollTop;
+	}
+	// tooltip width and height
+	var tpWd = (ns4)? tooltip.width: (ie4||ie5)? tooltip.clientWidth: tooltip.offsetWidth;
+	var tpHt = (ns4)? tooltip.height: (ie4||ie5)? tooltip.clientHeight: tooltip.offsetHeight;
+	// document area in view (subtract scrollbar width for ns)
+	var winWd = (ns4||ns5)? window.innerWidth-20+window.pageXOffset: document.body.clientWidth+document.body.scrollLeft;
+	var winHt = (ns4||ns5)? window.innerHeight-20+window.pageYOffset: document.body.clientHeight+document.body.scrollTop;
+	// check mouse position against tip and window dimensions
+	// and position the tooltip 
+	if ((mouseX+offX+tpWd)>winWd) 
+		tipcss.left = (ns4)? mouseX-(tpWd+offX): mouseX-(tpWd+offX)+"px";
+	else tipcss.left = (ns4)? mouseX+offX: mouseX+offX+"px";
+	if ((mouseY+offY+tpHt)>winHt) 
+		tipcss.top = (ns4)? winHt-(tpHt+offY): winHt-(tpHt+offY)+"px";
+	else tipcss.top = (ns4)? mouseY+offY: mouseY+offY+"px";
+	if (!tipFollowMouse) t1=setTimeout("tipcss.visibility='visible'",100);
+}
+
+function hideTip() {
+	if (!tooltip) return;
+	t2=setTimeout("tipcss.visibility='hidden'",100);
+	tipOn = false;
+}
+
+//-->
+</script>
+
+</head>
+
+<body oncontextmenu="return false" link="344f85" vlink="344f85" alink="dcdcdc">
+
+<SCRIPT LANGUAGE="JavaScript">
+if (window != top) top.location.href = location.href;
+</SCRIPT>
+
+
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td width="2%" rowspan="3" class=sx></td>
+      <td width="16%" bgcolor="#344f85"><div align="center"><a href="http://www.unesco.org/webworld/portal_archives" target="_top"><img src="grafica/archives_logo_sm.gif" width=98 height=44 alt="UNESCO Archives Portal" border="0"></a><br><br><a href="http://www.unesco.org/webworld/portal_bib" target="_top"><img src="grafica/logo_bib.gif" width=98 height=44 alt="UNESCO Libraries Portal" border="0"></a></div></td>
+      <td width="2%" rowspan="3" class=dx></td>
+      <td width="60%"><p align="center"><a href="index.php%3Fsez=home.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;"><img border="0" src="grafica/logo.jpg" width="186" height="179"></a></td>
+      <td width="2%" rowspan="3" class=sx></td>
+      <td width="16%" bgcolor="#344f85"> <div align="center"><a class=menu href="index.php%3Fsez=500enario.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;"><img border="0" src="grafica/ferranteId.jpg" width="100" height="180"></a></div></td>
+      <td width="2%" rowspan="3" class=dx></td>
+    </tr>
+    <tr>
+      <td width="16%" valign=top bgcolor="#344f85"><br><font color="#efefef">
+        <h5 align="center"><a class=menu href="index.php%3Fsez=sodalizio.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">STORIA DEL SODALIZIO</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=tradizione.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">TRADIZIONE STORIOGRAFICA</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=stato_di_guastalla.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">LO STATO DI GUASTALLA</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=erratacorrige.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">ERRATA CORRIGE</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=guastallarchivi.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">GUASTALLA <br>E GLI ARCHIVI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=guidaluoghistato.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">GUIDA AI LUOGHI<br> DELLO STATO</a></h5>
+        <h5 align="center">AUTORI & COLLABORATORI</h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=excerpta.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">EXCERPTA GUASTALLAE</a></h5></font>
+        <p>&nbsp;</p>
+        <br>
+        <p>&nbsp;</td>
+      <td valign=top width="60%"><div id="contenuto">
+              <br>
+<html>
+<head>
+
+<STYLE type="text/css">
+/* Global Table Settings */
+TR.elenco { 
+font-family: Verdana, Arial;
+font-size: 11px;
+
+ }
+
+/* Links */
+A:link { color:#000000; text-decoration:none; }
+A:visited { color:#000000; text-decoration:none; }
+A:active { color:#000000; text-decoration:none; }
+A:hover { color:#000000; text-decoration:none; }
+</style>
+<title>Home Directory</title>
+</head>
+
+<body>
+
+
+<p align="center"><font size="5" color="#800000">ASSOCIAZIONE GUASTALLESE<br>
+DI STORIA PATRIA<br>
+1933</font><br>
+<br>
+<p align="center">BIBLIOTECA DIGITALE <br>
+Progetto I.A.R.D.A. <br>
+(Indicizzazione Digitalizzata delle Riviste Documentarie dell’Associazione) </p>
+<p>Lo scambio librario attuato da A.G.SP. con Istituzioni culturali simili per storia e attività svolte, o comunque dedicate alla ricerca storico – culturale, ha permesso di acquisire a questo momento (31 ottobre 2006), insieme alle monografie, oltre mille fascicoli di Riviste periodiche, le cui testate sono elencate nella sezione ‘Scambio Librario’. Per rendere meglio accessibile questo patrimonio di conoscenza, consultabile dai soci e da chiunque sia interessato, è stato deciso di rendere on – line i sommari e gli indici dei fascicoli, in modo tale da consentire la valutazione preventiva degli argomenti di interesse e verificarne la consistenza. Quindi si sono abbreviati i tempi di ricerca, così da poter riservare alla consultazione e lettura degli articoli la massima attenzione. Mano a mano che si acquisiranno i nuovi numeri delle Riviste, o si completeranno serie ad oggi incomplete, o si acquisiranno nuove Riviste, si provvederà alle integrazioni del caso. Faranno parte di questa indicizzazione anche sommari e indici dei volumi miscellanei appartenenti alla sezione ‘Biblioteca’. Ad oggi i titoli immessi sono oltre ottomila. La realizzazione è stata resa possibile grazie anche all’apporto del Comune di Guastalla, che ha attribuito ad A.G.S.P. alcuni studenti partecipanti al ‘Progetto Tempo Prezioso’, nonché ad uno stage curricolare svolto in convenzione (vedi la sezione ‘Convenzioni e Partnership) con la Facoltà di Scienze della Comunicazione e dell’Economia dell’Università degli Studi di Modena e Reggio Emilia.<p>
+
+<table width="100%" bgcolor="#ffffff">
+<tr>
+  <td bgcolor="#ffffff">
+   <table border="0" width="100%" bordercolor="#000000" bordercolorlight="#000000" bordercolordark="#000000" cellspacing="0" cellpadding="5">
+    <tr>
+     <td align="center" width="65%"><b>Data Autore Titolo</b></td>
+     <td align="center" width="22%"><b>Inserito il</b></td>
+     <td width="13%" align="center"><b>Dimensione</b></td>
+    </tr><tr class="elenco" >
+ <td><a target="_blank" href="iarda/Acme%20-%20Facolta'%20di%20lettere%20e%20filosofia%20Unimi.pdf">Acme - Facolta' di lettere e filosofia Unimi.pdf</a></td>
+ <td align="center">14 November 2006 </td>
+ <td align="center">8.04 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="iarda/Actum%20Luce%20(rivista%20di%20studi%20lucchesi).pdf">Actum Luce (rivista di studi lucchesi).pdf</a></td>
+ <td align="center">14 November 2006 </td>
+ <td align="center">1.68 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="iarda/Annali%20della%20Scuola%20Normale%20Superiore%20di%20Pisa.pdf">Annali della Scuola Normale Superiore di Pisa.pdf</a></td>
+ <td align="center">14 November 2006 </td>
+ <td align="center">2.26 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="iarda/Annali%20di%20Storia%20Pavese.pdf">Annali di Storia Pavese.pdf</a></td>
+ <td align="center">16 November 2006 </td>
+ <td align="center">2.11 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="iarda/Archivio%20-%20Societa'%20romana%20di%20storia%20patria.pdf">Archivio - Societa' romana di storia patria.pdf</a></td>
+ <td align="center">14 November 2006 </td>
+ <td align="center">681.96 KB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="iarda/Archivio%20Storico%20-%20per%20le%20Provincie%20parmensi.pdf">Archivio Storico - per le Provincie parmensi.pdf</a></td>
+ <td align="center">14 November 2006 </td>
+ <td align="center">12.76 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="iarda/Archivio%20Storico%20Lombardo.pdf">Archivio Storico Lombardo.pdf</a></td>
+ <td align="center">14 November 2006 </td>
+ <td align="center">7.89 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="iarda/Archivio%20Storico%20per%20la%20Sicilia%20Orientale.pdf">Archivio Storico per la Sicilia Orientale.pdf</a></td>
+ <td align="center">14 November 2006 </td>
+ <td align="center">952.81 KB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="iarda/Archivio%20Storico%20Pratese.pdf">Archivio Storico Pratese.pdf</a></td>
+ <td align="center">14 November 2006 </td>
+ <td align="center">796.42 KB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="iarda/Archivio%20Storico%20Pugliese.pdf">Archivio Storico Pugliese.pdf</a></td>
+ <td align="center">14 November 2006 </td>
+ <td align="center">1.42 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="iarda/Archivio%20Storico%20Siciliano.pdf">Archivio Storico Siciliano.pdf</a></td>
+ <td align="center">14 November 2006 </td>
+ <td align="center">1.22 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="iarda/Archivi%20per%20la%20Storia%20(associazione%20archivistica%20nazionale).pdf">Archivi per la Storia (associazione archivistica nazionale).pdf</a></td>
+ <td align="center">14 November 2006 </td>
+ <td align="center">883.59 KB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="iarda/Atti%20e%20Memorie%20-%20Accademia%20Virgiliana%20di%20Storia%20Patria.pdf">Atti e Memorie - Accademia Virgiliana di Storia Patria.pdf</a></td>
+ <td align="center">16 November 2006 </td>
+ <td align="center">1.35 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="iarda/Atti%20e%20Memorie%20-%20Societa'%20savonese%20di%20Storia%20Patria.pdf">Atti e Memorie - Societa' savonese di Storia Patria.pdf</a></td>
+ <td align="center">16 November 2006 </td>
+ <td align="center">3.62 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="iarda/Atti%20e%20Memorie%20Deputazione%20di%20Storia%20Patria%20-%20Ferrara.pdf">Atti e Memorie Deputazione di Storia Patria - Ferrara.pdf</a></td>
+ <td align="center">16 November 2006 </td>
+ <td align="center">1.83 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="iarda/Atti%20e%20Memorie%20Deputazione%20di%20Storia%20Patria%20-%20Marche.pdf">Atti e Memorie Deputazione di Storia Patria - Marche.pdf</a></td>
+ <td align="center">16 November 2006 </td>
+ <td align="center">701.93 KB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="iarda/Atti%20e%20Memorie%20Societa'%20Dalmata%20di%20Storia%20Patria.pdf">Atti e Memorie Societa' Dalmata di Storia Patria.pdf</a></td>
+ <td align="center">16 November 2006 </td>
+ <td align="center">1.46 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="iarda/Aurea%20Parma.pdf">Aurea Parma.pdf</a></td>
+ <td align="center">16 November 2006 </td>
+ <td align="center">15.14 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="iarda/Bollettino%20del%20Museo%20del%20Risorgimento.pdf">Bollettino del Museo del Risorgimento.pdf</a></td>
+ <td align="center">16 November 2006 </td>
+ <td align="center">2.60 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="iarda/Bollettino%20Deputazione%20Abruzzese%20di%20Storia%20Patria.pdf">Bollettino Deputazione Abruzzese di Storia Patria.pdf</a></td>
+ <td align="center">16 November 2006 </td>
+ <td align="center">776.60 KB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="iarda/Bollettino%20Deputazione%20di%20Storia%20Patria%20dell'Umbria.pdf">Bollettino Deputazione di Storia Patria dell'Umbria.pdf</a></td>
+ <td align="center">16 November 2006 </td>
+ <td align="center">2.18 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="iarda/Bollettino%20Storico%20Piacentino.pdf">Bollettino Storico Piacentino.pdf</a></td>
+ <td align="center">16 November 2006 </td>
+ <td align="center">7.79 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="iarda/Bullettino%20Senese%20di%20Storia%20Patria.pdf">Bullettino Senese di Storia Patria.pdf</a></td>
+ <td align="center">16 November 2006 </td>
+ <td align="center">2.65 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="iarda/I%20Georgofili.pdf">I Georgofili.pdf</a></td>
+ <td align="center">16 November 2006 </td>
+ <td align="center">9.88 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="iarda/L'Archiginnasio.pdf">L'Archiginnasio.pdf</a></td>
+ <td align="center">16 November 2006 </td>
+ <td align="center">5.79 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="iarda/La%20Berio.pdf">La Berio.pdf</a></td>
+ <td align="center">16 November 2006 </td>
+ <td align="center">1.62 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="iarda/Malacoda.pdf">Malacoda.pdf</a></td>
+ <td align="center">16 November 2006 </td>
+ <td align="center">3.05 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="iarda/Navigazione%20Interna.pdf">Navigazione Interna.pdf</a></td>
+ <td align="center">16 November 2006 </td>
+ <td align="center">8.88 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="https://www.storiapatriaguastalla.it/iarda/Pesaro%20Citt%E0%20e%20Cont%E0.pdf">Pesaro Città e Contà.pdf</a></td>
+ <td align="center">16 November 2006 </td>
+ <td align="center">1.26 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="iarda/Quaderni%20della%20Bassa%20Modenese.pdf">Quaderni della Bassa Modenese.pdf</a></td>
+ <td align="center">16 November 2006 </td>
+ <td align="center">8.27 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="iarda/Rassegna%20degli%20Archivi%20di%20Stato.pdf">Rassegna degli Archivi di Stato.pdf</a></td>
+ <td align="center">16 November 2006 </td>
+ <td align="center">17.22 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="iarda/Rassegna%20Storica%20del%20Risorgimento.pdf">Rassegna Storica del Risorgimento.pdf</a></td>
+ <td align="center">16 November 2006 </td>
+ <td align="center">17.68 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="iarda/Reggio%20Storia.pdf">Reggio Storia.pdf</a></td>
+ <td align="center">16 November 2006 </td>
+ <td align="center">7.03 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="iarda/Torricelliana.pdf">Torricelliana.pdf</a></td>
+ <td align="center">16 November 2006 </td>
+ <td align="center">1.60 MB</td>
+</tr>   </table>
+  </td>
+ </tr>
+</table>
+</body>
+<html></div></td>
+      <td width="16%" valign=top bgcolor="#344f85"><br><font color="#efefef">
+        <h5 align="center"><a class=menu href="index.php%3Fsez=convegni.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">CONVEGNI SVOLTI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=programmi.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">PROGRAMMI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=search&amp;query=all.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">BIBLIOTECA</a></h5>
+<h5 align="center"> <a class=menu href="index.php%3Fsez=iarda.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">  PROGETTO I.A.R.D.A  </a>  </h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=scambiolibrario.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">SCAMBIO LIBRARIO</a></h5>        
+        <h5 align="center"><a class=menu href="index.php%3Fsez=bibliografia.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">BIBLIOGRAFIA</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=links.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">LINK</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=contatti.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">CONTATTI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=conv_part.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">CONVENZIONI E PARTNERSHIP</a></h5>
+        <p>&nbsp;</p>
+        <br>
+        <p>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="16%" bgcolor="#344f85">
+</td>
+      <td width="60%"><br><br><br><br><br><p align="center"><center>
+  <br>
+<font size="3">Propriet&agrave; e Copyright del sito: Associazione Guastallese di Storia Patria<br>
+Copyright A.G.S.P. 2001 - 2005</font>
+  </center></td>
+      <td width="16%" bgcolor="#344f85"></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<div id="tipDiv" style="position:absolute; visibility:hidden; z-index:100"></div>
+</body>
+
+</html>

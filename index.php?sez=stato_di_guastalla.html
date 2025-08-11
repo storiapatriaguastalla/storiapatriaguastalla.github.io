@@ -1,0 +1,348 @@
+<html>
+
+<head>
+<title>A.G.S.P.</title>
+
+<META NAME="DESCRIPTION" CONTENT="Storiapatriaguastalla.it ï¿½ il sito entro il quale Guastalla, capitale dello Stato sovrano che tra i minori piï¿½ si addentrï¿½ nel XVIII secolo, sino alla ricostituzione napoleonica del 1806, trova le coordinate per una corretta lettura e collocazione storiografica">
+<META NAME="KEYWORDS" CONTENT="archivi, archivistica, biblioteca, archivio, archivio di stato, asmo, aspr, asre, asmn, asmi, soprintendenza archivistica, unipr, unimore, gonzaga, este, sforza, visconti, farnese, venezia, serenissima, superba, ducato, granducato, regno, repubblica, guastalla, parma, manova, modena, ferrara, reggio emilia, mirandola, pico, sabbioneta, bozzolo, novellara, carpi, pio, gualtieri, comune di guastalla, guastalla cultura, maldotti, biblioteca maldotti, genova, doria, molfetta, campobasso, orsini, di capua, vicere, viceregno, madrid, vienna, impero, sri, sacro romano impero, stato pontificio, lucca, stmoderna, storia moderna, storia contemporanea, deputazione, deputazione di storia patria, societï¿½ storica lombarda, milano, ferrante gonzaga, abbazia, diocesi di reggio guastalla, duca, principe, conte, gualtieri, brescello, po, fiume po, massa carrara, papa, pontefice, serviti, cappuccine, mantellate, gesuiti, francescani, cappuccini, agostiniane, correggio, maria luigia, parma piacenza e guastalla, borbone, mbac, peppone, don camillo, guareschi, smeg, gazzetta di reggio, gazzetta di mantova, gazzetta di parma">
+<META HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<link rel="StyleSheet" type="text/css" href="storiapatria.css">
+<link media="print" rel="stylesheet" href="stampa.css" type="text/css">
+<script type="text/javascript">
+
+/***********************************************
+* Disable select-text script- ï¿½ Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+//form tags to omit in NS6+:
+var omitformtags=["input", "textarea", "select"]
+
+omitformtags=omitformtags.join("|")
+
+function disableselect(e){
+if (omitformtags.indexOf(e.target.tagName.toLowerCase())==-1)
+return false
+}
+
+function reEnable(){
+return true
+}
+
+if (typeof document.onselectstart!="undefined")
+document.onselectstart=new Function ("return false")
+else{
+document.onmousedown=disableselect
+document.onmouseup=reEnable
+}
+
+</script>
+
+<script language="javascript" type="text/javascript">
+<!--
+
+/*
+Image w/ description tooltip- By Dynamic Web Coding (www.dyn-web.com)
+Copyright 2002 by Sharon Paine
+Visit http://www.dynamicdrive.com for this script
+*/
+
+/* IMPORTANT: Put script after tooltip div or 
+	 put tooltip div just before </BODY>. */
+
+var dom = (document.getElementById) ? true : false;
+var ns5 = ((navigator.userAgent.indexOf("Gecko")>-1) && dom) ? true: false;
+var ie5 = ((navigator.userAgent.indexOf("MSIE")>-1) && dom) ? true : false;
+var ns4 = (document.layers && !dom) ? true : false;
+var ie4 = (document.all && !dom) ? true : false;
+var nodyn = (!ns5 && !ns4 && !ie4 && !ie5) ? true : false;
+
+// resize fix for ns4
+var origWidth, origHeight;
+if (ns4) {
+	origWidth = window.innerWidth; origHeight = window.innerHeight;
+	window.onresize = function() { if (window.innerWidth != origWidth || window.innerHeight != origHeight) history.go(0); }
+}
+
+// avoid error of passing event object in older browsers
+if (nodyn) { event = "nope" }
+
+///////////////////////  CUSTOMIZE HERE   ////////////////////
+// settings for tooltip 
+// Do you want tip to move when mouse moves over link?
+var tipFollowMouse= true;	
+// Be sure to set tipWidth wide enough for widest image
+var tipWidth= 302;
+var offX= 20;	// how far from mouse to show tip
+var offY= 12; 
+var tipFontFamily= "Verdana, arial, helvetica, sans-serif";
+var tipFontSize= "8pt";
+// set default text color and background color for tooltip here
+// individual tooltips can have their own (set in messages arrays)
+// but don't have to
+var tipFontColor= "#000000";
+var tipBgColor= "#FFFFFF"; 
+var tipBorderColor= "#000080";
+var tipBorderWidth= 0;
+var tipBorderStyle= "ridge";
+var tipPadding= 0;
+
+// tooltip content goes here (image, description, optional bgColor, optional textcolor)
+var messages = new Array();
+// multi-dimensional arrays containing: 
+// image and text for tooltip
+// optional: bgColor and color to be sent to tooltip
+messages[0] = new Array('linkimg/paralupi.jpg','',"#FFFFFF");
+messages[1] = new Array('linkimg/micheli.jpg','',"#FFFFFF");
+messages[2] = new Array('linkimg/dutillot.jpg','');
+messages[3] = new Array('linkimg/tranmoss.jpg','');
+messages[4] = new Array('linkimg/patrioti.jpg','');
+messages[5] = new Array('linkimg/tirelli.jpg','');
+messages[6] = new Array('linkimg/mariotti.jpg','');
+messages[7] = new Array('linkimg/rerum.jpg','');
+messages[8] = new Array('linkimg/maldotti.jpg','');
+messages[9] = new Array('linkimg/affo.jpg','');
+messages[10] = new Array('linkimg/baldi.jpg','');
+messages[11] = new Array('linkimg/lbaldi.jpg','');
+messages[12] = new Array('linkimg/lteodora.jpg','');
+
+////////////////////  END OF CUSTOMIZATION AREA  ///////////////////
+
+// preload images that are to appear in tooltip
+// from arrays above
+if (document.images) {
+	var theImgs = new Array();
+	for (var i=0; i<messages.length; i++) {
+  	theImgs[i] = new Image();
+		theImgs[i].src = messages[i][0];
+  }
+}
+
+// to layout image and text, 2-row table, image centered in top cell
+// these go in var tip in doTooltip function
+// startStr goes before image, midStr goes between image and text
+var startStr = '<table width="' + tipWidth + '"><tr><td align="center" width="100%"><img src="';
+var midStr = '" border="0"></td></tr><tr><td valign="top">';
+var endStr = '</td></tr></table>';
+
+////////////////////////////////////////////////////////////
+//  initTip	- initialization for tooltip.
+//		Global variables for tooltip. 
+//		Set styles for all but ns4. 
+//		Set up mousemove capture if tipFollowMouse set true.
+////////////////////////////////////////////////////////////
+var tooltip, tipcss;
+function initTip() {
+	if (nodyn) return;
+	tooltip = (ns4)? document.tipDiv.document: (ie4)? document.all['tipDiv']: (ie5||ns5)? document.getElementById('tipDiv'): null;
+	tipcss = (ns4)? document.tipDiv: tooltip.style;
+	if (ie4||ie5||ns5) {	// ns4 would lose all this on rewrites
+		tipcss.width = tipWidth+"px";
+		tipcss.fontFamily = tipFontFamily;
+		tipcss.fontSize = tipFontSize;
+		tipcss.color = tipFontColor;
+		tipcss.backgroundColor = tipBgColor;
+		tipcss.borderColor = tipBorderColor;
+		tipcss.borderWidth = tipBorderWidth+"px";
+		tipcss.padding = tipPadding+"px";
+		tipcss.borderStyle = tipBorderStyle;
+	}
+	if (tooltip&&tipFollowMouse) {
+		if (ns4) document.captureEvents(Event.MOUSEMOVE);
+		document.onmousemove = trackMouse;
+	}
+}
+
+window.onload = initTip;
+
+/////////////////////////////////////////////////
+//  doTooltip function
+//			Assembles content for tooltip and writes 
+//			it to tipDiv
+/////////////////////////////////////////////////
+var t1,t2;	// for setTimeouts
+var tipOn = false;	// check if over tooltip link
+function doTooltip(evt,num) {
+	if (!tooltip) return;
+	if (t1) clearTimeout(t1);	if (t2) clearTimeout(t2);
+	tipOn = true;
+	// set colors if included in messages array
+	if (messages[num][2])	var curBgColor = messages[num][2];
+	else curBgColor = tipBgColor;
+	if (messages[num][3])	var curFontColor = messages[num][3];
+	else curFontColor = tipFontColor;
+	if (ns4) {
+		var tip = '<table bgcolor="' + tipBorderColor + '" width="' + tipWidth + '" cellspacing="0" cellpadding="' + tipBorderWidth + '" border="0"><tr><td><table bgcolor="' + curBgColor + '" width="100%" cellspacing="0" cellpadding="' + tipPadding + '" border="0"><tr><td>'+ startStr + messages[num][0] + midStr + '<span style="font-family:' + tipFontFamily + '; font-size:' + tipFontSize + '; color:' + curFontColor + ';">' + messages[num][1] + '</span>' + endStr + '</td></tr></table></td></tr></table>';
+		tooltip.write(tip);
+		tooltip.close();
+	} else if (ie4||ie5||ns5) {
+		var tip = startStr + messages[num][0] + midStr + '<span style="font-family:' + tipFontFamily + '; font-size:' + tipFontSize + '; color:' + curFontColor + ';">' + messages[num][1] + '</span>' + endStr;
+		tipcss.backgroundColor = curBgColor;
+	 	tooltip.innerHTML = tip;
+	}
+	if (!tipFollowMouse) positionTip(evt);
+	else t1=setTimeout("tipcss.visibility='visible'",100);
+}
+
+var mouseX, mouseY;
+function trackMouse(evt) {
+	mouseX = (ns4||ns5)? evt.pageX: window.event.clientX + document.body.scrollLeft;
+	mouseY = (ns4||ns5)? evt.pageY: window.event.clientY + document.body.scrollTop;
+	if (tipOn) positionTip(evt);
+}
+
+/////////////////////////////////////////////////////////////
+//  positionTip function
+//		If tipFollowMouse set false, so trackMouse function
+//		not being used, get position of mouseover event.
+//		Calculations use mouseover event position, 
+//		offset amounts and tooltip width to position
+//		tooltip within window.
+/////////////////////////////////////////////////////////////
+function positionTip(evt) {
+	if (!tipFollowMouse) {
+		mouseX = (ns4||ns5)? evt.pageX: window.event.clientX + document.body.scrollLeft;
+		mouseY = (ns4||ns5)? evt.pageY: window.event.clientY + document.body.scrollTop;
+	}
+	// tooltip width and height
+	var tpWd = (ns4)? tooltip.width: (ie4||ie5)? tooltip.clientWidth: tooltip.offsetWidth;
+	var tpHt = (ns4)? tooltip.height: (ie4||ie5)? tooltip.clientHeight: tooltip.offsetHeight;
+	// document area in view (subtract scrollbar width for ns)
+	var winWd = (ns4||ns5)? window.innerWidth-20+window.pageXOffset: document.body.clientWidth+document.body.scrollLeft;
+	var winHt = (ns4||ns5)? window.innerHeight-20+window.pageYOffset: document.body.clientHeight+document.body.scrollTop;
+	// check mouse position against tip and window dimensions
+	// and position the tooltip 
+	if ((mouseX+offX+tpWd)>winWd) 
+		tipcss.left = (ns4)? mouseX-(tpWd+offX): mouseX-(tpWd+offX)+"px";
+	else tipcss.left = (ns4)? mouseX+offX: mouseX+offX+"px";
+	if ((mouseY+offY+tpHt)>winHt) 
+		tipcss.top = (ns4)? winHt-(tpHt+offY): winHt-(tpHt+offY)+"px";
+	else tipcss.top = (ns4)? mouseY+offY: mouseY+offY+"px";
+	if (!tipFollowMouse) t1=setTimeout("tipcss.visibility='visible'",100);
+}
+
+function hideTip() {
+	if (!tooltip) return;
+	t2=setTimeout("tipcss.visibility='hidden'",100);
+	tipOn = false;
+}
+
+//-->
+</script>
+
+</head>
+
+<body oncontextmenu="return false" link="344f85" vlink="344f85" alink="dcdcdc">
+
+<SCRIPT LANGUAGE="JavaScript">
+if (window != top) top.location.href = location.href;
+</SCRIPT>
+
+
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td width="2%" rowspan="3" class=sx></td>
+      <td width="16%" bgcolor="#344f85"><div align="center"><a href="http://www.unesco.org/webworld/portal_archives" target="_top"><img src="grafica/archives_logo_sm.gif" width=98 height=44 alt="UNESCO Archives Portal" border="0"></a><br><br><a href="http://www.unesco.org/webworld/portal_bib" target="_top"><img src="grafica/logo_bib.gif" width=98 height=44 alt="UNESCO Libraries Portal" border="0"></a></div></td>
+      <td width="2%" rowspan="3" class=dx></td>
+      <td width="60%"><p align="center"><a href="index.php%3Fsez=home.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;"><img border="0" src="grafica/logo.jpg" width="186" height="179"></a></td>
+      <td width="2%" rowspan="3" class=sx></td>
+      <td width="16%" bgcolor="#344f85"> <div align="center"><a class=menu href="index.php%3Fsez=500enario.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;"><img border="0" src="grafica/ferranteId.jpg" width="100" height="180"></a></div></td>
+      <td width="2%" rowspan="3" class=dx></td>
+    </tr>
+    <tr>
+      <td width="16%" valign=top bgcolor="#344f85"><br><font color="#efefef">
+        <h5 align="center"><a class=menu href="index.php%3Fsez=sodalizio.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">STORIA DEL SODALIZIO</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=tradizione.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">TRADIZIONE STORIOGRAFICA</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=stato_di_guastalla.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">LO STATO DI GUASTALLA</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=erratacorrige.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">ERRATA CORRIGE</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=guastallarchivi.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">GUASTALLA <br>E GLI ARCHIVI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=guidaluoghistato.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">GUIDA AI LUOGHI<br> DELLO STATO</a></h5>
+        <h5 align="center">AUTORI & COLLABORATORI</h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=excerpta.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">EXCERPTA GUASTALLAE</a></h5></font>
+        <p>&nbsp;</p>
+        <br>
+        <p>&nbsp;</td>
+      <td valign=top width="60%"><div id="contenuto">
+              <br><p align="center"><font size="5" color="#800000">ASSOCIAZIONE GUASTALLESE<br>
+DI STORIA PATRIA<br>
+1933</font></p><br>
+<br>
+<br>
+<p align="center">LO STATO DI GUASTALLA</p><br>
+<br>
+<a href="index.php%3Fsez=stato_di_guastalla.html#primo">Dalle origini al primo periodo feudale</a><br>
+<a href="index.php%3Fsez=stato_di_guastalla.html#secondo">I Torello all’ombra visconteo - sforzesca</a><br>
+<a href="index.php%3Fsez=stato_di_guastalla.html#terzo">I Gonzaga e la costruzione dello Stato</a><br>
+<a href="index.php%3Fsez=stato_di_guastalla.html#quarto">I duchi di Guastalla sovrani europei</a><br>
+<a href="index.php%3Fsez=stato_di_guastalla.html#quinto">Gli anni borbonici e il tramonto dell’Antico Regime</a><br>
+<a href="index.php%3Fsez=stato_di_guastalla.html#sesto">Il breve intermezzo napoleonico</a><br>
+<a href="index.php%3Fsez=stato_di_guastalla.html#settimo">Dalla Restaurazione all’Unità nazionale</a><br>
+<br>
+<a name="primo"><b>Dalle origini al primo periodo feudale</b></a><br>
+La storia etrusco – romana di Guastalla, ormai solidamente presente nei ritrovamenti archeologici, è però la grande assente storiografica, sia nelle fonti antiche sia in più recenti studi di adeguato spessore. Occorre quindi rifarsi, nel disegnare il divenire storico della nostra città, a quanto di consolidato sia ad oggi riconosciuto.&nbsp;<br>
+Autonomia territoriale ed amministrativa è possibile trovare, per Guastalla, nei ‘Fines Wardestallenses’ della prima età carolingia, il Pactum del 1102 tra gli uomini di Guastalla e la badessa di S. Sisto denuncia già l’articolazione di una realtà complessa, nella quale sono presenti più classi sociali dalle prerogative ben distinte, in un cammino che porterà allo status di libero Comune. Articolazione sociale, vita civile, adeguato contesto urbano e castellano, terre e commerci furono gli elementi che consentirono l’acquisizione di una ulteriore e fondamentale condizione, pensando ai secoli a venire. Infatti nel 1347, richiamando l’immemorabile tradizione di possesso imperiale, fu redatta l’investitura concessa da Carlo IV re dei Romani a Giovanni, Giberto ed Azzo da Correggio, relativa allo specifico Castrum di Guastalla (quindi non inserito in una pluralità di territori), nella quale fu riconosciuto come ‘ad plenam proprietate mensam &amp; Cameram Romani Imperii noscitur pertinere’.&nbsp;<br>
+<br>
+<a name="secondo"><b>I Torello all’ombra visconteo - sforzesca</b></a><br>
+I sessant’anni che seguirono furono costantemente caratterizzati dai clamori delle armi, le quali nel 1406 renderanno Guastalla feudo di Guido Torello ‘il Grande’ in virtù dei servigi prestati ai Visconti. Dal 1428 questo territorio, che ormai faceva parte del grande organismo unitario e sovraregionale visconteo, costituito in contea con le prerogative del caso, vedrà la propria storia segnare eccellenza e singolarità. Gli anni del secondo ‘400 furono meno movimentati, ma il retaggio delle unioni dinastiche dei decenni precedenti rimase inalterato. Acquisire per matrimonio parentele con i Visconti, i Pio di Carpi e i Del Carretto di Finale Ligure significò inserirsi nella più elevata aristocrazia del tempo, di investitura imperiale; grandi famiglie parmigiane e milanesi portarono ai Torello di Guastalla relazioni, esperienze, cultura. Anche l’organizzazione del feudo risentì positivamente, vide strutturate Corte ed  amministrazione del Signore, una borghesia cittadina impegnata più di quanto sia solito immaginare in commerci e traffici, uno sviluppo urbanistico ed edilizio che ricalca concettualmente le ‘Addizioni’ estensi. Nascono agli inizi del ‘500 il severo Palazzo Comunale ed il Palazzo che diverrà Ducale, sono anni nei quali Guastalla diviene città rinascimentale, dignitosa e paritaria rispetto alle vicine piccole Corti. Nel 1522 la brusca caduta di questo disegno, la morte di Achille Torello senza discendenti maschi viventi. Valoroso, trasgressivo, sanguigno, incarna l’archetipo del guerriero ma è anche attento politico in un diverso contesto rispetto al secolo precedente. Pare rinverdire il lustro del bisavolo Guido, ma la morte per pugnale consegna Guastalla alla figlia, definita ‘Contessa di Guastalla’. Il solo fondamento giuridico del possesso è legato alla necessità di Milano, ancora per poco sforzesca, di conservare la propria piazzaforte più orientale in potere ad una feudataria dominabile. Una tutela, che dalla metropoli viene accordata a Ludovica: le consente di sposare e seppellire due inadeguati coniugi, salvaguardarsi dalle mire dei parenti, condurre una vita tra sregolatezza e misticismo. È il collasso statuale, descritto dagli storici che hanno trattato di Guastalla, ma anche il momento che col riscatto della città ne segnerà l’identità più duratura.&nbsp;<br>
+<br>
+<a name="terzo"><b>I Gonzaga e la costruzione dello Stato</b></a><br>
+Quando si affaccia sulla scena Ferrante Gonzaga, l’interlocutore poteva essere considerato tra i più influenti uomini d’arme e di politica d’Europa, ripetendo su scala ben più ampia il cammino che un secolo prima era stato compiuto da Guido Torello. Con l’acquisto di Ferrante in Guastalla iniziano 207 anni di signoria, che diverrà sovranità, nel corso dei quali tanti piccoli competitori scompaiono dalla scena politica: Carpi già dal 1525, Correggio nel 1630, Bozzolo nel 1703, Mirandola nel 1708, Novellara nel 1728, la stessa grande Mantova nel 1708. Tra questi piccoli Stati Guastalla sarà in grado, grazie ai suoi Gonzaga, di accedere al novero dei grandi, non per dimensione, certo per prestigio. Non fu un processo lineare, vi furono splendidi progressi ed obbligati ripiegamenti. Il biennio1539 - 1541 è fondamentale, avviene l’acquisto del feudo e la sua dichiarazione di immediatezza all’Impero, che poi è lo status già goduto al tempo dei da Correggio: i Signori di Guastalla nulla più devono a Milano, colloquiano esclusivamente con l’imperatore, allora Carlo V. Al momento dell’acquisto di Guastalla, a volte inteso come ripiego rispetto ai fasti mantovani, Ferrante era condottiero tra i massimi, ma anche signore di tanti feudi nel Meridione d’Italia da valere almeno la metà del Mantovano, e con titoli (duca di Ariano, principe di Molfetta) al vertice dell’aristocrazia italo - spagnola, e poi Grande di Spagna e Cavaliere del Toson d’Oro. Insomma, in quanto a nobiltà su Guastalla si riverberavano dignità per nulla inferiori a quelle dei duchi di Mantova. Del 1556 è il privilegio di battere moneta, esercitato ininterrottamente sino al 1746, e Carlo V riconosce i Gonzaga di Guastalla privilegiati nel succedere in Novellara in caso di estinzione di quei Gonzaga.&nbsp;<br>
+Nel  1567, con Cesare I la Corte è trasferita definitivamente a Guastalla, e ci si appresta a dotare la città dei connotati degni di una capitale. Un palazzo pari ai maggiori allora in costruzione in Italia, assetto urbano innovativo, Chiesa ‘quasi vescovile’, brillante vita culturale, preziose collezioni d’arte, un’accademia letteraria nobilitante per chi vi sia ascritto. Dai matrimoni ( di Capua per Ferrante, Borromeo per Cesare I, Doria per Ferrante II, Orsini per Cesare II) si intesse una rete di relazioni privilegiate, e se Cesare I non riuscì ad affermarsi pienamente per la morte in giovane età, i successori raggiunsero i più alti gradi presso le Corti di Madrid e Vienna, sino al 1621 che vedrà consacrato tale status con la concessione del titolo ducale. I sovrani di Guastalla sono equiparati in dignità ai maggiori regnanti italiani. Il Commissariato imperiale per l’Italia a Ferrante II e al figlio Cesare è consacrazione del percorso iniziato ormai da un secolo. Sono gli anni della crisi dinastica di Mantova, il ramo dominante va spegnendosi tristemente, non senza ragione nella Corte di Guastalla si accarezza il grande passo, ottenere il trono di quel ducato. Nasce ora la diplomazia guastallese; guidata da Cesare II recluta agenti, inviati, emissari, blandisce e corrompe, promette e patteggia, spina nel fianco ai contendenti della Guerra dei Trent’anni la questione di Guastalla contro Mantova. Ma il ‘600 è secolo di compromessi, corrono i maneggi del Richelieu, i Protestanti minacciano l’Impero che traballa nelle spire della guerra confessionale, ed i buoni diritti dei Gonzaga di Guastalla dovranno essere sacrificati a favore dei Gonzaga Nevers, ormai francesi, con un compenso territoriale, Luzzara e Reggiolo, non grande estensione, ma ricche da valere una buona metà del Monferrato, terra nobile ma povera.&nbsp;<br>
+A suggellare ferocemente i decenni trascorsi interverrà la Peste del 1630, che lascerà prostrata Guastalla, ed orfano il nuovo duca Ferrante III, di soli 14 anni. Perduta la madre nel 1623, il padre nel 1632 a Vienna, con più di un sospetto di veleno, il nonno nel 1630, oberato dai debiti contratti dai suoi maggiori per il servizio imperiale, pare non poter sopravvivere dinasticamente. Ma oltre alla diplomazia entra in gioco un altro elemento troppo spesso sottovalutato, ossia la capacità politica dei ministri e segretari dei sovrani di Guastalla. Spilimbergo, Donesmondi, Quinziani, figure che si avvicendano alla cura dello Stato e del giovane duca, che riescono a tamponare, poi risolvere quella che pareva bancarotta economica, collasso statuale. Siamo nuovamente di fronte ai tempi nei quali occorre costruire, far valere le benemerenze acquisite, inghiottire le amarezze derivate dai dissesti, ma Vienna non ha dimenticato la fedeltà di un tempo, e redime il laudemio, che tante volte aveva stroncato i piccoli sovrani. Madrid comincia a conferire pensioni, e non è umiliante, dato che tutti i sovrani d’Italia le chiedono, si vendono i feudi meridionali, ci si concentra sulla salvaguardia di Guastalla e del suo Stato.&nbsp;<br>
+<br>
+<a name="quarto"><b>I duchi di Guastalla sovrani europei</b></a><br>
+È stato un lavoro duro ma nel 1647, con 45.000 ducati di rendita, Ferrante III può sposare Margherita d’Este, figlia del duca di Modena, figlia di sovrani; d’ora in poi la scelta sarà di essere duca nella vera accezione della parola, un Sovrano. Basta con il servizio imperiale, il rischio dei debiti, la lontananza da casa, ora lo Stato deve essere adeguato ai tempi sempre più duri, alla competizione tra le piccole e le grandi Corti. Ecco il trattamento di Serenissimo, la mediazione tra Modena e Spagna nel 1659, il Palazzo Ducale ora barocco da manierista che era, sino a giungere a potersi permettere di declinare l’offerta del Commissariato imperiale che ancora l’imperatore vorrebbe caricare a Guastalla. E poi i Ministri residenti a Vienna, Madrid, Roma, il ruolo di snodo tra Modena e Mantova, le finanze che si consolidano, gli acquisti di nuove terre per il patrimonio personale, soprattutto una discendenza maschile che proietta il futuro di Guastalla almeno al secolo successivo.&nbsp;<br>
+Parlammo di progressi e ripiegamenti, nel giro di pochi anni si spengono entrambi i figli maschi, proprio quando il primogenito, nel 1666, era stato chiamato alla Corte di Madrid in qualità di paggio dell’erede al trono, e voleva dire crescere nel cuore del sistema di protezione degli interessi dei principi italiani. Il 1671 segna quindi la tappa del matrimonio tra la figlia maggiore di Ferrante III e Ferdinando Carlo duca di Mantova, dopo 40 anni di dissidi i due maggiori e più nobili rami della casa Gonzaga si congiungono, ‘per la quiete d’Italia’, come si disse, ma con la prospettiva del progressivo assorbimento di Guastalla nell’orbita mantovana. Così parve che fosse dal 1678, quando, con la morte di Ferrante, l’amministrazione del ducato fu tenuta dal duca di Mantova, anche se nelle intenzioni spagnole Guastalla avrebbe dovuto essere la ‘Friburgo de Italia’. Sovrano inaffidabile il mantovano, perché gli si consentisse il controllo di troppo lungo tratto del Po, perché potesse rappresentare nel consesso delle dinastie europee la gloriosa tradizione dei Gonzaga. A Vienna osservano con pazienza la dubbia politica, l’avvicinamento a Luigi XIV, la crescente fame di denaro, i debiti troppo gravosi.&nbsp;<br>
+Il 1692, dopo 14 anni di ‘cattività mantovana’, rappresentò il ritorno di Guastalla sulla scena internazionale, quando Vincenzo, cugino di Ferrante III, ne sposò la figlia minore, dando luogo a quella discendenza, di entrambi i sessi, che a Mantova era mancata. Non diremo delle tensioni familiari, dinastiche, politiche che in quegli anni si accumularono, saltiamo anche gli anni (1702 1706) della guerra di Successione Spagnola, che costrinse i duchi di Guastalla esiliati a Venezia. Agli inizi del ‘700 si apre una nuova fase costruttiva, entrano in gioco i parametri già visti ed altri ancora. L’organizzazione si rafforza, politicamente con il Consiglio Ducale, ed amministrativamente con una ampia schiera di funzionari. Si costituisce un esercito permanente, si amplia la struttura diplomatica, cosicché la Cancelleria di Guastalla ha rapporti diretti con le maggiori Cancellerie europee, si introduce la Ferma Generale delle Finanze, pochi anni dopo che questo sistema aveva trovato applicazione nella Francia del Colbert. La vita culturale riprende, gli intellettuali guastallesi, riuniti nell’accademia degli Sconosciuti, sono in relazione con i maggiori italiani, due per tutti, Apostolo Zeno e Scipione Maffei.&nbsp;<br>
+Questo è permesso anche dall’ampliamento dello Stato, nel quale entrano (1708) il principato di Bozzolo e le sue Terre (Rivarolo, S. Martino dell’Argine, Pomponesco, Commessaggio, Ostiano, Isola Dovarese), il ducato di Sabbioneta (1710). Si affacciano novità nella condotta statuale, i primi tentativi di giurisdizionalismo circa gli oneri fiscali da imporre agli ecclesiastici, si uniforma la gestione di territori con tradizioni differenti grazie ad una sorta di consolidazione giuridica, gli ‘Ordini Generali per il Principato di Bozzolo’, qui si istituisce una ‘Accademia di S. Ferdinando’, motore di consenso culturale, si concentra nella sola Guastalla la giurisdizione giudicante di terzo grado. Questo lavorio, coronato dalla formale attribuzione del trattamento di ‘Altezza Serenissima’ (1709) al duca di Guastalla, si inserisce nella lotta per la seconda successione in Mantova, conseguente alla fellonia di Ferdinando Carlo. Durò anni, nel 1745 fu ancora all’ordine del giorno delle Cancellerie europee nelle more della Guerra di Successione Austriaca. I duchi ed i ministri di Guastalla misero in campo tutto quanto poteva essere giocato per far valere i propri diritti, sempre riconosciuti, solo vi fu distonia tra i tempi della Storia e la possibilità di farli valere.&nbsp;<br>
+Le alleanze matrimoniali alle quali si diede corso furono di tutto rilievo, cosicché Eleonora figlia di Vincenzo fu chiamata a tentare di risolvere nel 1709 la crisi successoria del granducato di Toscana. Sposata a Francesco Maria de’ Medici, fratello di Cosimo III, la troppa differenza d’età e inclinazioni non portò ad alcun risultato, ed il marito morì appena due anni più tardi. Complessi i matrimoni degli ultimi due sovrani, con le parentele che si estendono in Germania: quello tra Antonio Ferdinando e <a href="index.php%3Fsez=stato_di_guastalla.html#" onmouseover="doTooltip(event,12)" onmouseout="hideTip()">Teodora d’Assia Darmstadt</a> porta ad una lettura ambivalente. Figlia del governatore asburgico di Mantova, è una sorta di controllo che da Vienna si vuole esercitare sull’ultimo Stato dei Gonzaga, o rappresenta l’opportunità per i Nostri di far sentire la presenza continua dei diritti vantati su quello Stato? Ugualmente il matrimonio dell’ultimo duca, <a href="index.php%3Fsez=stato_di_guastalla.html#" onmouseover="doTooltip(event,7)" onmouseout="hideTip()">Giuseppe Maria</a>, con Eleonora Carlotta di Schleswig Holstein, proietterà le relazioni della Casa di Guastalla verso le famiglie reali di Svezia e Danimarca, oltre al consueto parterre tedesco. È il cinquantennio nel quale, spentasi Mantova, la nostra città ne occuperà politicamente il ruolo. Savoia, de’ Medici, Este, Farnese e Gonzaga di Guastalla, sono le dinastie italiane di antica origine ancora presenti nei loro Stati, e se in quegli anni sarà un susseguirsi di estinzioni dinastiche non per questo durante la vigenza di tale status mancheranno relazioni, apparati, sistemi di governo per i quali si possa dire che Guastalla potesse competere alla pari con le capitali italiane ed europee rappresentative del sistema dei principati.&nbsp;<br>
+<br>
+<a name="quinto"><b>Gli anni borbonici e il tramonto dell’Antico Regime</b></a><br>
+Il 1746 rappresenta quindi il punto terminale del percorso iniziato 340 anni prima con Guido Torello, e la città che risulta dal trapasso seguito alla pace di Aquisgrana (1748) sarà qualcosa di ugualmente interessante, ma diverso. La nascita dello Stato dei ducati di Parma, Piacenza e Guastalla, con la sovranità dei Borbone, lascia Guastalla sufficientemente autonoma dalla nuova capitale in quanto ne è separata da una striscia di territorio estense, vi dura la presenza della vedova del duca Antonio Ferdinando sino al 1784, la memoria dei vecchi sovrani costituisce un retaggio troppo sedimentato perché possa essere di punto in bianco cancellato. Tant’è che Ireneo Affò, massimo storico guastallese d’Antico Regime (benché originario di Busseto e destinato a chiara fama a Parma) si sentirà in dovere, nella sua ‘Istoria della Città e Ducato di Guastalla’ pubblicata tra 1785 e 1787, di ‘revisionare’ l’ultimo secolo del dominio dei Gonzaga di Guastalla. La normalizzazione borbonica imponeva anche questo.&nbsp;<br>
+Una città che si avvia ad un lento declino quindi, come è stata frequentemente disegnata? É piuttosto una città che assume altri valori rispetto a quelli dell’essere capitale, valori che oggi con attenta riflessione storiografica siamo in grado di cogliere, finalmente venuto meno il culto provinciale per il dipinto evocativo, per la distinta opera poetica, per la piccola memoria gelosamente conservata quali unici tratti degni di significare un passato.&nbsp;<br>
+Nel cinquantennio borbonico Guastalla esperimenta, col <a href="index.php%3Fsez=stato_di_guastalla.html#" onmouseover="doTooltip(event,2)" onmouseout="hideTip()">Du Tillot</a>, l’istituzione di una grande fabbrica statale per la produzione di tele e cordami, con una serie di addentellati sul territorio (filiera produttiva, opifici specializzati, lavorazioni decentrate, mezzi di trasporto dedicati, filiali manifatturiere e commerciali) e di addentellati immateriali (politica del lavoro e sorveglianza del lavoro, dell’occupazione, finanziaria, commerciale) che nulla di meno hanno rispetto ai più noti e studiati esempi di protoindustrializzazione.&nbsp;<br>
+Vede la nascita di una forte classe di imprenditori agrari (non redditieri agrari) uno dei cui tratti distintivi fu costituito, significativamente, dall’acquisizione delle maggiori unità immobiliari della città, cedute da un’aristocrazia ormai emigrata verso le nuove capitali.&nbsp;<br>
+Rivendica, rinnova ed amplia le ragioni della propria autonomia ecclesiastica, costituendosi come diocesi vescovile, pur guidata da un abate secolare ‘nullius’ (il più famoso, nel diciottesimo secolo, <a href="index.php%3Fsez=stato_di_guastalla.html#" onmouseover="doTooltip(event,5)" onmouseout="hideTip()">Francesco Tirelli</a>). Sfugge a quei fenomeni infeudativi che ancora nel 1761 saranno così presenti nei ducati di Parma e Piacenza, la parte maggiore del nuovo stato borbonico. Si avvia alla riconversione del proprio sistema identificativo sedimentato nei secoli, accettando senza perplessità l’espulsione dei Gesuiti (e lucrando sui loro ex beni), deconfessionalizzando l’insegnamento, giungendo all’immissione nel circuito dell’assistenza degli ex conventi, con un percorso che troverà, com’è noto, la sua massima estensione in epoca napoleonica, ma che già aveva visto all’opera non solo i sovrani illuministi, di origine asburgica, nel ducato di Milano, di Mantova, nel granducato di Toscana, ma anche il vicino duca di Modena, Francesco III d’Este.<br>
+<br>
+<a name="sesto"><b>Il breve intermezzo napoleonico</b></a><br>
+La Guastalla settecentesca è quindi perfettamente al passo con i tempi che mutano, così come lo sarà in epoca napoleonica, la quale le riserverà però una sorta di revanche, per lo più considerata una curiosità, ma tutt’altro che tale. Nel 1806 Napoleone Bonaparte ricostituisce l’antico Stato dei Gonzaga in principato e ducato per la sorella Paolina, avventura che durerà 54 giorni, e sulla quale è sempre stato posto a mo’ di epitaffio lo sconcerto della principessa una volta avuta notizia dell’esiguità del dominio assegnatole. Fin qui il colore, il quale vuole però vi si aggiunga qualche altra considerazione. Deve essere rilevato che le ricostituzioni napoleoniche (a parte l’attribuzione nominale di titoli di ex Stati a generali e ministri vari) valide dal punto di vista giuridico ed internazionale non furono poi così numerose, anzi, contando in Italia solo il caso di Massa – Lucca – Piombino per la sorella Elisa, tre piccoli ex Stati dalla nobile memoria. Ebbene, tra i casi in Italia ed in Europa rientra anche Guastalla, e solo le condizioni territoriali meno favorevoli all’aggregazione di altri territori rispetto al caso italiano visto (oltre alle ambizioni di questa sorella) comportarono che il progetto durasse lo spazio d’un mattino.&nbsp;<br>
+<br>
+<a name="settimo"><b>Dalla Restaurazione all’Unità nazionale</b></a><br>
+Guastalla dal 1814 proseguirà il cammino già intrapreso nella seconda metà del XVIII secolo, prima con Maria Luigia d’Austria poi, dal 1848, con il ducato di Modena, entro il quale sarà costituita in provincia. A questo punto gli orizzonti entro i quali dovrà muoversi la città saranno ormai quelli della futura unità nazionale, cosicché i <a href="index.php%3Fsez=stato_di_guastalla.html#" onmouseover="doTooltip(event,4)" onmouseout="hideTip()">moti carbonari</a>, il patriottismo risorgimentale, l’influenza della cultura massonica prenderanno gradatamente il posto dei tradizionali canoni di fedeltà al connubio tra trono e altare.&nbsp;<br>
+I tratti distintivi che per secoli l’avevano caratterizzata inizieranno quindi a stemperarsi nella generale uniformità post unitaria, meritevole comunque di studio, sino ad ora poco approfondito anche per le gravissime perdite subite dall’archivio comunale per gli anni che vanno dal 1815 al 1956. Due episodi sono comunque meritevoli di segnalazione: da un lato l’affermarsi del socialismo che portò Guastalla ad essere la terza città, a livello nazionale, amministrata da questa forza politica. Dall’altro il costituirsi, dal secondo Ottocento, di una iniziativa imprenditoriale nel settore dei legnami che giungerà ad essere una delle più cospicue in Italia e non solo, introducendo e innovando il processo di fabbricazione del legno compensato. Le <a href="index.php%3Fsez=stato_di_guastalla.html#" onmouseover="doTooltip(event,3)" onmouseout="hideTip()">Trancerie Mossina</a>, la cui storia durerà sino agli anni ’50 del Novecento, con una forza lavoro di oltre 800 addetti rappresentarono uno dei principali poli di industrializzazione di tutta la provincia di Reggio Emilia.
+
+</div></td>
+      <td width="16%" valign=top bgcolor="#344f85"><br><font color="#efefef">
+        <h5 align="center"><a class=menu href="index.php%3Fsez=convegni.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">CONVEGNI SVOLTI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=programmi.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">PROGRAMMI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=search&amp;query=all.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">BIBLIOTECA</a></h5>
+<h5 align="center"> <a class=menu href="index.php%3Fsez=iarda.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">  PROGETTO I.A.R.D.A  </a>  </h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=scambiolibrario.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">SCAMBIO LIBRARIO</a></h5>        
+        <h5 align="center"><a class=menu href="index.php%3Fsez=bibliografia.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">BIBLIOGRAFIA</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=links.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">LINK</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=contatti.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">CONTATTI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=conv_part.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">CONVENZIONI E PARTNERSHIP</a></h5>
+        <p>&nbsp;</p>
+        <br>
+        <p>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="16%" bgcolor="#344f85">
+</td>
+      <td width="60%"><br><br><br><br><br><p align="center"><center>
+  <br>
+<font size="3">Propriet&agrave; e Copyright del sito: Associazione Guastallese di Storia Patria<br>
+Copyright A.G.S.P. 2001 - 2005</font>
+  </center></td>
+      <td width="16%" bgcolor="#344f85"></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<div id="tipDiv" style="position:absolute; visibility:hidden; z-index:100"></div>
+</body>
+
+</html>

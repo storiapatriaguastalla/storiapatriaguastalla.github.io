@@ -1,0 +1,490 @@
+<html>
+
+<head>
+<title>A.G.S.P.</title>
+
+<META NAME="DESCRIPTION" CONTENT="Storiapatriaguastalla.it ï¿½ il sito entro il quale Guastalla, capitale dello Stato sovrano che tra i minori piï¿½ si addentrï¿½ nel XVIII secolo, sino alla ricostituzione napoleonica del 1806, trova le coordinate per una corretta lettura e collocazione storiografica">
+<META NAME="KEYWORDS" CONTENT="archivi, archivistica, biblioteca, archivio, archivio di stato, asmo, aspr, asre, asmn, asmi, soprintendenza archivistica, unipr, unimore, gonzaga, este, sforza, visconti, farnese, venezia, serenissima, superba, ducato, granducato, regno, repubblica, guastalla, parma, manova, modena, ferrara, reggio emilia, mirandola, pico, sabbioneta, bozzolo, novellara, carpi, pio, gualtieri, comune di guastalla, guastalla cultura, maldotti, biblioteca maldotti, genova, doria, molfetta, campobasso, orsini, di capua, vicere, viceregno, madrid, vienna, impero, sri, sacro romano impero, stato pontificio, lucca, stmoderna, storia moderna, storia contemporanea, deputazione, deputazione di storia patria, societï¿½ storica lombarda, milano, ferrante gonzaga, abbazia, diocesi di reggio guastalla, duca, principe, conte, gualtieri, brescello, po, fiume po, massa carrara, papa, pontefice, serviti, cappuccine, mantellate, gesuiti, francescani, cappuccini, agostiniane, correggio, maria luigia, parma piacenza e guastalla, borbone, mbac, peppone, don camillo, guareschi, smeg, gazzetta di reggio, gazzetta di mantova, gazzetta di parma">
+<META HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<link rel="StyleSheet" type="text/css" href="storiapatria.css">
+<link media="print" rel="stylesheet" href="stampa.css" type="text/css">
+<script type="text/javascript">
+
+/***********************************************
+* Disable select-text script- ï¿½ Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+//form tags to omit in NS6+:
+var omitformtags=["input", "textarea", "select"]
+
+omitformtags=omitformtags.join("|")
+
+function disableselect(e){
+if (omitformtags.indexOf(e.target.tagName.toLowerCase())==-1)
+return false
+}
+
+function reEnable(){
+return true
+}
+
+if (typeof document.onselectstart!="undefined")
+document.onselectstart=new Function ("return false")
+else{
+document.onmousedown=disableselect
+document.onmouseup=reEnable
+}
+
+</script>
+
+<script language="javascript" type="text/javascript">
+<!--
+
+/*
+Image w/ description tooltip- By Dynamic Web Coding (www.dyn-web.com)
+Copyright 2002 by Sharon Paine
+Visit http://www.dynamicdrive.com for this script
+*/
+
+/* IMPORTANT: Put script after tooltip div or 
+	 put tooltip div just before </BODY>. */
+
+var dom = (document.getElementById) ? true : false;
+var ns5 = ((navigator.userAgent.indexOf("Gecko")>-1) && dom) ? true: false;
+var ie5 = ((navigator.userAgent.indexOf("MSIE")>-1) && dom) ? true : false;
+var ns4 = (document.layers && !dom) ? true : false;
+var ie4 = (document.all && !dom) ? true : false;
+var nodyn = (!ns5 && !ns4 && !ie4 && !ie5) ? true : false;
+
+// resize fix for ns4
+var origWidth, origHeight;
+if (ns4) {
+	origWidth = window.innerWidth; origHeight = window.innerHeight;
+	window.onresize = function() { if (window.innerWidth != origWidth || window.innerHeight != origHeight) history.go(0); }
+}
+
+// avoid error of passing event object in older browsers
+if (nodyn) { event = "nope" }
+
+///////////////////////  CUSTOMIZE HERE   ////////////////////
+// settings for tooltip 
+// Do you want tip to move when mouse moves over link?
+var tipFollowMouse= true;	
+// Be sure to set tipWidth wide enough for widest image
+var tipWidth= 302;
+var offX= 20;	// how far from mouse to show tip
+var offY= 12; 
+var tipFontFamily= "Verdana, arial, helvetica, sans-serif";
+var tipFontSize= "8pt";
+// set default text color and background color for tooltip here
+// individual tooltips can have their own (set in messages arrays)
+// but don't have to
+var tipFontColor= "#000000";
+var tipBgColor= "#FFFFFF"; 
+var tipBorderColor= "#000080";
+var tipBorderWidth= 0;
+var tipBorderStyle= "ridge";
+var tipPadding= 0;
+
+// tooltip content goes here (image, description, optional bgColor, optional textcolor)
+var messages = new Array();
+// multi-dimensional arrays containing: 
+// image and text for tooltip
+// optional: bgColor and color to be sent to tooltip
+messages[0] = new Array('linkimg/paralupi.jpg','',"#FFFFFF");
+messages[1] = new Array('linkimg/micheli.jpg','',"#FFFFFF");
+messages[2] = new Array('linkimg/dutillot.jpg','');
+messages[3] = new Array('linkimg/tranmoss.jpg','');
+messages[4] = new Array('linkimg/patrioti.jpg','');
+messages[5] = new Array('linkimg/tirelli.jpg','');
+messages[6] = new Array('linkimg/mariotti.jpg','');
+messages[7] = new Array('linkimg/rerum.jpg','');
+messages[8] = new Array('linkimg/maldotti.jpg','');
+messages[9] = new Array('linkimg/affo.jpg','');
+messages[10] = new Array('linkimg/baldi.jpg','');
+messages[11] = new Array('linkimg/lbaldi.jpg','');
+messages[12] = new Array('linkimg/lteodora.jpg','');
+
+////////////////////  END OF CUSTOMIZATION AREA  ///////////////////
+
+// preload images that are to appear in tooltip
+// from arrays above
+if (document.images) {
+	var theImgs = new Array();
+	for (var i=0; i<messages.length; i++) {
+  	theImgs[i] = new Image();
+		theImgs[i].src = messages[i][0];
+  }
+}
+
+// to layout image and text, 2-row table, image centered in top cell
+// these go in var tip in doTooltip function
+// startStr goes before image, midStr goes between image and text
+var startStr = '<table width="' + tipWidth + '"><tr><td align="center" width="100%"><img src="';
+var midStr = '" border="0"></td></tr><tr><td valign="top">';
+var endStr = '</td></tr></table>';
+
+////////////////////////////////////////////////////////////
+//  initTip	- initialization for tooltip.
+//		Global variables for tooltip. 
+//		Set styles for all but ns4. 
+//		Set up mousemove capture if tipFollowMouse set true.
+////////////////////////////////////////////////////////////
+var tooltip, tipcss;
+function initTip() {
+	if (nodyn) return;
+	tooltip = (ns4)? document.tipDiv.document: (ie4)? document.all['tipDiv']: (ie5||ns5)? document.getElementById('tipDiv'): null;
+	tipcss = (ns4)? document.tipDiv: tooltip.style;
+	if (ie4||ie5||ns5) {	// ns4 would lose all this on rewrites
+		tipcss.width = tipWidth+"px";
+		tipcss.fontFamily = tipFontFamily;
+		tipcss.fontSize = tipFontSize;
+		tipcss.color = tipFontColor;
+		tipcss.backgroundColor = tipBgColor;
+		tipcss.borderColor = tipBorderColor;
+		tipcss.borderWidth = tipBorderWidth+"px";
+		tipcss.padding = tipPadding+"px";
+		tipcss.borderStyle = tipBorderStyle;
+	}
+	if (tooltip&&tipFollowMouse) {
+		if (ns4) document.captureEvents(Event.MOUSEMOVE);
+		document.onmousemove = trackMouse;
+	}
+}
+
+window.onload = initTip;
+
+/////////////////////////////////////////////////
+//  doTooltip function
+//			Assembles content for tooltip and writes 
+//			it to tipDiv
+/////////////////////////////////////////////////
+var t1,t2;	// for setTimeouts
+var tipOn = false;	// check if over tooltip link
+function doTooltip(evt,num) {
+	if (!tooltip) return;
+	if (t1) clearTimeout(t1);	if (t2) clearTimeout(t2);
+	tipOn = true;
+	// set colors if included in messages array
+	if (messages[num][2])	var curBgColor = messages[num][2];
+	else curBgColor = tipBgColor;
+	if (messages[num][3])	var curFontColor = messages[num][3];
+	else curFontColor = tipFontColor;
+	if (ns4) {
+		var tip = '<table bgcolor="' + tipBorderColor + '" width="' + tipWidth + '" cellspacing="0" cellpadding="' + tipBorderWidth + '" border="0"><tr><td><table bgcolor="' + curBgColor + '" width="100%" cellspacing="0" cellpadding="' + tipPadding + '" border="0"><tr><td>'+ startStr + messages[num][0] + midStr + '<span style="font-family:' + tipFontFamily + '; font-size:' + tipFontSize + '; color:' + curFontColor + ';">' + messages[num][1] + '</span>' + endStr + '</td></tr></table></td></tr></table>';
+		tooltip.write(tip);
+		tooltip.close();
+	} else if (ie4||ie5||ns5) {
+		var tip = startStr + messages[num][0] + midStr + '<span style="font-family:' + tipFontFamily + '; font-size:' + tipFontSize + '; color:' + curFontColor + ';">' + messages[num][1] + '</span>' + endStr;
+		tipcss.backgroundColor = curBgColor;
+	 	tooltip.innerHTML = tip;
+	}
+	if (!tipFollowMouse) positionTip(evt);
+	else t1=setTimeout("tipcss.visibility='visible'",100);
+}
+
+var mouseX, mouseY;
+function trackMouse(evt) {
+	mouseX = (ns4||ns5)? evt.pageX: window.event.clientX + document.body.scrollLeft;
+	mouseY = (ns4||ns5)? evt.pageY: window.event.clientY + document.body.scrollTop;
+	if (tipOn) positionTip(evt);
+}
+
+/////////////////////////////////////////////////////////////
+//  positionTip function
+//		If tipFollowMouse set false, so trackMouse function
+//		not being used, get position of mouseover event.
+//		Calculations use mouseover event position, 
+//		offset amounts and tooltip width to position
+//		tooltip within window.
+/////////////////////////////////////////////////////////////
+function positionTip(evt) {
+	if (!tipFollowMouse) {
+		mouseX = (ns4||ns5)? evt.pageX: window.event.clientX + document.body.scrollLeft;
+		mouseY = (ns4||ns5)? evt.pageY: window.event.clientY + document.body.scrollTop;
+	}
+	// tooltip width and height
+	var tpWd = (ns4)? tooltip.width: (ie4||ie5)? tooltip.clientWidth: tooltip.offsetWidth;
+	var tpHt = (ns4)? tooltip.height: (ie4||ie5)? tooltip.clientHeight: tooltip.offsetHeight;
+	// document area in view (subtract scrollbar width for ns)
+	var winWd = (ns4||ns5)? window.innerWidth-20+window.pageXOffset: document.body.clientWidth+document.body.scrollLeft;
+	var winHt = (ns4||ns5)? window.innerHeight-20+window.pageYOffset: document.body.clientHeight+document.body.scrollTop;
+	// check mouse position against tip and window dimensions
+	// and position the tooltip 
+	if ((mouseX+offX+tpWd)>winWd) 
+		tipcss.left = (ns4)? mouseX-(tpWd+offX): mouseX-(tpWd+offX)+"px";
+	else tipcss.left = (ns4)? mouseX+offX: mouseX+offX+"px";
+	if ((mouseY+offY+tpHt)>winHt) 
+		tipcss.top = (ns4)? winHt-(tpHt+offY): winHt-(tpHt+offY)+"px";
+	else tipcss.top = (ns4)? mouseY+offY: mouseY+offY+"px";
+	if (!tipFollowMouse) t1=setTimeout("tipcss.visibility='visible'",100);
+}
+
+function hideTip() {
+	if (!tooltip) return;
+	t2=setTimeout("tipcss.visibility='hidden'",100);
+	tipOn = false;
+}
+
+//-->
+</script>
+
+</head>
+
+<body oncontextmenu="return false" link="344f85" vlink="344f85" alink="dcdcdc">
+
+<SCRIPT LANGUAGE="JavaScript">
+if (window != top) top.location.href = location.href;
+</SCRIPT>
+
+
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td width="2%" rowspan="3" class=sx></td>
+      <td width="16%" bgcolor="#344f85"><div align="center"><a href="http://www.unesco.org/webworld/portal_archives" target="_top"><img src="grafica/archives_logo_sm.gif" width=98 height=44 alt="UNESCO Archives Portal" border="0"></a><br><br><a href="http://www.unesco.org/webworld/portal_bib" target="_top"><img src="grafica/logo_bib.gif" width=98 height=44 alt="UNESCO Libraries Portal" border="0"></a></div></td>
+      <td width="2%" rowspan="3" class=dx></td>
+      <td width="60%"><p align="center"><a href="index.php%3Fsez=home.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;"><img border="0" src="grafica/logo.jpg" width="186" height="179"></a></td>
+      <td width="2%" rowspan="3" class=sx></td>
+      <td width="16%" bgcolor="#344f85"> <div align="center"><a class=menu href="index.php%3Fsez=500enario.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;"><img border="0" src="grafica/ferranteId.jpg" width="100" height="180"></a></div></td>
+      <td width="2%" rowspan="3" class=dx></td>
+    </tr>
+    <tr>
+      <td width="16%" valign=top bgcolor="#344f85"><br><font color="#efefef">
+        <h5 align="center"><a class=menu href="index.php%3Fsez=sodalizio.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">STORIA DEL SODALIZIO</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=tradizione.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">TRADIZIONE STORIOGRAFICA</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=stato_di_guastalla.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">LO STATO DI GUASTALLA</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=erratacorrige.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">ERRATA CORRIGE</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=guastallarchivi.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">GUASTALLA <br>E GLI ARCHIVI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=guidaluoghistato.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">GUIDA AI LUOGHI<br> DELLO STATO</a></h5>
+        <h5 align="center">AUTORI & COLLABORATORI</h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=excerpta.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">EXCERPTA GUASTALLAE</a></h5></font>
+        <p>&nbsp;</p>
+        <br>
+        <p>&nbsp;</td>
+      <td valign=top width="60%"><div id="contenuto">
+              <br><html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>BIBLIOGRAFIA A</title>
+</head>
+
+<body>
+<p align="center"><font size="5" color="#800000">ASSOCIAZIONE GUASTALLESE<br>
+DI STORIA PATRIA<br>
+1933</p></font><br>
+<br>
+<p align="center">BIBLIOGRAFIA A.G.S.P.<br>
+(La bibliografia indicata di seguito si riferisce&nbsp;<br>
+alle edizioni 2000 – 2004 curate dall’Associazione)<br>
+<br>
+<br>
+VOLUME I<br>
+ARCHIVIO STORICO PER GLI ANTICHI STATI GUASTALLESI</p><br>
+<br>
+Eugenio Bartoli<br>
+Guastalla 1401 1746. Da Feudo a Stato di Antico Regime.&nbsp;<br>
+Evoluzione comparata in area centro - settentrionale<br>
+<br>
+Paola Benatti<br>
+I Fondi ecclesiastici nel Ducato e Diocesi di Guastalla.&nbsp;<br>
+L'Archivio della Parrocchiale di Casoni di Luzzara. Analisi di una complessità. 1617 - 1860<br>
+<br>
+Elena Valli<br>
+I gioielli dei Gonzaga Guastalla tra decoro e patrimonio. Esame dagli inventari del XVII secolo<br>
+<br>
+Claudio Recupito<br>
+Carlo III di Borbone - Parma e  Guastalla dopo l'attuazione del Trattato di Firenze.<br>
+Rivendicazioni economico - territoriali ed aspetti umani nel 1848 delle Rivoluzioni<br>
+<br>
+Giorgio Sulpizi<br>
+Esame comparato del sistema militare del Ducato di Guastalla.<br>
+Strutture fortificate, organici ed organigrammi&nbsp;<br>
+<br>
+Franco Canova<br>
+Il Ducato di Guastalla nel secolo XVII. Le Terre di Luzzara e Reggiolo nelle contese con Mantova<br>
+<br>
+Elisa Bertazzoni<br>
+Conservazione e divulgazione della Memoria. Finalità e prospettive della Biblioteca Maldotti<br>
+<br>
+Luigi Pietri<br>
+Il Dialetto come elemento identificativo delle Comunità<br>
+<br>
+Claudia Ghidorzi<br>
+Un caso di storia economica minore nella supplica di Francesco Ghidorzi al duca di Guastalla&nbsp;<br>
+<br>
+Nelso Simonazzi<br>
+La raccolta di manifesti della Biblioteca Maldotti. Una proposta di valorizzazione<br>
+<br>
+Gilberto Furlani<br>
+Storie di Medici e storia della Medicina come fonti per la storia delle popolazioni<br>
+<br>
+<br>
+<p align="center">VOLUME II<br>
+ARCHIVIO STORICO PER GLI ANTICHI STATI GUASTALLESI</p><br>
+<br>
+Franco Canova<br>
+Il Ducato di Guastalla da Ratisbona a Vestfalia. Pedina o contraente  necessario?<br>
+<br>
+Giorgio Sulpizi<br>
+Ordine pubblico e politica giudiziaria nelle Terre dei Gonzaga Guastalla attraverso il XVII secolo<br>
+<br>
+Eugenio Bartoli&nbsp;<br>
+Ferrante III Gonzaga. Un sovrano italiano tra le preponderanze straniere<br>
+<br>
+Antonio Aliani<br>
+Politiche statutarie tra Sovrani e Comunità nel XVII secolo: Guastalla, terre gonzaghesche ed altre Signorie padane<br>
+<br>
+Enzo Ghidoni<br>
+Il ruolo politico dei sovrani minori in area centropadana: il caso di Alessandro II Pico&nbsp;<br>
+<br>
+Gabriele Fabbrici<br>
+Tra Gonzaga e Gonzaga. Il rapporto parentale come opportunità o limite di politiche statuali comuni<br>
+<br>
+Ivan Cantoni<br>
+Ferrante II e Francesco Patrizi. Neoplatonismo e cultura di Corte nella transizione da Feudo a Stato<br>
+<br>
+Daniela Ferrari<br>
+I Gonzaga a Reggiolo. Le fonti conservate presso l’Archivio di Stato di Mantova<br>
+<br>
+<br>
+<p align="center">IL PALAZZO GONZAGA DI GUASTALLA<br>
+DUCALE – REGIO - IMPERIALE</p><br>
+<br>
+Diego Ferrari<br>
+Il Palazzo dalla genesi rinascimentale agli albori del Novecento<br>
+<br>
+Elena Valli<br>
+Fonti documentarie per la lettura distributiva degli ambienti del Palazzo<br>
+<br>
+Eugenio Bartoli<br>
+Quotidianità, simboli e potere nel Palazzo. Note tratte dai documenti 1521 1896<br>
+<br>
+Stefano Storchi<br>
+Una premessa e alcune riflessioni a parziale conclusione del racconto<br>
+<br>
+Redazione<br>
+Cartografia 1553 1999<br>
+<br>
+Redazione<br>
+Architettura costruita architettura fotografata. Un percorso di documentazione<br>
+<br>
+<br>
+<p align="center">1734 E DINTORNI<br>
+IL DUCATO E IL TERRITORIO DI GUASTALLA&nbsp;<br>
+TRA BATTAGLIE E VECCHI LUOGHI COMUNI</p><br>
+<br>
+Eugenio Bartoli<br>
+Il ducato di Guastalla. Stato, comunità, sovrani durante la guerra di Successione polacca<br>
+<br>
+Paola Benatti<br>
+La percezione paesaggistica e il rispetto ambientale all’epoca della battaglia di Guastalla<br>
+<br>
+Giorgio Sulpizi<br>
+Breve storia delle milizie del ducato guastallese<br>
+<br>
+Eugenio Bartoli (a c. di)<br>
+Documenti degli anni 1734 – 1735 – 1736. Edizione in facsimile<br>
+<br>
+<br>
+<p align="center">VOLUME III<br>
+ARCHIVIO STORICO PER GLI ANTICHI STATI GUASTALLESI</p><br>
+<br>
+Alberto Pedrazzini<br>
+Il disegno della città rinascimentale. Sablonetae Civitas, un modello di costruzione all'antica<br>
+<br>
+Loredana Chezzi<br>
+L'opera grafica di Arnaldo Bartoli, multiforme artista guastallese del "Secolo Breve"<br>
+<br>
+Monica Nascig<br>
+La Cattedrale di Guastalla nelle trasformazioni ottocentesche<br>
+<br>
+Gabriele Fabbrici<br>
+Onomastica guastallese del Quattrocento&nbsp;<br>
+<br>
+Walter Cupperi<br>
+Nuove ricerche su Leone Leoni e la committenza dei Gonzaga di Guastalla&nbsp;<br>
+<br>
+Raffaele Tamalio<br>
+La bibliografia relativa ai Gonzaga di Guastalla<br>
+<br>
+Eugenio Bartoli<br>
+Giovanni Passerini, le Accademie e la Scuola Agraria di Meleto. Ricerca scientifica e agricoltura d'avanguardia  nella Guastalla del XIX secolo<br>
+<br>
+Manlio Bonati<br>
+Il garibaldino Enrico Guastalla (con edizione di documenti inediti)<br>
+<br>
+Claudio Recupito<br>
+Problematiche confinarie tra i Ducati padani agli inizi del XIX secolo e note sull'amministrazione civica di Guastalla.&nbsp;<br>
+<br>
+<br>
+<p align="center">VOLUME V<br>
+ARCHIVIO STORICO PER GLI ANTICHI STATI GUASTALLESI</p><br>
+<br>
+Angela Donati<br>
+Brescello romana: un consuntivo<br>
+<br>
+Ezio Barbieri<br>
+Ex archivo s. Genesii. Pergamene e memorie tra archivi e biblioteche<br>
+<br>
+Eugenio Bartoli<br>
+Brescello estense dal Fondo ‘Carteggi dei Rettori dello Stato’  presso l’Archivio di Stato di Modena<br>
+<br>
+Cesare Corradini<br>
+La piazzaforte di Brescello nella strategia Austro - Estense<br>
+<br>
+Gino Badini&nbsp;<br>
+I fondi archivistici inerenti Brescello nell’Archivio di Stato di Reggio Emilia<br>
+<br>
+Alberto Pedrazzini&nbsp;<br>
+Tra terra e acqua: i “principati idraulici” durante la seconda metà del Cinquecento. Progetto di riqualificazione urbana di Pomponesco<br>
+<br>
+Francesco Ceccarelli&nbsp;<br>
+Terzo Terzi e la “Nova Città Erculea” di Brescello<br>
+<br>
+Stefano Storchi<br>
+Il territorio raccontato: fra mappe e descrizioni<br>
+<br>
+
+
+</body>
+
+</html>
+</div></td>
+      <td width="16%" valign=top bgcolor="#344f85"><br><font color="#efefef">
+        <h5 align="center"><a class=menu href="index.php%3Fsez=convegni.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">CONVEGNI SVOLTI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=programmi.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">PROGRAMMI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=search&amp;query=all.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">BIBLIOTECA</a></h5>
+<h5 align="center"> <a class=menu href="index.php%3Fsez=iarda.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">  PROGETTO I.A.R.D.A  </a>  </h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=scambiolibrario.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">SCAMBIO LIBRARIO</a></h5>        
+        <h5 align="center"><a class=menu href="index.php%3Fsez=bibliografia.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">BIBLIOGRAFIA</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=links.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">LINK</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=contatti.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">CONTATTI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=conv_part.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">CONVENZIONI E PARTNERSHIP</a></h5>
+        <p>&nbsp;</p>
+        <br>
+        <p>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="16%" bgcolor="#344f85">
+</td>
+      <td width="60%"><br><br><br><br><br><p align="center"><center>
+  <br>
+<font size="3">Propriet&agrave; e Copyright del sito: Associazione Guastallese di Storia Patria<br>
+Copyright A.G.S.P. 2001 - 2005</font>
+  </center></td>
+      <td width="16%" bgcolor="#344f85"></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<div id="tipDiv" style="position:absolute; visibility:hidden; z-index:100"></div>
+</body>
+
+</html>

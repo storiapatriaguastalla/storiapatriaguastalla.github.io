@@ -1,0 +1,512 @@
+<html>
+
+<head>
+<title>A.G.S.P.</title>
+
+<META NAME="DESCRIPTION" CONTENT="Storiapatriaguastalla.it ï¿½ il sito entro il quale Guastalla, capitale dello Stato sovrano che tra i minori piï¿½ si addentrï¿½ nel XVIII secolo, sino alla ricostituzione napoleonica del 1806, trova le coordinate per una corretta lettura e collocazione storiografica">
+<META NAME="KEYWORDS" CONTENT="archivi, archivistica, biblioteca, archivio, archivio di stato, asmo, aspr, asre, asmn, asmi, soprintendenza archivistica, unipr, unimore, gonzaga, este, sforza, visconti, farnese, venezia, serenissima, superba, ducato, granducato, regno, repubblica, guastalla, parma, manova, modena, ferrara, reggio emilia, mirandola, pico, sabbioneta, bozzolo, novellara, carpi, pio, gualtieri, comune di guastalla, guastalla cultura, maldotti, biblioteca maldotti, genova, doria, molfetta, campobasso, orsini, di capua, vicere, viceregno, madrid, vienna, impero, sri, sacro romano impero, stato pontificio, lucca, stmoderna, storia moderna, storia contemporanea, deputazione, deputazione di storia patria, societï¿½ storica lombarda, milano, ferrante gonzaga, abbazia, diocesi di reggio guastalla, duca, principe, conte, gualtieri, brescello, po, fiume po, massa carrara, papa, pontefice, serviti, cappuccine, mantellate, gesuiti, francescani, cappuccini, agostiniane, correggio, maria luigia, parma piacenza e guastalla, borbone, mbac, peppone, don camillo, guareschi, smeg, gazzetta di reggio, gazzetta di mantova, gazzetta di parma">
+<META HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<link rel="StyleSheet" type="text/css" href="storiapatria.css">
+<link media="print" rel="stylesheet" href="stampa.css" type="text/css">
+<script type="text/javascript">
+
+/***********************************************
+* Disable select-text script- ï¿½ Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+//form tags to omit in NS6+:
+var omitformtags=["input", "textarea", "select"]
+
+omitformtags=omitformtags.join("|")
+
+function disableselect(e){
+if (omitformtags.indexOf(e.target.tagName.toLowerCase())==-1)
+return false
+}
+
+function reEnable(){
+return true
+}
+
+if (typeof document.onselectstart!="undefined")
+document.onselectstart=new Function ("return false")
+else{
+document.onmousedown=disableselect
+document.onmouseup=reEnable
+}
+
+</script>
+
+<script language="javascript" type="text/javascript">
+<!--
+
+/*
+Image w/ description tooltip- By Dynamic Web Coding (www.dyn-web.com)
+Copyright 2002 by Sharon Paine
+Visit http://www.dynamicdrive.com for this script
+*/
+
+/* IMPORTANT: Put script after tooltip div or 
+	 put tooltip div just before </BODY>. */
+
+var dom = (document.getElementById) ? true : false;
+var ns5 = ((navigator.userAgent.indexOf("Gecko")>-1) && dom) ? true: false;
+var ie5 = ((navigator.userAgent.indexOf("MSIE")>-1) && dom) ? true : false;
+var ns4 = (document.layers && !dom) ? true : false;
+var ie4 = (document.all && !dom) ? true : false;
+var nodyn = (!ns5 && !ns4 && !ie4 && !ie5) ? true : false;
+
+// resize fix for ns4
+var origWidth, origHeight;
+if (ns4) {
+	origWidth = window.innerWidth; origHeight = window.innerHeight;
+	window.onresize = function() { if (window.innerWidth != origWidth || window.innerHeight != origHeight) history.go(0); }
+}
+
+// avoid error of passing event object in older browsers
+if (nodyn) { event = "nope" }
+
+///////////////////////  CUSTOMIZE HERE   ////////////////////
+// settings for tooltip 
+// Do you want tip to move when mouse moves over link?
+var tipFollowMouse= true;	
+// Be sure to set tipWidth wide enough for widest image
+var tipWidth= 302;
+var offX= 20;	// how far from mouse to show tip
+var offY= 12; 
+var tipFontFamily= "Verdana, arial, helvetica, sans-serif";
+var tipFontSize= "8pt";
+// set default text color and background color for tooltip here
+// individual tooltips can have their own (set in messages arrays)
+// but don't have to
+var tipFontColor= "#000000";
+var tipBgColor= "#FFFFFF"; 
+var tipBorderColor= "#000080";
+var tipBorderWidth= 0;
+var tipBorderStyle= "ridge";
+var tipPadding= 0;
+
+// tooltip content goes here (image, description, optional bgColor, optional textcolor)
+var messages = new Array();
+// multi-dimensional arrays containing: 
+// image and text for tooltip
+// optional: bgColor and color to be sent to tooltip
+messages[0] = new Array('linkimg/paralupi.jpg','',"#FFFFFF");
+messages[1] = new Array('linkimg/micheli.jpg','',"#FFFFFF");
+messages[2] = new Array('linkimg/dutillot.jpg','');
+messages[3] = new Array('linkimg/tranmoss.jpg','');
+messages[4] = new Array('linkimg/patrioti.jpg','');
+messages[5] = new Array('linkimg/tirelli.jpg','');
+messages[6] = new Array('linkimg/mariotti.jpg','');
+messages[7] = new Array('linkimg/rerum.jpg','');
+messages[8] = new Array('linkimg/maldotti.jpg','');
+messages[9] = new Array('linkimg/affo.jpg','');
+messages[10] = new Array('linkimg/baldi.jpg','');
+messages[11] = new Array('linkimg/lbaldi.jpg','');
+messages[12] = new Array('linkimg/lteodora.jpg','');
+
+////////////////////  END OF CUSTOMIZATION AREA  ///////////////////
+
+// preload images that are to appear in tooltip
+// from arrays above
+if (document.images) {
+	var theImgs = new Array();
+	for (var i=0; i<messages.length; i++) {
+  	theImgs[i] = new Image();
+		theImgs[i].src = messages[i][0];
+  }
+}
+
+// to layout image and text, 2-row table, image centered in top cell
+// these go in var tip in doTooltip function
+// startStr goes before image, midStr goes between image and text
+var startStr = '<table width="' + tipWidth + '"><tr><td align="center" width="100%"><img src="';
+var midStr = '" border="0"></td></tr><tr><td valign="top">';
+var endStr = '</td></tr></table>';
+
+////////////////////////////////////////////////////////////
+//  initTip	- initialization for tooltip.
+//		Global variables for tooltip. 
+//		Set styles for all but ns4. 
+//		Set up mousemove capture if tipFollowMouse set true.
+////////////////////////////////////////////////////////////
+var tooltip, tipcss;
+function initTip() {
+	if (nodyn) return;
+	tooltip = (ns4)? document.tipDiv.document: (ie4)? document.all['tipDiv']: (ie5||ns5)? document.getElementById('tipDiv'): null;
+	tipcss = (ns4)? document.tipDiv: tooltip.style;
+	if (ie4||ie5||ns5) {	// ns4 would lose all this on rewrites
+		tipcss.width = tipWidth+"px";
+		tipcss.fontFamily = tipFontFamily;
+		tipcss.fontSize = tipFontSize;
+		tipcss.color = tipFontColor;
+		tipcss.backgroundColor = tipBgColor;
+		tipcss.borderColor = tipBorderColor;
+		tipcss.borderWidth = tipBorderWidth+"px";
+		tipcss.padding = tipPadding+"px";
+		tipcss.borderStyle = tipBorderStyle;
+	}
+	if (tooltip&&tipFollowMouse) {
+		if (ns4) document.captureEvents(Event.MOUSEMOVE);
+		document.onmousemove = trackMouse;
+	}
+}
+
+window.onload = initTip;
+
+/////////////////////////////////////////////////
+//  doTooltip function
+//			Assembles content for tooltip and writes 
+//			it to tipDiv
+/////////////////////////////////////////////////
+var t1,t2;	// for setTimeouts
+var tipOn = false;	// check if over tooltip link
+function doTooltip(evt,num) {
+	if (!tooltip) return;
+	if (t1) clearTimeout(t1);	if (t2) clearTimeout(t2);
+	tipOn = true;
+	// set colors if included in messages array
+	if (messages[num][2])	var curBgColor = messages[num][2];
+	else curBgColor = tipBgColor;
+	if (messages[num][3])	var curFontColor = messages[num][3];
+	else curFontColor = tipFontColor;
+	if (ns4) {
+		var tip = '<table bgcolor="' + tipBorderColor + '" width="' + tipWidth + '" cellspacing="0" cellpadding="' + tipBorderWidth + '" border="0"><tr><td><table bgcolor="' + curBgColor + '" width="100%" cellspacing="0" cellpadding="' + tipPadding + '" border="0"><tr><td>'+ startStr + messages[num][0] + midStr + '<span style="font-family:' + tipFontFamily + '; font-size:' + tipFontSize + '; color:' + curFontColor + ';">' + messages[num][1] + '</span>' + endStr + '</td></tr></table></td></tr></table>';
+		tooltip.write(tip);
+		tooltip.close();
+	} else if (ie4||ie5||ns5) {
+		var tip = startStr + messages[num][0] + midStr + '<span style="font-family:' + tipFontFamily + '; font-size:' + tipFontSize + '; color:' + curFontColor + ';">' + messages[num][1] + '</span>' + endStr;
+		tipcss.backgroundColor = curBgColor;
+	 	tooltip.innerHTML = tip;
+	}
+	if (!tipFollowMouse) positionTip(evt);
+	else t1=setTimeout("tipcss.visibility='visible'",100);
+}
+
+var mouseX, mouseY;
+function trackMouse(evt) {
+	mouseX = (ns4||ns5)? evt.pageX: window.event.clientX + document.body.scrollLeft;
+	mouseY = (ns4||ns5)? evt.pageY: window.event.clientY + document.body.scrollTop;
+	if (tipOn) positionTip(evt);
+}
+
+/////////////////////////////////////////////////////////////
+//  positionTip function
+//		If tipFollowMouse set false, so trackMouse function
+//		not being used, get position of mouseover event.
+//		Calculations use mouseover event position, 
+//		offset amounts and tooltip width to position
+//		tooltip within window.
+/////////////////////////////////////////////////////////////
+function positionTip(evt) {
+	if (!tipFollowMouse) {
+		mouseX = (ns4||ns5)? evt.pageX: window.event.clientX + document.body.scrollLeft;
+		mouseY = (ns4||ns5)? evt.pageY: window.event.clientY + document.body.scrollTop;
+	}
+	// tooltip width and height
+	var tpWd = (ns4)? tooltip.width: (ie4||ie5)? tooltip.clientWidth: tooltip.offsetWidth;
+	var tpHt = (ns4)? tooltip.height: (ie4||ie5)? tooltip.clientHeight: tooltip.offsetHeight;
+	// document area in view (subtract scrollbar width for ns)
+	var winWd = (ns4||ns5)? window.innerWidth-20+window.pageXOffset: document.body.clientWidth+document.body.scrollLeft;
+	var winHt = (ns4||ns5)? window.innerHeight-20+window.pageYOffset: document.body.clientHeight+document.body.scrollTop;
+	// check mouse position against tip and window dimensions
+	// and position the tooltip 
+	if ((mouseX+offX+tpWd)>winWd) 
+		tipcss.left = (ns4)? mouseX-(tpWd+offX): mouseX-(tpWd+offX)+"px";
+	else tipcss.left = (ns4)? mouseX+offX: mouseX+offX+"px";
+	if ((mouseY+offY+tpHt)>winHt) 
+		tipcss.top = (ns4)? winHt-(tpHt+offY): winHt-(tpHt+offY)+"px";
+	else tipcss.top = (ns4)? mouseY+offY: mouseY+offY+"px";
+	if (!tipFollowMouse) t1=setTimeout("tipcss.visibility='visible'",100);
+}
+
+function hideTip() {
+	if (!tooltip) return;
+	t2=setTimeout("tipcss.visibility='hidden'",100);
+	tipOn = false;
+}
+
+//-->
+</script>
+
+</head>
+
+<body oncontextmenu="return false" link="344f85" vlink="344f85" alink="dcdcdc">
+
+<SCRIPT LANGUAGE="JavaScript">
+if (window != top) top.location.href = location.href;
+</SCRIPT>
+
+
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td width="2%" rowspan="3" class=sx></td>
+      <td width="16%" bgcolor="#344f85"><div align="center"><a href="http://www.unesco.org/webworld/portal_archives" target="_top"><img src="grafica/archives_logo_sm.gif" width=98 height=44 alt="UNESCO Archives Portal" border="0"></a><br><br><a href="http://www.unesco.org/webworld/portal_bib" target="_top"><img src="grafica/logo_bib.gif" width=98 height=44 alt="UNESCO Libraries Portal" border="0"></a></div></td>
+      <td width="2%" rowspan="3" class=dx></td>
+      <td width="60%"><p align="center"><a href="index.php%3Fsez=home.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;"><img border="0" src="grafica/logo.jpg" width="186" height="179"></a></td>
+      <td width="2%" rowspan="3" class=sx></td>
+      <td width="16%" bgcolor="#344f85"> <div align="center"><a class=menu href="index.php%3Fsez=500enario.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;"><img border="0" src="grafica/ferranteId.jpg" width="100" height="180"></a></div></td>
+      <td width="2%" rowspan="3" class=dx></td>
+    </tr>
+    <tr>
+      <td width="16%" valign=top bgcolor="#344f85"><br><font color="#efefef">
+        <h5 align="center"><a class=menu href="index.php%3Fsez=sodalizio.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">STORIA DEL SODALIZIO</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=tradizione.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">TRADIZIONE STORIOGRAFICA</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=stato_di_guastalla.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">LO STATO DI GUASTALLA</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=erratacorrige.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">ERRATA CORRIGE</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=guastallarchivi.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">GUASTALLA <br>E GLI ARCHIVI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=guidaluoghistato.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">GUIDA AI LUOGHI<br> DELLO STATO</a></h5>
+        <h5 align="center">AUTORI & COLLABORATORI</h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=excerpta.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">EXCERPTA GUASTALLAE</a></h5></font>
+        <p>&nbsp;</p>
+        <br>
+        <p>&nbsp;</td>
+      <td valign=top width="60%"><div id="contenuto">
+              <br>
+<html>
+<head>
+
+<STYLE type="text/css">
+/* Global Table Settings */
+TR.elenco { 
+font-family: Verdana, Arial;
+font-size: 11px;
+
+ }
+
+/* Links */
+A:link { color:#000000; text-decoration:none; }
+A:visited { color:#000000; text-decoration:none; }
+A:active { color:#000000; text-decoration:none; }
+A:hover { color:#000000; text-decoration:none; }
+</style>
+<title>Home Directory</title>
+</head>
+
+<body>
+
+
+<p align="center"><font size="5" color="#800000">ASSOCIAZIONE GUASTALLESE<br>
+DI STORIA PATRIA<br>
+1933<br>
+<br>
+<img border="0" src="grafica/medaglia.jpg" width="59" height="61"><br>
+1507 – 2007<br>
+500° DELLA NASCITA DI FERRANTE GONZAGA</font></p><br>
+<p>
+La ricorrenza, che nell’imminente anno 2007 vedrà la realizzazione di molteplici iniziative, tanto più motivate in Guastalla, non poteva mancare di trovare in A.G.S.P. un referente particolarmente attento. Nel 1539 iniziò la signoria che per 207 anni si legò integralmente alla storia della città, poi indissolubilmente alla sua memoria. Benché Ferrante non possa essere considerato ‘signore residenziale’ in riferimento a Guastalla, tuttavia le iniziative da lui prese segnarono il ‘nuovo’ carattere del luogo. Dalla riforma urbanistica (mura e nuovi edifici) a quella sociale (qualificazione degli abitanti e introduzione di famiglie distinte) a quella di governo (organizzazione signorile, amministrazione municipale, severa e inflessibile amministrazione della giustizia, istituzione dell’Archivio pubblico), non ci fu ambito in Guastalla che non fosse rivisto alla luce delle più aggiornate metodologie di conduzione di uno stato, sia pur di piccole dimensioni. Tale fu il lascito di Ferrante I che ancora in pieno XVIII secolo i suoi discendenti, ormai duchi sovrani e tra i pochi sovrani ‘italiani’, potevano porre a credito con la corte imperiale le benemerenze dell’illustre antenato. Si tratta dunque di una storia dalla quale non è possibile prescindere, ma non solo, della quale occorre dare conto. Così A.G.S.P., prima ancora di dare corso a specifiche ricerche ‘ferrantiane’, che pure si faranno, ha ritenuto proprio compito precipuo porre a disposizione di chi si accinga a studiare la figura di Ferrante, o anche solo ad interessarsi alle sue vicende, centrali nell’epoca di Carlo V, quanti più materiali sia stato possibile ‘tradurre’ on – line. Sono note le difficoltà, molte volte, per accedere a tali ed altri materiali (orari degli Istituti, condizione delle fonti, tempi lavorativi o di studio sempre più compressi, distanze, ...). Poter disporre, senza limitazioni fisiche, delle basi per la soddisfazione della conoscenza o dell’interesse crediamo sia un valore altamente condivisibile. Quindi A.S.G.P. proseguirà per tutto il 2007 in questa iniziativa, che nasce per una circostanza ma è destinata a protrarre il suo valore per il futuro.
+</p>
+
+<table width="100%" bgcolor="#ffffff">
+<tr>
+  <td bgcolor="#ffffff">
+   <table border="0" width="100%" bordercolor="#000000" bordercolorlight="#000000" bordercolordark="#000000" cellspacing="0" cellpadding="5">
+    <tr>
+     <td align="center" width="65%"><b>Data Autore Titolo</b></td>
+     <td align="center" width="22%"><b>Inserito il</b></td>
+     <td width="13%" align="center"><b>Dimensione</b></td>
+    </tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/1000%20-%20Tabula%20gratulatoria.pdf">1000 - Tabula gratulatoria.pdf</a></td>
+ <td align="center">24 March 2007 </td>
+ <td align="center">75.87 KB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/1559%20-%20Paolo%20Giovio%20-%20Dialogo%20dell'Imprese%20Militari%20et%20Amorose.pdf">1559 - Paolo Giovio - Dialogo dell'Imprese Militari et Amorose.pdf</a></td>
+ <td align="center">24 March 2007 </td>
+ <td align="center">11.47 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/1574%20-%20Paolo%20Giovio%20-%20Dialogo%20dell'Imprese%20Militari%20et%20Amorose%20-%20Edizione%20ampliata.pdf">1574 - Paolo Giovio - Dialogo dell'Imprese Militari et Amorose - Edizione ampliata.pdf</a></td>
+ <td align="center">24 March 2007 </td>
+ <td align="center">11.05 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/1785%20-%20Ireneo%20Affo'%20-%20Istoria%20della%20Citta'%20e%20Ducato%20di%20Guastalla%20-%20Tomo%20II%20Libro%20VIII%20-%20Gli%20anni%20di%20Ferrante%20I%20Gonzaga.pdf">1785 - Ireneo Affo' - Istoria della Citta' e Ducato di Guastalla - Tomo II Libro VIII - Gli anni di Ferrante I Gonzaga.pdf</a></td>
+ <td align="center">11 November 2006 </td>
+ <td align="center">5.74 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/1786%20-%20Ireneo%20Affo'%20-%20Istoria%20della%20Citta'%20e%20Ducato%20di%20Guastalla%20-%20Tomo%20III%20Libro%20IX%20-%20Gli%20anni%20di%20Ferrante%20Gonzaga.pdf">1786 - Ireneo Affo' - Istoria della Citta' e Ducato di Guastalla - Tomo III Libro IX - Gli anni di Ferrante Gonzaga.pdf</a></td>
+ <td align="center">11 November 2006 </td>
+ <td align="center">6.29 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/1787%20-%20Ireneo%20Affo'%20-%20Memorie%20di%20Donna%20Ippolita%20Gonzaga%20Colonna%20e%20Carrafa.pdf">1787 - Ireneo Affo' - Memorie di Donna Ippolita Gonzaga Colonna e Carrafa.pdf</a></td>
+ <td align="center">04 October 2007 </td>
+ <td align="center">9.53 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/1864%20-%20Federico%20Odorici%20-%20P.L.%20Farnese%20e%20la%20congiura%20piacentina%20del%201547%20-%20Cenni%20storici%20-%20Con%20documenti%20inediti.pdf">1864 - Federico Odorici - P.L. Farnese e la congiura piacentina del 1547 - Cenni storici - Con documenti inediti.pdf</a></td>
+ <td align="center">04 October 2007 </td>
+ <td align="center">12.13 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/1864%20-%20Giuliano%20Gosellino%20-%20Congiura%20di%20Piacenza%20contro%20P.L.%20Farnese.pdf">1864 - Giuliano Gosellino - Congiura di Piacenza contro P.L. Farnese.pdf</a></td>
+ <td align="center">04 October 2007 </td>
+ <td align="center">12.36 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/1865%20-%20Giuseppe%20Campori%20-%20Sebastiano%20Del%20Piombo%20e%20Ferrante%20Gonzaga.pdf">1865 - Giuseppe Campori - Sebastiano Del Piombo e Ferrante Gonzaga.pdf</a></td>
+ <td align="center">24 March 2007 </td>
+ <td align="center">3.19 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/1866%20-%20Amadio%20Ronchini%20-%20Leone%20Leoni%20di%20Arezzo%20e%20Ferrante%20Gonzaga%20-%20Lettere.pdf">1866 - Amadio Ronchini - Leone Leoni di Arezzo e Ferrante Gonzaga - Lettere.pdf</a></td>
+ <td align="center">24 March 2007 </td>
+ <td align="center">8.35 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/1866%20-%20Amadio%20Ronchini%20-%20Leone%20Leoni%20di%20Arezzo%20e%20Ferrante%20Gonzaga%20-%20Testo%20del%20saggio.pdf">1866 - Amadio Ronchini - Leone Leoni di Arezzo e Ferrante Gonzaga - Testo del saggio.pdf</a></td>
+ <td align="center">24 March 2007 </td>
+ <td align="center">6.68 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="https://www.storiapatriaguastalla.it/500enario/1866%20-%20Federico%20Odorici%20-%20Lettere%20di%20Muley-Hassen%20re%20di%20Tunisi%20a%20Ferrante%20Gonzaga%20vicer%E8%20di%20Sicilia%20-%20Lettere%20parte%201.pdf">1866 - Federico Odorici - Lettere di Muley-Hassen re di Tunisi a Ferrante Gonzaga vicerè di Sicilia - Lettere parte 1.pdf</a></td>
+ <td align="center">24 March 2007 </td>
+ <td align="center">9.33 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="https://www.storiapatriaguastalla.it/500enario/1866%20-%20Federico%20Odorici%20-%20Lettere%20di%20Muley-Hassen%20re%20di%20Tunisi%20a%20Ferrante%20Gonzaga%20vicer%E8%20di%20Sicilia%20-%20Lettere%20parte%202.pdf">1866 - Federico Odorici - Lettere di Muley-Hassen re di Tunisi a Ferrante Gonzaga vicerè di Sicilia - Lettere parte 2.pdf</a></td>
+ <td align="center">24 March 2007 </td>
+ <td align="center">9.65 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="https://www.storiapatriaguastalla.it/500enario/1866%20-%20Federico%20Odorici%20-%20Lettere%20di%20Muley-Hassen%20re%20di%20Tunisi%20a%20Ferrante%20Gonzaga%20vicer%E8%20di%20Sicilia%20-%20Testo%20del%20saggio.pdf">1866 - Federico Odorici - Lettere di Muley-Hassen re di Tunisi a Ferrante Gonzaga vicerè di Sicilia - Testo del saggio.pdf</a></td>
+ <td align="center">24 March 2007 </td>
+ <td align="center">11.22 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="https://www.storiapatriaguastalla.it/500enario/1866%20-%20Michele%20Amari%20-%20Lettera%20a%20Federico%20Odorici%20in%20Lettere%20di%20Muley-Hassen%20re%20di%20Tunisi%20a%20Ferrante%20Gonzaga%20vicer%E8%20di%20Sicilia.pdf">1866 - Michele Amari - Lettera a Federico Odorici in Lettere di Muley-Hassen re di Tunisi a Ferrante Gonzaga vicerè di Sicilia.pdf</a></td>
+ <td align="center">24 March 2007 </td>
+ <td align="center">4.27 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/1884%20-%20Angelo%20Arboit%20-%20Documenti%20storici%20di%20Guastalla.pdf">1884 - Angelo Arboit - Documenti storici di Guastalla.pdf</a></td>
+ <td align="center">24 March 2007 </td>
+ <td align="center">3.83 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/1889%20-%201%20-%20Emilio%20Costa%20-%20Registri%20di%20lettere%20di%20Ferrante%20Gonzaga%20vicere'%20di%20Sicilia.pdf">1889 - 1 - Emilio Costa - Registri di lettere di Ferrante Gonzaga vicere' di Sicilia.pdf</a></td>
+ <td align="center">04 October 2007 </td>
+ <td align="center">9.87 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/1889%20-%202%20-%20Emilio%20Costa%20-%20Registri%20di%20lettere%20di%20Ferrante%20Gonzaga%20vicere'%20di%20Sicilia.pdf">1889 - 2 - Emilio Costa - Registri di lettere di Ferrante Gonzaga vicere' di Sicilia.pdf</a></td>
+ <td align="center">04 October 2007 </td>
+ <td align="center">11.08 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/1893%20-%20Lino%20Chiesi%20-%20Papa%20Giulio%20III%20e%20la%20guerra%20di%20Parma%20e%20della%20Mirandola%20secondo%20il%20carteggio%20di%20Ippolito%20Capilupi%20con%20Ferrante%20Gonzaga.pdf">1893 - Lino Chiesi - Papa Giulio III e la guerra di Parma e della Mirandola secondo il carteggio di Ippolito Capilupi con Ferrante Gonzaga.pdf</a></td>
+ <td align="center">24 March 2007 </td>
+ <td align="center">5.41 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/1930%20-%20Giannetto%20Bongiovanni%20-%20I%20Gonzaga%20-%20pp.%207%20a%209%20Dedica%20ad%20Aldo%20Mossina%20e%20pp.%2089%20a%20104%20Franton.pdf">1930 - Giannetto Bongiovanni - I Gonzaga - pp. 7 a 9 Dedica ad Aldo Mossina e pp. 89 a 104 Franton.pdf</a></td>
+ <td align="center">02 April 2007 </td>
+ <td align="center">6.61 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/1937%20-%20Alessandro%20Visconti%20-%20Storia%20di%20Milano%20-%20Parte%20IV%20Cap.II.pdf">1937 - Alessandro Visconti - Storia di Milano - Parte IV Cap.II.pdf</a></td>
+ <td align="center">17 November 2006 </td>
+ <td align="center">7.03 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/1939%20-%20Costantino%20Baroni%20-%20Domenico%20Giunti%20architetto%20di%20don%20Ferrante%20Gonzaga%20e%20le%20sue%20opere%20in%20Milano.pdf">1939 - Costantino Baroni - Domenico Giunti architetto di don Ferrante Gonzaga e le sue opere in Milano.pdf</a></td>
+ <td align="center">24 March 2007 </td>
+ <td align="center">10.17 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/1939%20-%20Giannetto%20Bongiovanni%20-%20Isabella%20d'Este%20e%20il%20Sacco%20di%20Roma%20-%20pp.%20264%20a%20277.pdf">1939 - Giannetto Bongiovanni - Isabella d'Este e il Sacco di Roma - pp. 264 a 277.pdf</a></td>
+ <td align="center">02 April 2007 </td>
+ <td align="center">4.65 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/1944%20-%20Giovanni%20Drei%20-%20L'origine%20dell'inveterata%20inimicizia%20tra%20i%20Gonzaga%20e%20i%20Farnese.pdf">1944 - Giovanni Drei - L'origine dell'inveterata inimicizia tra i Gonzaga e i Farnese.pdf</a></td>
+ <td align="center">11 November 2006 </td>
+ <td align="center">989.99 KB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/1972%20-%20Santino%20Lange'%20-%20Ville%20della%20provincia%20di%20Milano%20-%20Villa%20La%20Senavra.pdf">1972 - Santino Lange' - Ville della provincia di Milano - Villa La Senavra.pdf</a></td>
+ <td align="center">24 March 2007 </td>
+ <td align="center">1.36 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/1972%20-%20Santino%20Lange'%20-%20Ville%20della%20provincia%20di%20Milano%20-%20Villa%20La%20Simonetta.pdf">1972 - Santino Lange' - Ville della provincia di Milano - Villa La Simonetta.pdf</a></td>
+ <td align="center">24 March 2007 </td>
+ <td align="center">1.83 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/1978%20-%20Restauri%20tra%20Modena%20e%20Reggio%20-%20Scheda%20n.%2043%20-%20Il%20cofano%20scrittoio%20di%20Leone%20Leoni%20per%20Ferrante%20Gonzaga.pdf">1978 - Restauri tra Modena e Reggio - Scheda n. 43 - Il cofano scrittoio di Leone Leoni per Ferrante Gonzaga.pdf</a></td>
+ <td align="center">02 April 2007 </td>
+ <td align="center">9.03 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/1985%20-%20Cesare%20Mozzarelli%20-%20I%20Gonzaga%20a%20Guastalla%20dalla%20cortigiania%20al%20principato,%20e%20alla%20istituzione%20di%20una%20citta'%20conveniente.pdf">1985 - Cesare Mozzarelli - I Gonzaga a Guastalla dalla cortigiania al principato, e alla istituzione di una citta' conveniente.pdf</a></td>
+ <td align="center">11 November 2006 </td>
+ <td align="center">6.16 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/1990%20-%20Dall'Acqua%20-%20Storchi%20-%20Delmarcel%20-%20Grandi%20artisti%20in%20una%20piccola%20corte%20dei%20Gonzaga%20-%20Estratti.pdf">1990 - Dall'Acqua - Storchi - Delmarcel - Grandi artisti in una piccola corte dei Gonzaga - Estratti.pdf</a></td>
+ <td align="center">02 April 2007 </td>
+ <td align="center">7.23 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/1990%20-%20Marco%20Carminati%20-%20Cenni%20a%20Domenico%20Giunti%20e%20la%20chiesa%20di%20Sant'Angelo%20a%20Milano.pdf">1990 - Marco Carminati - Cenni a Domenico Giunti e la chiesa di Sant'Angelo a Milano.pdf</a></td>
+ <td align="center">24 March 2007 </td>
+ <td align="center">86.47 KB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/1991%20-%20Raffaele%20Tamalio%20-%20Ferrante%20Gonzaga%20alla%20corte%20di%20Carlo%20V%20-%20Iconografia-Bibliografia-Indici.pdf">1991 - Raffaele Tamalio - Ferrante Gonzaga alla corte di Carlo V - Iconografia-Bibliografia-Indici.pdf</a></td>
+ <td align="center">14 December 2006 </td>
+ <td align="center">2.58 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/1991%20-%20Raffaele%20Tamalio%20-%20Ferrante%20Gonzaga%20alla%20corte%20di%20Carlo%20V%20-%20Introduzione%20-%20Vita%20di%20Ferrante%20Gonzaga.pdf">1991 - Raffaele Tamalio - Ferrante Gonzaga alla corte di Carlo V - Introduzione - Vita di Ferrante Gonzaga.pdf</a></td>
+ <td align="center">14 December 2006 </td>
+ <td align="center">6.82 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="https://www.storiapatriaguastalla.it/500enario/1991%20-%20Raffaele%20Tamalio%20-%20Ferrante%20Gonzaga%20alla%20corte%20di%20Carlo%20V%20-%20Lettere%201%B0%20parte.pdf">1991 - Raffaele Tamalio - Ferrante Gonzaga alla corte di Carlo V - Lettere 1° parte.pdf</a></td>
+ <td align="center">14 December 2006 </td>
+ <td align="center">6.27 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="https://www.storiapatriaguastalla.it/500enario/1991%20-%20Raffaele%20Tamalio%20-%20Ferrante%20Gonzaga%20alla%20corte%20di%20Carlo%20V%20-%20Lettere%202%B0%20parte.pdf">1991 - Raffaele Tamalio - Ferrante Gonzaga alla corte di Carlo V - Lettere 2° parte.pdf</a></td>
+ <td align="center">14 December 2006 </td>
+ <td align="center">8.04 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="https://www.storiapatriaguastalla.it/500enario/1991%20-%20Raffaele%20Tamalio%20-%20Ferrante%20Gonzaga%20alla%20corte%20di%20Carlo%20V%20-%20Lettere%203%B0%20parte.pdf">1991 - Raffaele Tamalio - Ferrante Gonzaga alla corte di Carlo V - Lettere 3° parte.pdf</a></td>
+ <td align="center">14 December 2006 </td>
+ <td align="center">8.87 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/1992%20-%20Vittore%20Branca%20-%20Una%20lettera%20e%20tre%20sonetti%20inediti%20di%20Pietro%20Aretino%20a%20Carlo%20V.pdf">1992 - Vittore Branca - Una lettera e tre sonetti inediti di Pietro Aretino a Carlo V.pdf</a></td>
+ <td align="center">24 March 2007 </td>
+ <td align="center">95.92 KB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/1994%20-%20Marco%20Bona%20Castellotti%20-%20Leone%20e%20Pompeo%20Leoni%20in%20mostra%20al%20Prado.pdf">1994 - Marco Bona Castellotti - Leone e Pompeo Leoni in mostra al Prado.pdf</a></td>
+ <td align="center">24 March 2007 </td>
+ <td align="center">88.52 KB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/1996%20-%20Nello%20Forti%20Grazzini%20-%20Le%20'Tapizerie%20dei%20Gonzaga'%20di%20Brown%20e%20Delmarcel.pdf">1996 - Nello Forti Grazzini - Le 'Tapizerie dei Gonzaga' di Brown e Delmarcel.pdf</a></td>
+ <td align="center">24 March 2007 </td>
+ <td align="center">106.50 KB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/1997%20-%20Amedeo%20Quondam%20-%20Scrivere%20lettere%20nel%20Cinquecento.pdf">1997 - Amedeo Quondam - Scrivere lettere nel Cinquecento.pdf</a></td>
+ <td align="center">04 October 2007 </td>
+ <td align="center">8.46 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/2002%20-%20Walter%20Cupperi%20-%20La%20statua%20di%20Ferrante%20I%20a%20Guastalla%20Una%20commissione%20monumentale%20di%20Cesare%20I%20a%20Leone%20Leoni.pdf">2002 - Walter Cupperi - La statua di Ferrante I a Guastalla Una commissione monumentale di Cesare I a Leone Leoni.pdf</a></td>
+ <td align="center">11 November 2006 </td>
+ <td align="center">7.79 MB</td>
+</tr><tr class="elenco" >
+ <td><a target="_blank" href="500enario/2003%20-%20Rivista%20la%20Ca'%20Granda%20Anno%20XLIV%20-%20n.%203%20-%20La%20Senavra.pdf">2003 - Rivista la Ca' Granda Anno XLIV - n. 3 - La Senavra.pdf</a></td>
+ <td align="center">02 April 2007 </td>
+ <td align="center">25.56 KB</td>
+</tr>   </table>
+  </td>
+ </tr>
+</table>
+</body>
+<html></div></td>
+      <td width="16%" valign=top bgcolor="#344f85"><br><font color="#efefef">
+        <h5 align="center"><a class=menu href="index.php%3Fsez=convegni.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">CONVEGNI SVOLTI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=programmi.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">PROGRAMMI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=search&amp;query=all.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">BIBLIOTECA</a></h5>
+<h5 align="center"> <a class=menu href="index.php%3Fsez=iarda.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">  PROGETTO I.A.R.D.A  </a>  </h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=scambiolibrario.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">SCAMBIO LIBRARIO</a></h5>        
+        <h5 align="center"><a class=menu href="index.php%3Fsez=bibliografia.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">BIBLIOGRAFIA</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=links.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">LINK</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=contatti.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">CONTATTI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=conv_part.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">CONVENZIONI E PARTNERSHIP</a></h5>
+        <p>&nbsp;</p>
+        <br>
+        <p>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="16%" bgcolor="#344f85">
+</td>
+      <td width="60%"><br><br><br><br><br><p align="center"><center>
+  <br>
+<font size="3">Propriet&agrave; e Copyright del sito: Associazione Guastallese di Storia Patria<br>
+Copyright A.G.S.P. 2001 - 2005</font>
+  </center></td>
+      <td width="16%" bgcolor="#344f85"></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<div id="tipDiv" style="position:absolute; visibility:hidden; z-index:100"></div>
+</body>
+
+</html>

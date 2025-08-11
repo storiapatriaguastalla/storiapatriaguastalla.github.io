@@ -1,0 +1,409 @@
+<html>
+
+<head>
+<title>A.G.S.P.</title>
+
+<META NAME="DESCRIPTION" CONTENT="Storiapatriaguastalla.it ï¿½ il sito entro il quale Guastalla, capitale dello Stato sovrano che tra i minori piï¿½ si addentrï¿½ nel XVIII secolo, sino alla ricostituzione napoleonica del 1806, trova le coordinate per una corretta lettura e collocazione storiografica">
+<META NAME="KEYWORDS" CONTENT="archivi, archivistica, biblioteca, archivio, archivio di stato, asmo, aspr, asre, asmn, asmi, soprintendenza archivistica, unipr, unimore, gonzaga, este, sforza, visconti, farnese, venezia, serenissima, superba, ducato, granducato, regno, repubblica, guastalla, parma, manova, modena, ferrara, reggio emilia, mirandola, pico, sabbioneta, bozzolo, novellara, carpi, pio, gualtieri, comune di guastalla, guastalla cultura, maldotti, biblioteca maldotti, genova, doria, molfetta, campobasso, orsini, di capua, vicere, viceregno, madrid, vienna, impero, sri, sacro romano impero, stato pontificio, lucca, stmoderna, storia moderna, storia contemporanea, deputazione, deputazione di storia patria, societï¿½ storica lombarda, milano, ferrante gonzaga, abbazia, diocesi di reggio guastalla, duca, principe, conte, gualtieri, brescello, po, fiume po, massa carrara, papa, pontefice, serviti, cappuccine, mantellate, gesuiti, francescani, cappuccini, agostiniane, correggio, maria luigia, parma piacenza e guastalla, borbone, mbac, peppone, don camillo, guareschi, smeg, gazzetta di reggio, gazzetta di mantova, gazzetta di parma">
+<META HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<link rel="StyleSheet" type="text/css" href="storiapatria.css">
+<link media="print" rel="stylesheet" href="stampa.css" type="text/css">
+<script type="text/javascript">
+
+/***********************************************
+* Disable select-text script- ï¿½ Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+//form tags to omit in NS6+:
+var omitformtags=["input", "textarea", "select"]
+
+omitformtags=omitformtags.join("|")
+
+function disableselect(e){
+if (omitformtags.indexOf(e.target.tagName.toLowerCase())==-1)
+return false
+}
+
+function reEnable(){
+return true
+}
+
+if (typeof document.onselectstart!="undefined")
+document.onselectstart=new Function ("return false")
+else{
+document.onmousedown=disableselect
+document.onmouseup=reEnable
+}
+
+</script>
+
+<script language="javascript" type="text/javascript">
+<!--
+
+/*
+Image w/ description tooltip- By Dynamic Web Coding (www.dyn-web.com)
+Copyright 2002 by Sharon Paine
+Visit http://www.dynamicdrive.com for this script
+*/
+
+/* IMPORTANT: Put script after tooltip div or 
+	 put tooltip div just before </BODY>. */
+
+var dom = (document.getElementById) ? true : false;
+var ns5 = ((navigator.userAgent.indexOf("Gecko")>-1) && dom) ? true: false;
+var ie5 = ((navigator.userAgent.indexOf("MSIE")>-1) && dom) ? true : false;
+var ns4 = (document.layers && !dom) ? true : false;
+var ie4 = (document.all && !dom) ? true : false;
+var nodyn = (!ns5 && !ns4 && !ie4 && !ie5) ? true : false;
+
+// resize fix for ns4
+var origWidth, origHeight;
+if (ns4) {
+	origWidth = window.innerWidth; origHeight = window.innerHeight;
+	window.onresize = function() { if (window.innerWidth != origWidth || window.innerHeight != origHeight) history.go(0); }
+}
+
+// avoid error of passing event object in older browsers
+if (nodyn) { event = "nope" }
+
+///////////////////////  CUSTOMIZE HERE   ////////////////////
+// settings for tooltip 
+// Do you want tip to move when mouse moves over link?
+var tipFollowMouse= true;	
+// Be sure to set tipWidth wide enough for widest image
+var tipWidth= 302;
+var offX= 20;	// how far from mouse to show tip
+var offY= 12; 
+var tipFontFamily= "Verdana, arial, helvetica, sans-serif";
+var tipFontSize= "8pt";
+// set default text color and background color for tooltip here
+// individual tooltips can have their own (set in messages arrays)
+// but don't have to
+var tipFontColor= "#000000";
+var tipBgColor= "#FFFFFF"; 
+var tipBorderColor= "#000080";
+var tipBorderWidth= 0;
+var tipBorderStyle= "ridge";
+var tipPadding= 0;
+
+// tooltip content goes here (image, description, optional bgColor, optional textcolor)
+var messages = new Array();
+// multi-dimensional arrays containing: 
+// image and text for tooltip
+// optional: bgColor and color to be sent to tooltip
+messages[0] = new Array('linkimg/paralupi.jpg','',"#FFFFFF");
+messages[1] = new Array('linkimg/micheli.jpg','',"#FFFFFF");
+messages[2] = new Array('linkimg/dutillot.jpg','');
+messages[3] = new Array('linkimg/tranmoss.jpg','');
+messages[4] = new Array('linkimg/patrioti.jpg','');
+messages[5] = new Array('linkimg/tirelli.jpg','');
+messages[6] = new Array('linkimg/mariotti.jpg','');
+messages[7] = new Array('linkimg/rerum.jpg','');
+messages[8] = new Array('linkimg/maldotti.jpg','');
+messages[9] = new Array('linkimg/affo.jpg','');
+messages[10] = new Array('linkimg/baldi.jpg','');
+messages[11] = new Array('linkimg/lbaldi.jpg','');
+messages[12] = new Array('linkimg/lteodora.jpg','');
+
+////////////////////  END OF CUSTOMIZATION AREA  ///////////////////
+
+// preload images that are to appear in tooltip
+// from arrays above
+if (document.images) {
+	var theImgs = new Array();
+	for (var i=0; i<messages.length; i++) {
+  	theImgs[i] = new Image();
+		theImgs[i].src = messages[i][0];
+  }
+}
+
+// to layout image and text, 2-row table, image centered in top cell
+// these go in var tip in doTooltip function
+// startStr goes before image, midStr goes between image and text
+var startStr = '<table width="' + tipWidth + '"><tr><td align="center" width="100%"><img src="';
+var midStr = '" border="0"></td></tr><tr><td valign="top">';
+var endStr = '</td></tr></table>';
+
+////////////////////////////////////////////////////////////
+//  initTip	- initialization for tooltip.
+//		Global variables for tooltip. 
+//		Set styles for all but ns4. 
+//		Set up mousemove capture if tipFollowMouse set true.
+////////////////////////////////////////////////////////////
+var tooltip, tipcss;
+function initTip() {
+	if (nodyn) return;
+	tooltip = (ns4)? document.tipDiv.document: (ie4)? document.all['tipDiv']: (ie5||ns5)? document.getElementById('tipDiv'): null;
+	tipcss = (ns4)? document.tipDiv: tooltip.style;
+	if (ie4||ie5||ns5) {	// ns4 would lose all this on rewrites
+		tipcss.width = tipWidth+"px";
+		tipcss.fontFamily = tipFontFamily;
+		tipcss.fontSize = tipFontSize;
+		tipcss.color = tipFontColor;
+		tipcss.backgroundColor = tipBgColor;
+		tipcss.borderColor = tipBorderColor;
+		tipcss.borderWidth = tipBorderWidth+"px";
+		tipcss.padding = tipPadding+"px";
+		tipcss.borderStyle = tipBorderStyle;
+	}
+	if (tooltip&&tipFollowMouse) {
+		if (ns4) document.captureEvents(Event.MOUSEMOVE);
+		document.onmousemove = trackMouse;
+	}
+}
+
+window.onload = initTip;
+
+/////////////////////////////////////////////////
+//  doTooltip function
+//			Assembles content for tooltip and writes 
+//			it to tipDiv
+/////////////////////////////////////////////////
+var t1,t2;	// for setTimeouts
+var tipOn = false;	// check if over tooltip link
+function doTooltip(evt,num) {
+	if (!tooltip) return;
+	if (t1) clearTimeout(t1);	if (t2) clearTimeout(t2);
+	tipOn = true;
+	// set colors if included in messages array
+	if (messages[num][2])	var curBgColor = messages[num][2];
+	else curBgColor = tipBgColor;
+	if (messages[num][3])	var curFontColor = messages[num][3];
+	else curFontColor = tipFontColor;
+	if (ns4) {
+		var tip = '<table bgcolor="' + tipBorderColor + '" width="' + tipWidth + '" cellspacing="0" cellpadding="' + tipBorderWidth + '" border="0"><tr><td><table bgcolor="' + curBgColor + '" width="100%" cellspacing="0" cellpadding="' + tipPadding + '" border="0"><tr><td>'+ startStr + messages[num][0] + midStr + '<span style="font-family:' + tipFontFamily + '; font-size:' + tipFontSize + '; color:' + curFontColor + ';">' + messages[num][1] + '</span>' + endStr + '</td></tr></table></td></tr></table>';
+		tooltip.write(tip);
+		tooltip.close();
+	} else if (ie4||ie5||ns5) {
+		var tip = startStr + messages[num][0] + midStr + '<span style="font-family:' + tipFontFamily + '; font-size:' + tipFontSize + '; color:' + curFontColor + ';">' + messages[num][1] + '</span>' + endStr;
+		tipcss.backgroundColor = curBgColor;
+	 	tooltip.innerHTML = tip;
+	}
+	if (!tipFollowMouse) positionTip(evt);
+	else t1=setTimeout("tipcss.visibility='visible'",100);
+}
+
+var mouseX, mouseY;
+function trackMouse(evt) {
+	mouseX = (ns4||ns5)? evt.pageX: window.event.clientX + document.body.scrollLeft;
+	mouseY = (ns4||ns5)? evt.pageY: window.event.clientY + document.body.scrollTop;
+	if (tipOn) positionTip(evt);
+}
+
+/////////////////////////////////////////////////////////////
+//  positionTip function
+//		If tipFollowMouse set false, so trackMouse function
+//		not being used, get position of mouseover event.
+//		Calculations use mouseover event position, 
+//		offset amounts and tooltip width to position
+//		tooltip within window.
+/////////////////////////////////////////////////////////////
+function positionTip(evt) {
+	if (!tipFollowMouse) {
+		mouseX = (ns4||ns5)? evt.pageX: window.event.clientX + document.body.scrollLeft;
+		mouseY = (ns4||ns5)? evt.pageY: window.event.clientY + document.body.scrollTop;
+	}
+	// tooltip width and height
+	var tpWd = (ns4)? tooltip.width: (ie4||ie5)? tooltip.clientWidth: tooltip.offsetWidth;
+	var tpHt = (ns4)? tooltip.height: (ie4||ie5)? tooltip.clientHeight: tooltip.offsetHeight;
+	// document area in view (subtract scrollbar width for ns)
+	var winWd = (ns4||ns5)? window.innerWidth-20+window.pageXOffset: document.body.clientWidth+document.body.scrollLeft;
+	var winHt = (ns4||ns5)? window.innerHeight-20+window.pageYOffset: document.body.clientHeight+document.body.scrollTop;
+	// check mouse position against tip and window dimensions
+	// and position the tooltip 
+	if ((mouseX+offX+tpWd)>winWd) 
+		tipcss.left = (ns4)? mouseX-(tpWd+offX): mouseX-(tpWd+offX)+"px";
+	else tipcss.left = (ns4)? mouseX+offX: mouseX+offX+"px";
+	if ((mouseY+offY+tpHt)>winHt) 
+		tipcss.top = (ns4)? winHt-(tpHt+offY): winHt-(tpHt+offY)+"px";
+	else tipcss.top = (ns4)? mouseY+offY: mouseY+offY+"px";
+	if (!tipFollowMouse) t1=setTimeout("tipcss.visibility='visible'",100);
+}
+
+function hideTip() {
+	if (!tooltip) return;
+	t2=setTimeout("tipcss.visibility='hidden'",100);
+	tipOn = false;
+}
+
+//-->
+</script>
+
+</head>
+
+<body oncontextmenu="return false" link="344f85" vlink="344f85" alink="dcdcdc">
+
+<SCRIPT LANGUAGE="JavaScript">
+if (window != top) top.location.href = location.href;
+</SCRIPT>
+
+
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td width="2%" rowspan="3" class=sx></td>
+      <td width="16%" bgcolor="#344f85"><div align="center"><a href="http://www.unesco.org/webworld/portal_archives" target="_top"><img src="grafica/archives_logo_sm.gif" width=98 height=44 alt="UNESCO Archives Portal" border="0"></a><br><br><a href="http://www.unesco.org/webworld/portal_bib" target="_top"><img src="grafica/logo_bib.gif" width=98 height=44 alt="UNESCO Libraries Portal" border="0"></a></div></td>
+      <td width="2%" rowspan="3" class=dx></td>
+      <td width="60%"><p align="center"><a href="index.php%3Fsez=home.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;"><img border="0" src="grafica/logo.jpg" width="186" height="179"></a></td>
+      <td width="2%" rowspan="3" class=sx></td>
+      <td width="16%" bgcolor="#344f85"> <div align="center"><a class=menu href="index.php%3Fsez=500enario.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;"><img border="0" src="grafica/ferranteId.jpg" width="100" height="180"></a></div></td>
+      <td width="2%" rowspan="3" class=dx></td>
+    </tr>
+    <tr>
+      <td width="16%" valign=top bgcolor="#344f85"><br><font color="#efefef">
+        <h5 align="center"><a class=menu href="index.php%3Fsez=sodalizio.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">STORIA DEL SODALIZIO</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=tradizione.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">TRADIZIONE STORIOGRAFICA</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=stato_di_guastalla.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">LO STATO DI GUASTALLA</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=erratacorrige.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">ERRATA CORRIGE</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=guastallarchivi.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">GUASTALLA <br>E GLI ARCHIVI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=guidaluoghistato.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">GUIDA AI LUOGHI<br> DELLO STATO</a></h5>
+        <h5 align="center">AUTORI & COLLABORATORI</h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=excerpta.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">EXCERPTA GUASTALLAE</a></h5></font>
+        <p>&nbsp;</p>
+        <br>
+        <p>&nbsp;</td>
+      <td valign=top width="60%"><div id="contenuto">
+              <br><html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Eugenio Bartoli&nbsp; NOTE IN MARGINE ALLA CORRISPONDENZA DINASTICA
+SETTECENTESCA DEI DUCHI DI GUASTALLA&nbsp; Le considerazioni seguenti sono</title>
+</head>
+
+<body>
+
+<p align="center"><b>Eugenio Bartoli</b><br>
+<br>
+ Note in margine alla corrispondenza dinastica settecentesca dei duchi di Guastalla*</p><br>
+<br>
+Le considerazioni seguenti sono relative ad una selezione documentaria pubblicata in facsimile nel volume ‘1734 e dintorni. Il ducato e il territorio di Guastalla tra battaglie e vecchi luoghi comuni’ È stata ricavata dai materiali conservati presso gli Archivi di Stato di Parma e Modena. Non avrebbe potuto essere se non una selezione, dato che la sola corrispondenza augurale ricevuta dai duchi di Guastalla e ad oggi sopravvissuta ammonta a varie migliaia di pezzi. Non molti in valore assoluto considerando l’originaria consistenza dell’Archivio Segreto dei nostri Gonzaga, tuttavia rilevanti quando si pensasse ad una edizione critica di tale tipologia. Questo centinaio di carte è stato suddiviso in varie categorie. Le augurali in: a) regnanti insigniti di titolo regio, oltre al Pontefice, b) altri principi regnanti, c) cardinali ed alti funzionari, d) parenti di casa Gonzaga, e) soggetti a vario titolo in rapporto con Guastalla, f) Enti guastallesi, g) funzionari e sudditi del ducato. Quelle di ‘Stato’ presentano corrispondenze da Guastalla dirette a Venezia dal primo ministro e segretario di Stato conte di Spilimbergo, e da Roma ugualmente dirette a Venezia dal ministro residente presso il Pontefice, abate Rossi. Lo Spilimbergo scrive direttamente al duca, mentre il Rossi rivolge la propria corrispondenza ad un segretario di camera del duca, Giovanni Maggiorini. La presenza di questa, come di altre qui non citate figure, è indice della riorganizzazione di una ragguardevole struttura burocratica anche in Venezia, negli anni di esilio, alla quale sovrintendeva il vice primo ministro conte Papini. Questi avrebbe potuto essere destinatario delle corrispondenze da Roma, e sarebbe interessante comprendere la ragione di questa interposizione, se dovuta ad un rapporto preferenziale tra il Rossi ed il Maggiorini o piuttosto alla sistematica dell’organizzazione dell’ufficio.&nbsp;<br>
+Dall’Archivio di Stato di Modena è tratta la relazione di Giovanni Bosi del 31 luglio 1734, relativa al pagamento di contribuzioni dovute dal ducato estense agli occupanti franco – sardi (si veda la lettera inviata da Rinaldo d’Este duca di Modena con data topica ‘Bologna’, anch’egli in esilio). Le vicissitudini degli inviati di Modena sono emblematiche di come una guerra assumesse anche il carattere di contabilità ragionieristica nel momento in cui si dovesse trattare di denaro. Questo riconduce a termini molto mercantili quanto si è soliti immaginare come derivato dalla pura e semplice apprensione di risorse, giungendo a confondere l’ormai collaudata organizzazione degli eserciti settecenteschi con una sorta di brigantaggio legalizzato.&nbsp;<br>
+Passando ora in generale alla sistematica della corrispondenza augurale si rende opportuno svolgere alcune osservazioni.&nbsp;<br>
+In primo luogo la forma grafica, che presenta difformità anche rilevanti tra i vari mittenti, in ordine alla precisione della stesura, alla spaziatura e marginatura, all’uso di determinati caratteri (latini o gotici). Se proprio l’uso dei caratteri è legato alla tradizione culturale locale (il che diviene un elemento insindacabile), la più o meno chiara impostazione grafica deve invece essere connessa alla maggiore o minore abilità professionale dello scrivente da un lato, all’adeguamento e attenzione ai moderni sistemi di gestione degli uffici dall’altro. In questo senso Segreterie e Cancellerie, i luoghi nei quali per la maggior parte si produceva materiale documentario, tanto più si modernizzano quanto più adottano tipizzazioni scrittorie condivise in senso ampio e facilmente comprensibili (ovviamente il discorso andrebbe ampliato alle procedure di produzione documentale, al sistema di esame di merito delle pratiche, ai sistemi archivistici, ma non è il caso in questa sede). La mancanza di questo adeguamento formale corrisponde né più né meno, in un ufficio contemporaneo, al rifiuto dell’aggiornamento dei programmi informatici.&nbsp;<br>
+In secondo luogo la dimensione dei fogli di carta. Per questa edizione si è scelto di utilizzare al meglio il formato del volume, con la conseguenza che non sempre vi è proporzione reale tra l’uno e l’altro esempio. Dagli originali si può invece osservare come siano presenti numerose varianti dimensionali, alcune delle quali si accennano ad esempio. Il caso che più si avvicina alla nostra esperienza odierna è quello della Curia romana. In quel caso tutti i cardinali utilizzano il medesimo formato e tipo di carta. Il formato utilizzato in Inghilterra è decisamente più piccolo alla vista, in quanto il foglio viene ruotato di 180° e piegato in due, di modo che si ottengono quattro facciate, delle quali solo la prima è utilizzata. I re di Svezia, Norvegia e Portogallo utilizzano il formato di maggiore dimensione, con l’ovvia differenza del tipo di carta.<br>
+In terzo luogo si deve notare come l’alternanza di pieni e vuoti risponda a ben precisi criteri cerimoniali. Quanto maggiore è la distanza sociale tra il mittente e il duca di Guastalla tanto maggiore sarà lo spazio lasciato tra l’intestazione ‘Altezza Serenissima’ ed il testo. Non accade a caso, bensì vuole rappresentare graficamente il porsi, come si diceva al tempo, ‘ai piedi’ del sovrano, quindi del trono, quindi della fonte immediata dell’autorità in un certo territorio, o meglio in un certo Stato.&nbsp;<br>
+Al contrario è da notare che quando ci si trovi fra parigrado questa distanza tende a diminuire, quasi giungendo a coincidere l’intestazione con il corpo del testo. Le graduazioni, leggere, che comunque si notano in questa categoria rispondono al maggiore o minore grado di parentela tra chi scrive e chi riceve, considerando anche la portata dei titoli pertinenti a ciascuno. Ad esempio un duca ‘principe libero’ (cioè investito immediatamente dall’imperatore) beneficerà di maggiore dignità rispetto ad un duca ‘mediato’ (cioè investito, ad esempio, dal re di Spagna). Talvolta si assiste, in questa categoria, ad una prolissità barocca che saremmo portati ad attribuire più alla Spagna che ai principi protestanti dell’Europa del nord. La pagina completamente percorsa da segni grafici ornamentali perde le caratteristiche funzionali per giungere a significare un ‘horror vacui’ evidentemente consono allo spirito delle brume nordiche. Il citato uso dei caratteri gotici attribuisce a queste lettere la sostanza di una rivendicazione di identità, che si vuole differenziare fortemente da quella di ambito non germanico. Deve però essere ricordato che negli anni di nostro interesse era attiva, presso i duchi di Guastalla, la segreteria delle mogli, principesse tedesche che avevano portato al proprio seguito personale loro conterraneo, dotato quindi della capacità, non tanto linguistica quanto grafica, di leggere gli inconsueti caratteri gotici.&nbsp;<br>
+Si verifica una vera e propria inversione delle intestazioni quando ad inviare gli auguri sia un sovrano portante il titolo regio. In questo caso si presentano alcune varianti, la cui caratteristica comune è di posporre il minor titolo, negli esempi che esaminiamo quello di duca di Guastalla.&nbsp;<br>
+Prima soluzione, l’intestazione è costituita dai titoli del mittente, che può far prevalere il proprio maggior grado rispetto al destinatario. Questa consuetudine è applicata in ambito nord europeo dai re di Svezia e di Danimarca, i quali, per altro, mantengono l’uso dei caratteri grafici latini e di questa lingua, il che semplifica la comprensione.&nbsp;<br>
+Seconda soluzione, applicata negli esempi presentati del re di Sardegna e del più cospicuo re d’Inghilterra, consta dell’adottare una forma apparentemente più semplice, in quanto intestano la lettera ponendo in risalto il rapporto parentale (Mon Cousin, My Cousin) senza illustrazione dei propri titoli. La semplice firma in calce identifica il mittente, senza che questi senta la necessità, ovviamente, di ulteriori specifiche. D’altra parte chi avrebbe potuto equivocare su di una lettera del re d’Inghilterra. Questa formula è adottata anche dai re di Francia.&nbsp;<br>
+Tuttavia questa apparente semplicità trova una ulteriore rarefazione nel caso del re di Spagna, che si firma semplicemente ‘Yo el Rey’, imitato dal re di Portogallo.&nbsp;<br>
+Il Pontefice intesta ogni breve con il proprio nome (nell’esempio Clemente Papa XII) ed omette ogni titolo del destinatario, appellandolo semplicemente ‘Dilecte Fili Nobilis Vir’, il che è ovvio, dato che per il papa non possono esistere distinzioni, almeno formalmente, tra i componenti del proprio gregge, e d’altra parte di fronte alla prospettiva di eternità che guida la Chiesa la contingenza di un titolo perde di significato.<br>
+In quarto luogo deve essere considerato l’uso della lingua di corrispondenza. Ora, è ovvio che le Segreterie e Cancellerie dell’epoca fossero in grado di trattare diversi idiomi, cosicché era indifferente che si applicasse la lingua latina, o francese, tedesca, spagnola. Il caso è già diverso quando si applica la lingua inglese, poco usata e non molto conosciuta, tanto che in anni di poco precedenti i nostri l’allora Gran principe di Toscana, Giangastone de’ Medici, era ammirato per la conoscenza di quell’idioma. Il portoghese ovviamente non poneva soverchie difficoltà, a differenza dell’olandese, lingua con la quale scrivono gli Stati Generali d’Olanda e il già statòlder principe d’Orange (questa carica, di ‘luogotenente’ divenne di fatto ereditaria nella Casa d’Orange anche se con interruzioni, e fu convertita in titolo regio dopo il 1815). Tuttavia con un poco di esercizio sarebbe stato possibile risolvere anche quest’ultima curiosità, date le assonanze col tedesco. Ad esempio si noti come il titolo di ‘Altezza Serenissima’ sia in tedesco coevo ‘Durchleuchtig’ ed in olandese ‘Doorluchtigh’. La frequente presenza dei diplomatici guastallesi in Olanda non avrà certamente mancato di fornire quelle nozioni di base occorrenti al disbrigo di questioni cerimoniali di tale genere. Comunque, da un inventario di libri della biblioteca dei duchi di Guastalla apprendiamo che Segreteria e Cancelleria potevano far conto da tempo su un
+<i> Dictionarius linguarum Latina Gallica Hispaniae Italiae Anglicae et
+Theutonicae</i>, stampato nel 1579 (evidentemente acquistato all’inizio del regno di Ferrante II), il che non può prescindere dall’aver sempre praticato, in questa Corte, la conoscenza di varie lingue in una forma tale da consentirne l’uso corrente.&nbsp;<br>
+Infine si note come nelle lettere inglesi sia presente la doppia datazione (esempio, 1733/4), in quanto il calendario che si applica è quello basato sullo ‘stile dell’Incarnazione’, che fa iniziare l’anno al 25 marzo. Di conseguenza, pur essendo già nel 1734 in Italia e ovunque in Europa occidentale, in Inghilterra (lettere del 31 gennaio) si è ancora al 1733, dato che l’anno 1734 sarebbe iniziato solo al 25 marzo successivo. Dal 1752 anche in Inghilterra si adotterà il cosiddetto ‘stile moderno’ (1 gennaio – 31 dicembre) ed il calendario Gregoriano, equiparando così le date.<br>
+Voglio anticipatamente accennare, per collegarmi alla tipologia testé illustrata, che in conclusione dell’edizione si riporta una lettera di auguri inviata dal duca di Guastalla alla regina d’Ungheria, nel 1741. La differenza di alcuni anni non rileva ai fini della determinazione delle caratteristiche formali della missiva, per come le abbiamo identificate sopra negli altri casi. Ognuno potrà osservare come la segreteria ducale di Guastalla avesse adottato una forma ed una grafia veramente rimarchevoli in quanto ad equilibrio e chiarezza. L’uso della lingua italiana era poi conforme a quanto praticato a Vienna, dove era diffusa e conosciuta tanto quanto la tedesca. Questo sistema di presentazione è chiaro indice della volontà di significare attraverso lo strumento principe della comunicazione, le lettere, la precisa consapevolezza del grado raggiunto nel parterre dei sovrani italiani e più in generale europei, che in quegli anni equiparava dinasticamente i duchi di Guastalla ai dominanti di ben più cospicui Stati.<br>
+Per quanto riguarda gli altri generi di corrispondenza si può rilevare che lo Spilimbergo scrive tramite la cancelleria ducale, quindi non sussistono particolari osservazioni. Ugualmente per Gaetana Secchi Ronchi, che condivide la buona impostazione grafica con l’essere rinomata verseggiatrice, quindi per forza di cose avvezza a penna e calamaio. L’abate Rossi presenta invece grafia e forma delle lettere che definire approssimative è poco. Evidentemente scriveva di propria mano, senza che questa fosse altrettanto felice quanto il medesimo si professava devoto alla causa imperiale e fedele servitore dei Gonzaga. Solo nel 1736, in lettere che esulano dalle circostanze in esame, adotta una sistematica di scrittura finalmente accessibile, segno evidente che aveva potuto permettersi di assoldare uno scrivano professionista, il che forse va collegato alla ripresa di normali rapporti di stipendio con la Corte di Guastalla, non più angustiata dalle ristrettezze derivate dalle vicende belliche. Infine Giovanni Bosi, scrittore di suo pugno, mediamente leggibile, nel quale si osserva in modo assai marcato l’alternanza di spazi pieni e vuoti alla quale si è accennato in precedenza. D’altra parte scrive direttamente al suo sovrano, il duca di Modena.&nbsp;<br>
+Di seguito si elencano, secondo l’ordine stabilito nella riproduzione, i mittenti delle lettere di auguri. Seguono la corrispondenza dello Spilimbergo, dell’abate Rossi, la lettera di G. Secchi Ronchi, la relazione Bosi, la lettera di Giuseppe Maria Gonzaga. Ovviamente si è tralasciato di indicare note biografiche per quei personaggi la cui notorietà sia assodata. Negli altri casi, ove possibile si è proposto l’inquadramento biografico e funzionale del soggetto. Se ciò non è stato possibile si sono sottolineate comunque talune curiosità.<br>
+<br>
+<i>Sovrani ‘Superiorem non reconoscens’&nbsp;</i><br>
+Papa Clemente XII, regnante dal 1730 al 1740, al secolo Lorenzo Corsini.<br>
+<br>
+<i>Sovrani ‘superiorem non reconoscens’ regnanti con titolo reale</i><br>
+Il re d’Inghilterra, Giorgio II elettore di Hannover, re d’I. e d’Irlanda.<br>
+Il re del Portogallo, Giovanni V di Braganza.<br>
+Il re di Sardegna, Carlo Emanuele III di Savoia.<br>
+Il re di Svezia, Federico I di Hassia - Cassel, giunse al trono di Svezia per via matrimoniale, avendo sposato la sorella del re Carlo XII della Casa di Holstein.<br>
+Il re di Danimarca, Cristiano VI della Casa di Schleswig - Holstein<br>
+<br>
+<i>Principi ed Enti regnanti</i><br>
+Gli Stati generali d’Olanda, governo collettivo delle Province Unite, rappresentavano le medesime nei confronti dell’estero. Avevano potestà su guerra, pace e difesa, potestà finanziaria, in generale legislativa.<br>
+Il duca di Modena e Reggio, Rinaldo I d’Este.<br>
+Carlo Elettore Palatino, ossia Carlo III Filippo elettore palatino del Reno, dei Wittelsbach del ramo di Zweibrucken – Neuburg, cognato di Anna Maria de’ Medici. Fu successore, dal 1716, del fratello Guglielmo, marito della predetta.&nbsp;<br>
+Il principe d’Orange, Guglielmo Giovanni Friso di Orange Nassau Dietz.&nbsp;<br>
+Clemente Augusto Elettore, ossia C.A. Wittelsbach, arcivescovo elettore di Colonia.<br>
+Ferdinand Albrecht I duca di Braunschweig und Luneburg (Brunswick – Luneburg), del ramo B. – Bevern. Si segnala il titolario adottato da questo duca, il più preciso tra quelli che ho potuto riscontrare. Molti principi tedeschi appellano ancora nel 1734 i Gonzaga di Guastalla con i predicati di Campobasso, Molfetta e Giovinazzo, feudi pugliesi venduti da Ferrante III nel 1639.&nbsp;<br>
+Federico Carlo conte di Schonborn, vescovo del principato vescovile di Bamberga e Wurzburg. Il predecessore, Lotario Francesco, della stessa famiglia, fu anche elettore di Magonza, e a lui si deve il castello elettorale di Gaibach, dal quale F.C. scrive.<br>
+Franz Josias duca di Julich, Kleve und Berg, della Casa Pfalz – Neuburg, ramo dei Wittelsbach. Dal tratto grafico della firma si direbbe di età avanzata; con lui si estinse, nel 1742, questo ramo collaterale dei dominanti di Baviera.<br>
+Mittente non identificato.<br>
+Magdalena Wilhelmina, probabilmente la Serenissima di Assia - Homburg<br>
+Mittente non identificato.<br>
+<br>
+<i>Cardinali e ministri</i><br>
+Cardinale Francesco Alberoni<br>
+Cardinale di Rohan, A.G.M. di R., vescovo di Strasburgo, cardinale dal 1712, grande Elemosiniere di Francia dal 1713.&nbsp;<br>
+Il marchese d’Ormea, primo ministro di Carlo Emanuele III di Savoia.<br>
+Il primo ministro portoghese<br>
+Il primo ministro inglese<br>
+Philipp Ludwig conte diSinzendorff, ministro dell’imperatore Carlo Vi, fu tra i negoziatori della conclusione della Guerra di Successione Polacca.<br>
+<br>
+<i>Parenti di Casa Gonzaga, originari e acquisiti</i><br>
+Anna Maria Elettrice, figlia di Cosimo III de’ Medici granduca di Firenze. Sposò Guglielmo Elettore palatino del Reno, dei Wittelsbach di Neuburg, al quale non diede discendenza. Tornata a Firenze una volta rimasta vedova su di lei si appuntarono le speranze per una successione a Giangastone, suo fratello e ultimo sovrano della Toscana di quella famiglia, il che non ebbe però seguito. Ricciarda Gonzaga Cybo, dei Gonzaga di Novellara, moglie di Alderano Cybo, ultimo duca di Massa. Tra Ricciarda ed i Gonzaga di Guastalla si aprì un significativo contenzioso allorché nel 1728, alla morte di Filippo, ultimo conte di Novellara, e fratello della predetta, si accavallarono le mire successorie su quel feudo. Per ovvie ragioni giuridiche Ricciarda non poté essere chiamata alla successione feudale, e su Guastalla prevalse Modena, in quanto il feudo di Novellara servì all’Impero per tacitare le pretese degli Este alla restituzione di un prestito di 150.000 fiorini concesso a Vienna nelle more della guerra di Successione spagnola.&nbsp;<br>
+Enrichetta duchessa vedova di Parma, figlia del duca di Modena Rinaldo d’Este, moglie di Antonio Farnese, ultimo duca di Parma e Piacenza di quella famiglia. In seconde nozze sposò Leopoldo d’Assia Darmstadt, fratello di Teodora, moglie di Antonio Ferdinando Gonzaga, fratello e predecessore di Giuseppe Maria.&nbsp;<br>
+Filippo langravio d’Assia, principe, governatore di Mantova per conto degli Asburgo. La figlia Teodora sposò nel 1727 Antonio Ferdinando Gonzaga duca di Guastalla. Questa vi morirà nel 1784, a 38 anni dalla fine del ducato di Guastalla, dopo avervi tenuto un simulacro di Corte.&nbsp;<br>
+Giuseppe langravio d’Assia, principe, figlio del precedente, cognato di Antonio Ferdinando, si diede alla vita ecclesiastica.<br>
+Carlo Gonzaga, figlio naturale di Ferdinando Carlo Gonzaga Nevers, ultimo duca di Mantova. Tra i numerosi fratellastri ebbe buona fortuna, in quanto seguì una discreta carriera ecclesiastica, che si può seguire anche dalle lettere inviate ai ‘parenti’ duchi di Guastalla. Queste tracciano il suo ‘cursus honorum’ attraverso varie località dello Stato Pontificio. Una di queste è annotata di pugno dal duca Antonio Ferdinando proprio con l’indicazione ‘figlio naturale di Ferdinando Carlo duca di Mantova’.&nbsp;<br>
+La marchesa di Pescara e del Vasto, della famiglia d’Avalos. Nel 1734 i feudi di Pescara e Vasto erano stati già incamerati dal Demanio Regio di Napoli, ragion per cui è da ritenere che l’utilizzo dei predicati continuasse a titolo onorifico presso i d’Avalos principi di Troia.<br>
+Luigi Gonzaga, marchese, del ramo già feudatario di Luzzara. Questi contesero giudizialmente ai Gonzaga di Guastalla, nel 1630 e 1692, il possesso di Luzzara, tuttavia senza esito.<br>
+<br>
+<i>Soggetti vari</i><br>
+Ferdinando Masetti, conte, famiglia originaria della Mirandola. Organicamente presente nella Corte di Guastalla per molti anni con il ruolo di ‘Gentiluomo di Camera’.<br>
+Giuseppe Passerini, conte, di Castiglione delle Stiviere. In anni precedenti servì i duchi di Guastalla nel feudo di Ostiano (CR), con varie funzioni. Nel 1743 lo si trova censito tra i confidenti della Repubblica di Venezia, dai documenti conservati presso l’Archivio di Stato di Venezia.&nbsp;<br>
+Giulio Scutellari, di Parma. Da questa famiglia venne l’ultimo abate ordinario di Guastalla, dopo di che la diocesi fu eretta in vescovile, nel 1828.<br>
+Giulio (?) Pepoli, non meglio identificato. Lo si segnala per il curioso scambio di persona nel quale inciampò, confondendo il defunto duca Antonio Ferdinando con il vivente Giuseppe Maria. Essendo passati cinque anni dalla morte del primo la mancanza non è lieve.<br>
+Antonio Varano di Camerino, della famiglia già signora di quel principato. Fu a lungo al servizio dell’ultimo duca di Mantova, nei momenti di maggiore inclinazione filo francese.<br>
+<br>
+<i>Enti guastallesi</i><br>
+I deputati della Comunità di Guastalla<br>
+Gaetano Negri arciprete della Collegiata di Guastalla e il Capitolo della medesima<br>
+p. Filippo Maria Marchi priore del convento dei Servi di Maria in Guastalla<br>
+Maria Francesca Ponzoni, priora (sic) del convento di S. Carlo delle MM. Agostiniane in Guastalla<br>
+Maria Pudenziana Chiappini, superiora del convento delle Mantellate in Guastalla<br>
+<br>
+<i>Funzionari e sudditi dello Stato</i><br>
+Giulio Tirelli, marchese. Il padre Giovanni Battista (morto nel 1732) fu capitano della Guardia degli alabardieri. Francesco Tirelli (1719 1792), abate ordinario di Guastalla, della cui Chiesa riscattò le prerogative ‘nullius’ compromesse dai vescovi viciniori, apparteneva a questa famiglia.<br>
+Carlo Piccioni, conte, aggregato alla Corte di Guastalla in seguito all’unione del principato di Bozzolo al ducato di Guastalla, dal 1708.<br>
+Giambattista Paralupi, cavaliere, ‘gentiluomo di seguito’.<br>
+Giuseppe Ghisolfi, cavaliere, ‘Mastro di Casa’ della Camera Ducale delle Finanze.<br>
+Luigi Papini, consigliere, podestà di Sabbioneta.<br>
+Pomponio di Spilimbergo, conte, primo ministro, segretario di Stato e presidente della Camera Ducale di Guastalla.<br>
+Giuseppe Giorgi, colonnello, comandante della ‘Infanteria del Ducato di Guastalla’.&nbsp;<br>
+Gianantonio Cattaneo, avvocato, primo consigliere ducale, uditore generale.<br>
+Giuliantonio Barilli, ministro residente del duca di Guastalla a Milano, presso quella Corte arciducale.<br>
+Francesco Antonio Sartoretti, titolare della Ferma Generale di Guastalla<br>
+Giuseppe de’ Pedretti Pacini, di Bozzolo.<br>
+Carlo Borio, piemontese, cavaliere, ministro residente del duca di Guastalla a Parigi, presso la Corte di Luigi XV.
+<br>
+
+* Da "1734 e dintorni. Il ducato e il territorio di Guastalla tra battaglie e vecchi luoghi comuni"
+</body>
+
+</html>
+</div></td>
+      <td width="16%" valign=top bgcolor="#344f85"><br><font color="#efefef">
+        <h5 align="center"><a class=menu href="index.php%3Fsez=convegni.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">CONVEGNI SVOLTI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=programmi.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">PROGRAMMI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=search&amp;query=all.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">BIBLIOTECA</a></h5>
+<h5 align="center"> <a class=menu href="index.php%3Fsez=iarda.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">  PROGETTO I.A.R.D.A  </a>  </h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=scambiolibrario.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">SCAMBIO LIBRARIO</a></h5>        
+        <h5 align="center"><a class=menu href="index.php%3Fsez=bibliografia.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">BIBLIOGRAFIA</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=links.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">LINK</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=contatti.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">CONTATTI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=conv_part.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">CONVENZIONI E PARTNERSHIP</a></h5>
+        <p>&nbsp;</p>
+        <br>
+        <p>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="16%" bgcolor="#344f85">
+</td>
+      <td width="60%"><br><br><br><br><br><p align="center"><center>
+  <br>
+<font size="3">Propriet&agrave; e Copyright del sito: Associazione Guastallese di Storia Patria<br>
+Copyright A.G.S.P. 2001 - 2005</font>
+  </center></td>
+      <td width="16%" bgcolor="#344f85"></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<div id="tipDiv" style="position:absolute; visibility:hidden; z-index:100"></div>
+</body>
+
+</html>

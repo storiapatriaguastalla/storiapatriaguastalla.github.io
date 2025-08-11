@@ -1,0 +1,500 @@
+<html>
+
+<head>
+<title>A.G.S.P.</title>
+
+<META NAME="DESCRIPTION" CONTENT="Storiapatriaguastalla.it ï¿½ il sito entro il quale Guastalla, capitale dello Stato sovrano che tra i minori piï¿½ si addentrï¿½ nel XVIII secolo, sino alla ricostituzione napoleonica del 1806, trova le coordinate per una corretta lettura e collocazione storiografica">
+<META NAME="KEYWORDS" CONTENT="archivi, archivistica, biblioteca, archivio, archivio di stato, asmo, aspr, asre, asmn, asmi, soprintendenza archivistica, unipr, unimore, gonzaga, este, sforza, visconti, farnese, venezia, serenissima, superba, ducato, granducato, regno, repubblica, guastalla, parma, manova, modena, ferrara, reggio emilia, mirandola, pico, sabbioneta, bozzolo, novellara, carpi, pio, gualtieri, comune di guastalla, guastalla cultura, maldotti, biblioteca maldotti, genova, doria, molfetta, campobasso, orsini, di capua, vicere, viceregno, madrid, vienna, impero, sri, sacro romano impero, stato pontificio, lucca, stmoderna, storia moderna, storia contemporanea, deputazione, deputazione di storia patria, societï¿½ storica lombarda, milano, ferrante gonzaga, abbazia, diocesi di reggio guastalla, duca, principe, conte, gualtieri, brescello, po, fiume po, massa carrara, papa, pontefice, serviti, cappuccine, mantellate, gesuiti, francescani, cappuccini, agostiniane, correggio, maria luigia, parma piacenza e guastalla, borbone, mbac, peppone, don camillo, guareschi, smeg, gazzetta di reggio, gazzetta di mantova, gazzetta di parma">
+<META HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<link rel="StyleSheet" type="text/css" href="storiapatria.css">
+<link media="print" rel="stylesheet" href="stampa.css" type="text/css">
+<script type="text/javascript">
+
+/***********************************************
+* Disable select-text script- ï¿½ Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+//form tags to omit in NS6+:
+var omitformtags=["input", "textarea", "select"]
+
+omitformtags=omitformtags.join("|")
+
+function disableselect(e){
+if (omitformtags.indexOf(e.target.tagName.toLowerCase())==-1)
+return false
+}
+
+function reEnable(){
+return true
+}
+
+if (typeof document.onselectstart!="undefined")
+document.onselectstart=new Function ("return false")
+else{
+document.onmousedown=disableselect
+document.onmouseup=reEnable
+}
+
+</script>
+
+<script language="javascript" type="text/javascript">
+<!--
+
+/*
+Image w/ description tooltip- By Dynamic Web Coding (www.dyn-web.com)
+Copyright 2002 by Sharon Paine
+Visit http://www.dynamicdrive.com for this script
+*/
+
+/* IMPORTANT: Put script after tooltip div or 
+	 put tooltip div just before </BODY>. */
+
+var dom = (document.getElementById) ? true : false;
+var ns5 = ((navigator.userAgent.indexOf("Gecko")>-1) && dom) ? true: false;
+var ie5 = ((navigator.userAgent.indexOf("MSIE")>-1) && dom) ? true : false;
+var ns4 = (document.layers && !dom) ? true : false;
+var ie4 = (document.all && !dom) ? true : false;
+var nodyn = (!ns5 && !ns4 && !ie4 && !ie5) ? true : false;
+
+// resize fix for ns4
+var origWidth, origHeight;
+if (ns4) {
+	origWidth = window.innerWidth; origHeight = window.innerHeight;
+	window.onresize = function() { if (window.innerWidth != origWidth || window.innerHeight != origHeight) history.go(0); }
+}
+
+// avoid error of passing event object in older browsers
+if (nodyn) { event = "nope" }
+
+///////////////////////  CUSTOMIZE HERE   ////////////////////
+// settings for tooltip 
+// Do you want tip to move when mouse moves over link?
+var tipFollowMouse= true;	
+// Be sure to set tipWidth wide enough for widest image
+var tipWidth= 302;
+var offX= 20;	// how far from mouse to show tip
+var offY= 12; 
+var tipFontFamily= "Verdana, arial, helvetica, sans-serif";
+var tipFontSize= "8pt";
+// set default text color and background color for tooltip here
+// individual tooltips can have their own (set in messages arrays)
+// but don't have to
+var tipFontColor= "#000000";
+var tipBgColor= "#FFFFFF"; 
+var tipBorderColor= "#000080";
+var tipBorderWidth= 0;
+var tipBorderStyle= "ridge";
+var tipPadding= 0;
+
+// tooltip content goes here (image, description, optional bgColor, optional textcolor)
+var messages = new Array();
+// multi-dimensional arrays containing: 
+// image and text for tooltip
+// optional: bgColor and color to be sent to tooltip
+messages[0] = new Array('linkimg/paralupi.jpg','',"#FFFFFF");
+messages[1] = new Array('linkimg/micheli.jpg','',"#FFFFFF");
+messages[2] = new Array('linkimg/dutillot.jpg','');
+messages[3] = new Array('linkimg/tranmoss.jpg','');
+messages[4] = new Array('linkimg/patrioti.jpg','');
+messages[5] = new Array('linkimg/tirelli.jpg','');
+messages[6] = new Array('linkimg/mariotti.jpg','');
+messages[7] = new Array('linkimg/rerum.jpg','');
+messages[8] = new Array('linkimg/maldotti.jpg','');
+messages[9] = new Array('linkimg/affo.jpg','');
+messages[10] = new Array('linkimg/baldi.jpg','');
+messages[11] = new Array('linkimg/lbaldi.jpg','');
+messages[12] = new Array('linkimg/lteodora.jpg','');
+
+////////////////////  END OF CUSTOMIZATION AREA  ///////////////////
+
+// preload images that are to appear in tooltip
+// from arrays above
+if (document.images) {
+	var theImgs = new Array();
+	for (var i=0; i<messages.length; i++) {
+  	theImgs[i] = new Image();
+		theImgs[i].src = messages[i][0];
+  }
+}
+
+// to layout image and text, 2-row table, image centered in top cell
+// these go in var tip in doTooltip function
+// startStr goes before image, midStr goes between image and text
+var startStr = '<table width="' + tipWidth + '"><tr><td align="center" width="100%"><img src="';
+var midStr = '" border="0"></td></tr><tr><td valign="top">';
+var endStr = '</td></tr></table>';
+
+////////////////////////////////////////////////////////////
+//  initTip	- initialization for tooltip.
+//		Global variables for tooltip. 
+//		Set styles for all but ns4. 
+//		Set up mousemove capture if tipFollowMouse set true.
+////////////////////////////////////////////////////////////
+var tooltip, tipcss;
+function initTip() {
+	if (nodyn) return;
+	tooltip = (ns4)? document.tipDiv.document: (ie4)? document.all['tipDiv']: (ie5||ns5)? document.getElementById('tipDiv'): null;
+	tipcss = (ns4)? document.tipDiv: tooltip.style;
+	if (ie4||ie5||ns5) {	// ns4 would lose all this on rewrites
+		tipcss.width = tipWidth+"px";
+		tipcss.fontFamily = tipFontFamily;
+		tipcss.fontSize = tipFontSize;
+		tipcss.color = tipFontColor;
+		tipcss.backgroundColor = tipBgColor;
+		tipcss.borderColor = tipBorderColor;
+		tipcss.borderWidth = tipBorderWidth+"px";
+		tipcss.padding = tipPadding+"px";
+		tipcss.borderStyle = tipBorderStyle;
+	}
+	if (tooltip&&tipFollowMouse) {
+		if (ns4) document.captureEvents(Event.MOUSEMOVE);
+		document.onmousemove = trackMouse;
+	}
+}
+
+window.onload = initTip;
+
+/////////////////////////////////////////////////
+//  doTooltip function
+//			Assembles content for tooltip and writes 
+//			it to tipDiv
+/////////////////////////////////////////////////
+var t1,t2;	// for setTimeouts
+var tipOn = false;	// check if over tooltip link
+function doTooltip(evt,num) {
+	if (!tooltip) return;
+	if (t1) clearTimeout(t1);	if (t2) clearTimeout(t2);
+	tipOn = true;
+	// set colors if included in messages array
+	if (messages[num][2])	var curBgColor = messages[num][2];
+	else curBgColor = tipBgColor;
+	if (messages[num][3])	var curFontColor = messages[num][3];
+	else curFontColor = tipFontColor;
+	if (ns4) {
+		var tip = '<table bgcolor="' + tipBorderColor + '" width="' + tipWidth + '" cellspacing="0" cellpadding="' + tipBorderWidth + '" border="0"><tr><td><table bgcolor="' + curBgColor + '" width="100%" cellspacing="0" cellpadding="' + tipPadding + '" border="0"><tr><td>'+ startStr + messages[num][0] + midStr + '<span style="font-family:' + tipFontFamily + '; font-size:' + tipFontSize + '; color:' + curFontColor + ';">' + messages[num][1] + '</span>' + endStr + '</td></tr></table></td></tr></table>';
+		tooltip.write(tip);
+		tooltip.close();
+	} else if (ie4||ie5||ns5) {
+		var tip = startStr + messages[num][0] + midStr + '<span style="font-family:' + tipFontFamily + '; font-size:' + tipFontSize + '; color:' + curFontColor + ';">' + messages[num][1] + '</span>' + endStr;
+		tipcss.backgroundColor = curBgColor;
+	 	tooltip.innerHTML = tip;
+	}
+	if (!tipFollowMouse) positionTip(evt);
+	else t1=setTimeout("tipcss.visibility='visible'",100);
+}
+
+var mouseX, mouseY;
+function trackMouse(evt) {
+	mouseX = (ns4||ns5)? evt.pageX: window.event.clientX + document.body.scrollLeft;
+	mouseY = (ns4||ns5)? evt.pageY: window.event.clientY + document.body.scrollTop;
+	if (tipOn) positionTip(evt);
+}
+
+/////////////////////////////////////////////////////////////
+//  positionTip function
+//		If tipFollowMouse set false, so trackMouse function
+//		not being used, get position of mouseover event.
+//		Calculations use mouseover event position, 
+//		offset amounts and tooltip width to position
+//		tooltip within window.
+/////////////////////////////////////////////////////////////
+function positionTip(evt) {
+	if (!tipFollowMouse) {
+		mouseX = (ns4||ns5)? evt.pageX: window.event.clientX + document.body.scrollLeft;
+		mouseY = (ns4||ns5)? evt.pageY: window.event.clientY + document.body.scrollTop;
+	}
+	// tooltip width and height
+	var tpWd = (ns4)? tooltip.width: (ie4||ie5)? tooltip.clientWidth: tooltip.offsetWidth;
+	var tpHt = (ns4)? tooltip.height: (ie4||ie5)? tooltip.clientHeight: tooltip.offsetHeight;
+	// document area in view (subtract scrollbar width for ns)
+	var winWd = (ns4||ns5)? window.innerWidth-20+window.pageXOffset: document.body.clientWidth+document.body.scrollLeft;
+	var winHt = (ns4||ns5)? window.innerHeight-20+window.pageYOffset: document.body.clientHeight+document.body.scrollTop;
+	// check mouse position against tip and window dimensions
+	// and position the tooltip 
+	if ((mouseX+offX+tpWd)>winWd) 
+		tipcss.left = (ns4)? mouseX-(tpWd+offX): mouseX-(tpWd+offX)+"px";
+	else tipcss.left = (ns4)? mouseX+offX: mouseX+offX+"px";
+	if ((mouseY+offY+tpHt)>winHt) 
+		tipcss.top = (ns4)? winHt-(tpHt+offY): winHt-(tpHt+offY)+"px";
+	else tipcss.top = (ns4)? mouseY+offY: mouseY+offY+"px";
+	if (!tipFollowMouse) t1=setTimeout("tipcss.visibility='visible'",100);
+}
+
+function hideTip() {
+	if (!tooltip) return;
+	t2=setTimeout("tipcss.visibility='hidden'",100);
+	tipOn = false;
+}
+
+//-->
+</script>
+
+</head>
+
+<body oncontextmenu="return false" link="344f85" vlink="344f85" alink="dcdcdc">
+
+<SCRIPT LANGUAGE="JavaScript">
+if (window != top) top.location.href = location.href;
+</SCRIPT>
+
+
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td width="2%" rowspan="3" class=sx></td>
+      <td width="16%" bgcolor="#344f85"><div align="center"><a href="http://www.unesco.org/webworld/portal_archives" target="_top"><img src="grafica/archives_logo_sm.gif" width=98 height=44 alt="UNESCO Archives Portal" border="0"></a><br><br><a href="http://www.unesco.org/webworld/portal_bib" target="_top"><img src="grafica/logo_bib.gif" width=98 height=44 alt="UNESCO Libraries Portal" border="0"></a></div></td>
+      <td width="2%" rowspan="3" class=dx></td>
+      <td width="60%"><p align="center"><a href="index.php%3Fsez=home.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;"><img border="0" src="grafica/logo.jpg" width="186" height="179"></a></td>
+      <td width="2%" rowspan="3" class=sx></td>
+      <td width="16%" bgcolor="#344f85"> <div align="center"><a class=menu href="index.php%3Fsez=500enario.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;"><img border="0" src="grafica/ferranteId.jpg" width="100" height="180"></a></div></td>
+      <td width="2%" rowspan="3" class=dx></td>
+    </tr>
+    <tr>
+      <td width="16%" valign=top bgcolor="#344f85"><br><font color="#efefef">
+        <h5 align="center"><a class=menu href="index.php%3Fsez=sodalizio.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">STORIA DEL SODALIZIO</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=tradizione.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">TRADIZIONE STORIOGRAFICA</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=stato_di_guastalla.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">LO STATO DI GUASTALLA</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=erratacorrige.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">ERRATA CORRIGE</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=guastallarchivi.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">GUASTALLA <br>E GLI ARCHIVI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=guidaluoghistato.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">GUIDA AI LUOGHI<br> DELLO STATO</a></h5>
+        <h5 align="center">AUTORI & COLLABORATORI</h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=excerpta.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">EXCERPTA GUASTALLAE</a></h5></font>
+        <p>&nbsp;</p>
+        <br>
+        <p>&nbsp;</td>
+      <td valign=top width="60%"><div id="contenuto">
+              <br><html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>ASSOCIAZIONE GUASTALLESE DI STOR</title>
+</head>
+
+<body>
+<p align="center"><font size="5" color="#800000">ASSOCIAZIONE GUASTALLESE<br>
+DI STORIA PATRIA<br>
+1933</font><br>
+<br>
+<br>
+TRADIZIONE STORIOGRAFICA<br></p>
+<br>
+<br>
+Guastalla è terra di storiografi e di storiografia. Non solo quindi terra per la 
+storiografia, intesa come possibile oggetto di studio in ragione dei trascorsi 
+storici e dinastici, artistici e sociali, e quali e quanti si vogliano 
+considerare. Terra di storiografi vuole invece 
+significare che qui non ci si trova in una località nella quale solo tardi, solo 
+per ragioni municipalistiche o di erudizione locale si sia dato corso a scrivere 
+di storia. Ugualmente, non ci troviamo di fronte al pur frequente ed 
+interessante fenomeno della cronachistica, più o meno acculturata che fosse, per 
+la quale a maggior ragione vale la difficoltà, comune a certa storiografia, di 
+prevedere “la coesistenza tra storia generale (o universale) e storia 
+particolare, ma anche tra una storia organica di una città e una rapsodica 
+raccolta di memorie” (G. Tocci). Esiste quindi una continuità significativa nel 
+costruire la memoria della Storia, che mira a superare la contraddizione detta, 
+e che prende le mosse ancora prima rispetto al momento fondante dell’idea di 
+Guastalla come Stato, ossia prima dell’inizio della signoria gonzaghesca con 
+Ferrante I. Se poniamo attenzione alle ‘storie’ che circa la figura di questo 
+signore sono state pubblicate, e quando sono state pubblicate, notiamo come 
+inizi dal 1535 una corrente, strettamente dinastica, certo, che in breve tempo 
+però declinerà sempre più verso una maggiore ed ampia percezione della dinastia 
+allargata e poi dello Stato. Non avrebbe potuto che essere così, ovviamente, 
+trattandosi di definire il momento propulsore di una storia durata 207 anni, e 
+della quale ancora si è fortemente tributari. <br>
+Tuttavia già alla fine del XVI secolo inizia il processo per cui l’interazione 
+tra intellettuale e quasi – sovrano (tale senza ‘quasi’ dal 1621) vede 
+realizzare un’opera che definisce un contesto più ampio rispetto a quello della 
+dinastia, evidente già nel titolo “Storia di Guastalla”. Si tratta di <a href="index.php%3Fsez=tradizione.html#" onmouseover="doTooltip(event,10)" onmouseout="hideTip()">Bernardino 
+Baldi</a>, 1553 – 1617, illustre studioso e poliglotta, abate di Guastalla, e di 
+Ferrante II. La storia di Guastalla che questi scrisse, già con spirito erudito di ricercatore documentario (e non consideriamo in questa sede le presunte difficoltà di accesso all’Archivio Gonzaga), è stata considerata perduta per molto tempo, in quanto la si riteneva naufragata nel trasporto dei documenti Albani, tra i quali era finita, quando furono venduti negli Stati Uniti (sostenitore di tale tesi fu Aldo Cerlini). In ragione di questa presunta perdita è riuscito difficile sino ad ora inquadrarne compiutamente portata e significati, quali fossero quelli che il Baldi avesse voluto conferirle. Infatti, per quanto ci sia nota l’esistenza di un “Baldi riassunto” (ancora secondo Aldo Cerlini, ne era in possesso Aldo Mossina), anche di questo non se ne conosce la fine. Quindi sino ad ora è stato necessario rifarsi all’utilizzo e accenni tramandatici da Affò. Ci sarebbe poi bastato ragionare sulle modalità che portarono alla interazione detta, tra sovrano ed erudito, al significato che ebbe il portarla dal campo letterario a quello più strettamente storiografico. Ugualmente, sarebbe stato opportuno e bastevole considerare la vicenda ‘riassuntiva’ di questa storia come paradigma della progressiva diffusione della conoscenza ‘scientifica’ della storia. Fu solo una redazione, furono in maggior numero ma se ne è perduta la memoria, quale ambiente intellettuale verté su Guastalla negli anni più tranquilli della vicenda sovrana di Ferrante II, storiograficamente parlando, che il cotê letterario è noto? (altra cosa saranno gli anni della lotta per la successione in Mantova). Insomma, si accenna solamente ad alcuni interrogativi che la storia del Baldi aveva suscitato, ed attorno ai quali si poteva ragionare al condizionale. Ora tuttavia, grazie ad uno di quei casi che a volte capitanto anche nelle situazioni date assodate per perse, lo scenario è completamente ribaltato. È notizia di questi giorni il ritrovamento di un manoscritto nel quale è contenuta anche la redazione della “Storia di Guastalla” del Baldi, anzi, della “Historia di Guastalla”. Che dire al momento, se non della constatazione che sarà possibile riaprire il dibattito intorno al divenire storiografico in Guastalla e di Guastalla? <br>
+Anche per il fatto che se dobbiamo attendere ben il 1674 per vedere un’opera 
+storiografica pubblicata, la “Storia di Guastalla” del padre servita G. B. 
+Benamati, è difficilmente credibile che tanto tempo fosse trascorso senza che 
+qui ci si interessasse di storia. Ne sia indizio l’edizione che questi diede del 
+diploma matildico col quale, nel 1101 “La contessa Matilde concede privilegi 
+alla Pieve e al clero di Guastalla”. Ireneo Affò, nell’emendarlo dagli errori 
+del Benamati, pubblicandolo in “Antichità e pregi della Chiesa Guastallese” nel 
+1774 (giusto un secolo più tardi), descrisse le vicende di successive e varie 
+copie della pergamena, il che nel merito attiene più alla diplomatica. Ma a noi 
+interessa piuttosto rilevare, deducendolo dalle righe del famoso francescano, 
+che nel torno di tempo dal Baldi al Benamati le ricerche erudite sui più antichi 
+documenti guastallesi non mancarono, certamente nella corrente avviata, già 
+dalla fine del XVI secolo, dai Bollandisti e dal loro metodo critico (sarebbe 
+interessante rilevare se e quale conoscenza potesse averne avuto il Baldi agli 
+albori di quella ciclopica opera). Quindi, se il Benamati pubblicato e la 
+revisione critica alla sua opera ci forniscono tracce storiografiche di rilievo, 
+è altrettanto vero che il Benamati inedito potrebbe riservare interessanti 
+sorprese. Quest’opera, un ms. intitolato “Memorie del convento dei Servi nella 
+città di Guastalla”, non deve essere vista riduttivamente come una semplice 
+cronaca del Convento, in quanto proprio l’Affò, mai tenero con l’opera di chi 
+gli fosse tornato utile, scrisse “Se il premuroso scrittore non avesse avuto 
+troppa fretta di stampare quell’opera, noi l’avremmo certo più compita, o meno 
+imperfetta. Fa di ciò testimonio il voluminoso suo manoscritto, conservato 
+nell’archivio de’ padri Serviti di Guastalla, ove molte altre cose notate si 
+leggono, che nella storia molto avanti stampata non sono”. Siano quindi di 
+fronte ad un percorso storiografico articolato, e la fretta del Benamati nel 
+dare ai torchi la sua opera si può giustificare con lo stato di salute del duca 
+allora regnate, Ferrante III, che sarebbe morto nel 1678. Autorevolmente è stato 
+ritenuto che tale opera significasse e segnasse una sorta di rivendicazione 
+municipale locale a fronte della prospettata unione tra Guastalla e Mantova, che 
+si sarebbe realizzata mercé le avvenute nozze tra Anna Isabella figlia maggiore 
+di Ferrante III e Ferdinando Carlo allora giovane duca di Mantova. Tuttavia 
+riesce difficile leggere in questi termini il disegno del Benamati, in quanto la 
+situazione dinastico – successoria tra 1678 ed anni seguenti sarebbe stata 
+tutt’altro che chiara, soggetta a molteplici scenari evolutivi, agitata da 
+varie, contrapposte e plausibili soluzioni, in una parola, era fluida, e 
+conosciuta per tale sin dal 1671 di quelle nozze. Anche in questo senso, quindi, 
+sono possibili ripensamenti e nuove letture. <br>
+Parallelamente al Benamati scrisse don Francesco Battaglia, il cui ms. fu visto 
+dall’Affò presso il canonico don Benedetto Ghisolfi, con una qualità di notizie 
+(e correttezza testuale riferita al diploma del 1101) anche maggiore rispetto 
+alla lezione del religioso Servita. <br>
+Sarebbe interessante poter ricostruire il clima competitivo che allora dovette 
+accendere il confronto tra chi, in Guastalla, si occupava dei passi, non però i 
+primi, inerenti la memoria di un ducato ormai condecorato, come si diceva, da 
+matrimoni tra sovrani e trattamenti di Altezze Serenissime. Questo a significare 
+che per tutto il XVII secolo siamo in presenza di una trama storiografica (che 
+attenderebbe di essere meglio scritta, una storia della storiografia di e in 
+Guastalla) antitetica rispetto all’idea dell’esito eccellente ma soggettivamente 
+e temporalmente definito. Esiste invece un continuum, diffuso negli scrittori e 
+partecipato negli eruditi, la cui tessitura dovrebbe essere recuperata da ben 
+indirizzate ricerche archivistiche. <br>
+Non a caso si può parlare di tessitura, in quanto è proprio la trama stretta dei 
+rapporti della e nella societas degli eruditi che caratterizza il passaggio 
+culturale tra ‘600 e ‘700 in Guastalla. Sono tre le accademie che in 
+relativamente breve lasso di tempo si succedono (Inesperti, Oziosi, 
+Sconosciuti), la terza più duratura, ricondotte però, nella percezione di chi ne 
+abbia esaminato le vicende, al dato strettamente letterario, evidenziando il 
+mutamento dell’ultima, verso la fine della propria attività, in una sorta di 
+provinciale consesso degli epigoni di un mondo ormai al tramonto. <br>
+Considerando chi vi abbia avuto parte, di quali esperienze e conoscenze sia 
+stato portatore, di quali rapporti vi abbia disegnato, è da credere sia una 
+percezione che debba essere ampliata, almeno in riferimento alla seconda e 
+terza. <br>
+Il 1696 vede quindi la costituzione dell’Accademia degli Oziosi nel palazzo del 
+conte Marcantonio Torresini. Si tenga conto del fatto che questa famiglia 
+rappresentò con accreditamento diplomatico, non quindi semplici agenti, per ben 
+108 anni i Gonzaga di Guastalla alla Corte di Vienna, e Marcantonio fu anche 
+primo Ministro e Segretario di Stato (cioè ministro degli esteri) dei duchi di 
+Guastalla. Le relazioni, le conoscenze, l’esperienza che un soggetto del genere 
+(vero nume tutelare dell’accademia, al di là del patrocinio del principe 
+ereditario Antonio Ferdinando) ebbe modo di conseguire non furono certo di poco 
+conto, proiettando verso scenari europei le relazioni che in quell’ambiente 
+accademico si intrecciarono. <br>
+Tuttavia di maggiore puntualità in ordine a questa ricognizione circa la 
+storiografia guastallese deve essere accreditata la nascita dell’Accademia degli 
+Sconosciuti, nel 1726, nella quale ebbero parte preponderante la figura e 
+l’attività di Alessandro Pegolotti. Senza soffermarsi su questo letterato 
+poliedrico, politico, amministratore, diplomatico, che meriterebbe studi 
+approfonditi, quanto piuttosto sulla rete di relazioni intellettuali che 
+attraverso l’accademia tessé con personaggi della portata di Apostolo Zeno, 
+Crescimbeni, Martelli, Baruffaldi, Orsi, Magliabechi, Arici, e questa è storia 
+nota, e dovuta, dato che il sistema – Arcadia comportava che le relazioni tra 
+intellettuali fossero ampie e continue. Soprattutto per quanto riguarda queste 
+considerazioni sono da notare Scipione Maffei e L. A. Muratori, massimi tra i 
+diplomatisti e gli storici del tempo. <br>
+Ecco allora che il cotê storiografico ancora una volta emerge con grande 
+rilevanza, e se del Pegolotti sono note per lo più le produzioni poetiche non 
+per tale motivo è da sottovalutare quanto la componente delle conoscenze 
+storiche dovette in generale accompagnarlo, ed in particolare in uno degli 
+incarichi svolti in torno di tempo, ossia quello di segretario del Dispaccio ai 
+principi d’Italia conferitogli da Ferdinando Carlo duca di Mantova. Sebbene la 
+diplomazia mantovana non brillasse per acume in quegli anni, è altrettanto vero 
+che non sarebbe stato possibile organizzare un così rilevante servizio di Stato 
+senza una approfondita conoscenza di quanto, politicamente e dinasticamente si 
+muovesse e si fosse mosso nel composito panorama dei principati italiani del 
+tempo, e antecedenti. E come acquisire una tale conoscenza, se non attraverso 
+l’applicazione di sani e coerenti principi storiografici? Quindi ognuno vede 
+come il sistema culturale guastallese della prima metà del XVIII secolo, 
+certamente in attesa della grande ma anche controversa e controvertibile lezione 
+di Ireneo Affò, non mancasse, storiograficamente, di quel tessuto a fitta trama 
+di cui si è detto. <br>
+Riprova ne sia che a far da tramite tra quel momento e la seconda metà del 
+secolo fu proprio quel Giuseppe Maria Negri, canonico, al quale è dovuta una 
+“Storia di Guastalla” tra le più significative, tale anche se inedita e quasi 
+misconosciuta. Tramite in quanto dall’ambiente accademico di Mantova (Accademia 
+dei Timidi) passò a quello di Guastalla, agli Sconosciuti, e col declinare di 
+questa, ed accentrarsi delle iniziative culturali locali nella figura dell’Affò, 
+fu colui che non solo indusse questi alla storia di Guastalla, fu colui che non 
+solo gli somministrò lumi (intellettuali) e carte, bensì fu colui che, col 
+proprio ms., gli fornì una falsariga ampiamente documentata e criticamente 
+vagliata, non certo solamente quel “ben ordinato volume di memorie della sua 
+patria” come sostenne poi l’Affò. <br>
+Entrare nel merito di quanto Ireneo Affò abbia scritto sul versante della 
+storiografia richiederebbe un convegno di studi ad hoc (che in quello in 
+occasione del bicentenario della morte si affrontarono molteplici connotati 
+dello studioso), ed anche se si guardasse alla sola produzione ‘gonzaghesca’ non 
+sarebbe possibile risolvere l’ampiezza di temi e soggetti trattati se non 
+facendovi convergere il risultato di più ricerche. Quindi sarebbe fuori luogo e 
+non producente trattarne in questa sede. <br>
+Quanto piuttosto possa essere rilevato in questo breve inquadramento della 
+storiografia guastallese non può che riferirsi all’ambivalenza, all’ambiguità, 
+con le quali tale autore abbia disegnato l’identità di Guastalla, le cui 
+conseguenze tutt’oggi si scontano. <br>
+Tra ‘800 e ‘900 si spegne in Guastalla l’ampiezza di impegno e dibattito che 
+aveva caratterizzato la ricerca storica nei secoli precedenti, e tanta parte dei 
+pur numerosi contributi sono prodotti e pubblicati altrove, incentrati nella 
+maggior parte sulla figura di Ferrante I, e si debbono frequentemente a 
+scrittori che gravitano in altri ambiti culturali. Fa eccezione storiografica 
+l’Amaduzzi, con la sua “Serie cronologica dei fatti più memorabili della storia 
+di Guastalla”, del 1888. <br>
+Solo con gli anni Trenta del ‘900 vedranno la luce due opere, la “Storia di 
+Guastalla” di Aldo Mossina, e la “Storia di Reggiolo” di Rufo Paralupi, che si 
+reimmettono nella falsariga antica, e per tema generale trattato, e per il fatto 
+di integrarsi con la fondazione dell’Associazione Guastallese di Storia Patria, 
+quindi con una struttura organicamente votata alla ricerca. <br>
+Saranno tuttavia caratterizzate dalla forma molto compendiata la prima (e 
+sarebbe da capirne la ragione, vista l’ampiezza documentaria affrontata dallo 
+scrittore), e dallo spirito marcatamente anticlericale e massonico la seconda.
+<br>
+In ogni caso entrambe propongono l’ormai annoso tema della riscrittura, visto 
+alla luce, questa volta, di un afflato risorgimentale che stava vivendo gli 
+ultimi anni di sentita partecipazione.<br>
+Infine il secondo Dopoguerra, rappresentato in un quarantennio dagli esiti 
+editoriali di tre convegni di studi, nei quali sono presenti saggi dalla qualità 
+altalenante, dato che si scorre dall’approfondita ricerca documentaria 
+all’esposizione di teorie quantomeno ‘curiose’, in ogni caso saggi solo 
+relativamente legati dal vincolo di un filo conduttore condiviso.<br>
+L’oggi (ed il domani) della storiografia guastallese è rappresentato dalle 
+coerenti e coordinate iniziative di A.G.S.P., ma su queste la valutazione 
+spetterà alla critica e coscienza di chi seguirà. <br>
+&nbsp;
+
+</body>
+
+</html>
+</div></td>
+      <td width="16%" valign=top bgcolor="#344f85"><br><font color="#efefef">
+        <h5 align="center"><a class=menu href="index.php%3Fsez=convegni.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">CONVEGNI SVOLTI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=programmi.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">PROGRAMMI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=search&amp;query=all.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">BIBLIOTECA</a></h5>
+<h5 align="center"> <a class=menu href="index.php%3Fsez=iarda.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">  PROGETTO I.A.R.D.A  </a>  </h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=scambiolibrario.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">SCAMBIO LIBRARIO</a></h5>        
+        <h5 align="center"><a class=menu href="index.php%3Fsez=bibliografia.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">BIBLIOGRAFIA</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=links.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">LINK</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=contatti.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">CONTATTI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=conv_part.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">CONVENZIONI E PARTNERSHIP</a></h5>
+        <p>&nbsp;</p>
+        <br>
+        <p>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="16%" bgcolor="#344f85">
+</td>
+      <td width="60%"><br><br><br><br><br><p align="center"><center>
+  <br>
+<font size="3">Propriet&agrave; e Copyright del sito: Associazione Guastallese di Storia Patria<br>
+Copyright A.G.S.P. 2001 - 2005</font>
+  </center></td>
+      <td width="16%" bgcolor="#344f85"></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<div id="tipDiv" style="position:absolute; visibility:hidden; z-index:100"></div>
+</body>
+
+</html>

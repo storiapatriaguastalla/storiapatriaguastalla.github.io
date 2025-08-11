@@ -1,0 +1,28 @@
+A.menu:link { color: #efefef }
+A.menu:visited { color: #dcdcdc }
+A.menu:active { color: #FFFFFF }
+html,body{margin:0; padding: 0}
+A.hide:link { display: none }
+A.hide:visited { display: none }
+A.hide:active { display: none }
+img.hide { display: none }
+td.hide { display: none }
+td.sx{ background: url(grafica/sx2.jpg) repeat-y top left; }
+
+td.dx{ background: url(grafica/dx2.jpg) repeat-y top right; }
+
+img.link{
+border:0;
+margin:0;
+}
+
+div#hide { display: none }
+div#contenuto
+{
+margin-left: 15px;
+margin-right: 15px;    
+text-align: justify;
+font-size: .90em;
+}
+
+img.resize { width:100% }

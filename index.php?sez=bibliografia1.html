@@ -1,0 +1,1121 @@
+<html>
+
+<head>
+<title>A.G.S.P.</title>
+
+<META NAME="DESCRIPTION" CONTENT="Storiapatriaguastalla.it ï¿½ il sito entro il quale Guastalla, capitale dello Stato sovrano che tra i minori piï¿½ si addentrï¿½ nel XVIII secolo, sino alla ricostituzione napoleonica del 1806, trova le coordinate per una corretta lettura e collocazione storiografica">
+<META NAME="KEYWORDS" CONTENT="archivi, archivistica, biblioteca, archivio, archivio di stato, asmo, aspr, asre, asmn, asmi, soprintendenza archivistica, unipr, unimore, gonzaga, este, sforza, visconti, farnese, venezia, serenissima, superba, ducato, granducato, regno, repubblica, guastalla, parma, manova, modena, ferrara, reggio emilia, mirandola, pico, sabbioneta, bozzolo, novellara, carpi, pio, gualtieri, comune di guastalla, guastalla cultura, maldotti, biblioteca maldotti, genova, doria, molfetta, campobasso, orsini, di capua, vicere, viceregno, madrid, vienna, impero, sri, sacro romano impero, stato pontificio, lucca, stmoderna, storia moderna, storia contemporanea, deputazione, deputazione di storia patria, societï¿½ storica lombarda, milano, ferrante gonzaga, abbazia, diocesi di reggio guastalla, duca, principe, conte, gualtieri, brescello, po, fiume po, massa carrara, papa, pontefice, serviti, cappuccine, mantellate, gesuiti, francescani, cappuccini, agostiniane, correggio, maria luigia, parma piacenza e guastalla, borbone, mbac, peppone, don camillo, guareschi, smeg, gazzetta di reggio, gazzetta di mantova, gazzetta di parma">
+<META HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<link rel="StyleSheet" type="text/css" href="storiapatria.css">
+<link media="print" rel="stylesheet" href="stampa.css" type="text/css">
+<script type="text/javascript">
+
+/***********************************************
+* Disable select-text script- ï¿½ Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+//form tags to omit in NS6+:
+var omitformtags=["input", "textarea", "select"]
+
+omitformtags=omitformtags.join("|")
+
+function disableselect(e){
+if (omitformtags.indexOf(e.target.tagName.toLowerCase())==-1)
+return false
+}
+
+function reEnable(){
+return true
+}
+
+if (typeof document.onselectstart!="undefined")
+document.onselectstart=new Function ("return false")
+else{
+document.onmousedown=disableselect
+document.onmouseup=reEnable
+}
+
+</script>
+
+<script language="javascript" type="text/javascript">
+<!--
+
+/*
+Image w/ description tooltip- By Dynamic Web Coding (www.dyn-web.com)
+Copyright 2002 by Sharon Paine
+Visit http://www.dynamicdrive.com for this script
+*/
+
+/* IMPORTANT: Put script after tooltip div or 
+	 put tooltip div just before </BODY>. */
+
+var dom = (document.getElementById) ? true : false;
+var ns5 = ((navigator.userAgent.indexOf("Gecko")>-1) && dom) ? true: false;
+var ie5 = ((navigator.userAgent.indexOf("MSIE")>-1) && dom) ? true : false;
+var ns4 = (document.layers && !dom) ? true : false;
+var ie4 = (document.all && !dom) ? true : false;
+var nodyn = (!ns5 && !ns4 && !ie4 && !ie5) ? true : false;
+
+// resize fix for ns4
+var origWidth, origHeight;
+if (ns4) {
+	origWidth = window.innerWidth; origHeight = window.innerHeight;
+	window.onresize = function() { if (window.innerWidth != origWidth || window.innerHeight != origHeight) history.go(0); }
+}
+
+// avoid error of passing event object in older browsers
+if (nodyn) { event = "nope" }
+
+///////////////////////  CUSTOMIZE HERE   ////////////////////
+// settings for tooltip 
+// Do you want tip to move when mouse moves over link?
+var tipFollowMouse= true;	
+// Be sure to set tipWidth wide enough for widest image
+var tipWidth= 302;
+var offX= 20;	// how far from mouse to show tip
+var offY= 12; 
+var tipFontFamily= "Verdana, arial, helvetica, sans-serif";
+var tipFontSize= "8pt";
+// set default text color and background color for tooltip here
+// individual tooltips can have their own (set in messages arrays)
+// but don't have to
+var tipFontColor= "#000000";
+var tipBgColor= "#FFFFFF"; 
+var tipBorderColor= "#000080";
+var tipBorderWidth= 0;
+var tipBorderStyle= "ridge";
+var tipPadding= 0;
+
+// tooltip content goes here (image, description, optional bgColor, optional textcolor)
+var messages = new Array();
+// multi-dimensional arrays containing: 
+// image and text for tooltip
+// optional: bgColor and color to be sent to tooltip
+messages[0] = new Array('linkimg/paralupi.jpg','',"#FFFFFF");
+messages[1] = new Array('linkimg/micheli.jpg','',"#FFFFFF");
+messages[2] = new Array('linkimg/dutillot.jpg','');
+messages[3] = new Array('linkimg/tranmoss.jpg','');
+messages[4] = new Array('linkimg/patrioti.jpg','');
+messages[5] = new Array('linkimg/tirelli.jpg','');
+messages[6] = new Array('linkimg/mariotti.jpg','');
+messages[7] = new Array('linkimg/rerum.jpg','');
+messages[8] = new Array('linkimg/maldotti.jpg','');
+messages[9] = new Array('linkimg/affo.jpg','');
+messages[10] = new Array('linkimg/baldi.jpg','');
+messages[11] = new Array('linkimg/lbaldi.jpg','');
+messages[12] = new Array('linkimg/lteodora.jpg','');
+
+////////////////////  END OF CUSTOMIZATION AREA  ///////////////////
+
+// preload images that are to appear in tooltip
+// from arrays above
+if (document.images) {
+	var theImgs = new Array();
+	for (var i=0; i<messages.length; i++) {
+  	theImgs[i] = new Image();
+		theImgs[i].src = messages[i][0];
+  }
+}
+
+// to layout image and text, 2-row table, image centered in top cell
+// these go in var tip in doTooltip function
+// startStr goes before image, midStr goes between image and text
+var startStr = '<table width="' + tipWidth + '"><tr><td align="center" width="100%"><img src="';
+var midStr = '" border="0"></td></tr><tr><td valign="top">';
+var endStr = '</td></tr></table>';
+
+////////////////////////////////////////////////////////////
+//  initTip	- initialization for tooltip.
+//		Global variables for tooltip. 
+//		Set styles for all but ns4. 
+//		Set up mousemove capture if tipFollowMouse set true.
+////////////////////////////////////////////////////////////
+var tooltip, tipcss;
+function initTip() {
+	if (nodyn) return;
+	tooltip = (ns4)? document.tipDiv.document: (ie4)? document.all['tipDiv']: (ie5||ns5)? document.getElementById('tipDiv'): null;
+	tipcss = (ns4)? document.tipDiv: tooltip.style;
+	if (ie4||ie5||ns5) {	// ns4 would lose all this on rewrites
+		tipcss.width = tipWidth+"px";
+		tipcss.fontFamily = tipFontFamily;
+		tipcss.fontSize = tipFontSize;
+		tipcss.color = tipFontColor;
+		tipcss.backgroundColor = tipBgColor;
+		tipcss.borderColor = tipBorderColor;
+		tipcss.borderWidth = tipBorderWidth+"px";
+		tipcss.padding = tipPadding+"px";
+		tipcss.borderStyle = tipBorderStyle;
+	}
+	if (tooltip&&tipFollowMouse) {
+		if (ns4) document.captureEvents(Event.MOUSEMOVE);
+		document.onmousemove = trackMouse;
+	}
+}
+
+window.onload = initTip;
+
+/////////////////////////////////////////////////
+//  doTooltip function
+//			Assembles content for tooltip and writes 
+//			it to tipDiv
+/////////////////////////////////////////////////
+var t1,t2;	// for setTimeouts
+var tipOn = false;	// check if over tooltip link
+function doTooltip(evt,num) {
+	if (!tooltip) return;
+	if (t1) clearTimeout(t1);	if (t2) clearTimeout(t2);
+	tipOn = true;
+	// set colors if included in messages array
+	if (messages[num][2])	var curBgColor = messages[num][2];
+	else curBgColor = tipBgColor;
+	if (messages[num][3])	var curFontColor = messages[num][3];
+	else curFontColor = tipFontColor;
+	if (ns4) {
+		var tip = '<table bgcolor="' + tipBorderColor + '" width="' + tipWidth + '" cellspacing="0" cellpadding="' + tipBorderWidth + '" border="0"><tr><td><table bgcolor="' + curBgColor + '" width="100%" cellspacing="0" cellpadding="' + tipPadding + '" border="0"><tr><td>'+ startStr + messages[num][0] + midStr + '<span style="font-family:' + tipFontFamily + '; font-size:' + tipFontSize + '; color:' + curFontColor + ';">' + messages[num][1] + '</span>' + endStr + '</td></tr></table></td></tr></table>';
+		tooltip.write(tip);
+		tooltip.close();
+	} else if (ie4||ie5||ns5) {
+		var tip = startStr + messages[num][0] + midStr + '<span style="font-family:' + tipFontFamily + '; font-size:' + tipFontSize + '; color:' + curFontColor + ';">' + messages[num][1] + '</span>' + endStr;
+		tipcss.backgroundColor = curBgColor;
+	 	tooltip.innerHTML = tip;
+	}
+	if (!tipFollowMouse) positionTip(evt);
+	else t1=setTimeout("tipcss.visibility='visible'",100);
+}
+
+var mouseX, mouseY;
+function trackMouse(evt) {
+	mouseX = (ns4||ns5)? evt.pageX: window.event.clientX + document.body.scrollLeft;
+	mouseY = (ns4||ns5)? evt.pageY: window.event.clientY + document.body.scrollTop;
+	if (tipOn) positionTip(evt);
+}
+
+/////////////////////////////////////////////////////////////
+//  positionTip function
+//		If tipFollowMouse set false, so trackMouse function
+//		not being used, get position of mouseover event.
+//		Calculations use mouseover event position, 
+//		offset amounts and tooltip width to position
+//		tooltip within window.
+/////////////////////////////////////////////////////////////
+function positionTip(evt) {
+	if (!tipFollowMouse) {
+		mouseX = (ns4||ns5)? evt.pageX: window.event.clientX + document.body.scrollLeft;
+		mouseY = (ns4||ns5)? evt.pageY: window.event.clientY + document.body.scrollTop;
+	}
+	// tooltip width and height
+	var tpWd = (ns4)? tooltip.width: (ie4||ie5)? tooltip.clientWidth: tooltip.offsetWidth;
+	var tpHt = (ns4)? tooltip.height: (ie4||ie5)? tooltip.clientHeight: tooltip.offsetHeight;
+	// document area in view (subtract scrollbar width for ns)
+	var winWd = (ns4||ns5)? window.innerWidth-20+window.pageXOffset: document.body.clientWidth+document.body.scrollLeft;
+	var winHt = (ns4||ns5)? window.innerHeight-20+window.pageYOffset: document.body.clientHeight+document.body.scrollTop;
+	// check mouse position against tip and window dimensions
+	// and position the tooltip 
+	if ((mouseX+offX+tpWd)>winWd) 
+		tipcss.left = (ns4)? mouseX-(tpWd+offX): mouseX-(tpWd+offX)+"px";
+	else tipcss.left = (ns4)? mouseX+offX: mouseX+offX+"px";
+	if ((mouseY+offY+tpHt)>winHt) 
+		tipcss.top = (ns4)? winHt-(tpHt+offY): winHt-(tpHt+offY)+"px";
+	else tipcss.top = (ns4)? mouseY+offY: mouseY+offY+"px";
+	if (!tipFollowMouse) t1=setTimeout("tipcss.visibility='visible'",100);
+}
+
+function hideTip() {
+	if (!tooltip) return;
+	t2=setTimeout("tipcss.visibility='hidden'",100);
+	tipOn = false;
+}
+
+//-->
+</script>
+
+</head>
+
+<body oncontextmenu="return false" link="344f85" vlink="344f85" alink="dcdcdc">
+
+<SCRIPT LANGUAGE="JavaScript">
+if (window != top) top.location.href = location.href;
+</SCRIPT>
+
+
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td width="2%" rowspan="3" class=sx></td>
+      <td width="16%" bgcolor="#344f85"><div align="center"><a href="http://www.unesco.org/webworld/portal_archives" target="_top"><img src="grafica/archives_logo_sm.gif" width=98 height=44 alt="UNESCO Archives Portal" border="0"></a><br><br><a href="http://www.unesco.org/webworld/portal_bib" target="_top"><img src="grafica/logo_bib.gif" width=98 height=44 alt="UNESCO Libraries Portal" border="0"></a></div></td>
+      <td width="2%" rowspan="3" class=dx></td>
+      <td width="60%"><p align="center"><a href="index.php%3Fsez=home.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;"><img border="0" src="grafica/logo.jpg" width="186" height="179"></a></td>
+      <td width="2%" rowspan="3" class=sx></td>
+      <td width="16%" bgcolor="#344f85"> <div align="center"><a class=menu href="index.php%3Fsez=500enario.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;"><img border="0" src="grafica/ferranteId.jpg" width="100" height="180"></a></div></td>
+      <td width="2%" rowspan="3" class=dx></td>
+    </tr>
+    <tr>
+      <td width="16%" valign=top bgcolor="#344f85"><br><font color="#efefef">
+        <h5 align="center"><a class=menu href="index.php%3Fsez=sodalizio.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">STORIA DEL SODALIZIO</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=tradizione.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">TRADIZIONE STORIOGRAFICA</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=stato_di_guastalla.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">LO STATO DI GUASTALLA</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=erratacorrige.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">ERRATA CORRIGE</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=guastallarchivi.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">GUASTALLA <br>E GLI ARCHIVI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=guidaluoghistato.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">GUIDA AI LUOGHI<br> DELLO STATO</a></h5>
+        <h5 align="center">AUTORI & COLLABORATORI</h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=excerpta.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">EXCERPTA GUASTALLAE</a></h5></font>
+        <p>&nbsp;</p>
+        <br>
+        <p>&nbsp;</td>
+      <td valign=top width="60%"><div id="contenuto">
+              <br><html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>I GONZAGA DI GUASTALLA</title>
+</head>
+
+<body>
+
+<p align="center">&nbsp;I GONZAGA DI GUASTALLA, PERIODO COMITALE E DUCALE <br>
+(da R. Tamalio, in Archivio Storico per gli antichi Stati guastallesi, vol. III, 
+al 1999)<br></p>
+<br>
+<br>
+1535. GONZAGA FERRANDO DUCA DI MOLFETTA, F. G. al signor H. Gonzaga Cardinal di 
+Mantua suo fratello... della presa de Tunesi con tutte le particularità che sono 
+seguite dapoi che la Maiesta Cesa. sacampò a Tunici, s. e., s. l., s.d. (1535?).<br>
+1535. La felice victoria de Tunici [et] Goletta fatta da la Cesarea Maiesta de 
+Carlo V. imperatore: Con li assalti &amp; scaramuze fatti con Turchi &amp; mori: co le 
+particolarità de morti &amp; feriti de luna parte &amp; laltra. Con la fuga del 
+Barbarossa, (Signor D. Ferrando Gonzaga, Al... Signor Hercule Gonzaga Cardinal 
+di Mantua... Della Presa de Tunesi, etc.), s. e. s. l., 1535.<br>
+1535. Verteutscht schreibe von Kayserlicher Maiestat wunderbarlicher eroberung 
+der Königklichen Statt Tunis in Africa, do selbst den xxiij. Julij. 1535. an 
+herrn Fernanden des Herzogen von Mantua [et]c. brudern, aussgangen, [Or rather, 
+a translation of the letter sent by Ferrando Gonzaga to his brother Cardinal 
+Ercole Gonzaga. Signed by the translator: C. S. D., i.e. Christoph Scheurl.], 
+[J. Petri], Nürnberg 1535.<br>
+1546. VERITÀ LANDOLFO, M. Landolfo Verità al signor Theodoro Calergi. La entrata 
+fatta in Milano alli XIX di giugno M.D.XLVI dello illustrissimo et 
+eccellentissimo Signore don Ferrando Gonzaga luogotenente Cesareo, et capitano 
+generale di S. M. in Italia con la descrittione del sito, grandezza et felicità 
+di Milano, Borgio, Milano s. d. (1546) conservato nella Biblioteca Trivulziana 
+di Milano.<br>
+1549. Descrittione delli archi et dechiaratione delle statue et apparati publici 
+fatti alla entrata in Mantoua del Serenissimo Prencipe di Spagna, alli XIII di 
+Genaro nel MDXLIX, Mantova s. d., ma forse 1549.<br>
+1550. CONTILE LUCA, Comedia del Contile chiamata Cesarea Gonzaga, Marchesino, 
+Milano 1550.<br>
+1552. CONTILE LUCA, La Agia. Egloga del Contile recitata da la sopra humana d. 
+Hippolita Gonzaga e da molte altre sue gentildonne, Vaklerius et Hieronimus 
+Metii, Mediolani 1552.<br>
+1554. BOTTAZZO GIAN JACOPO, Epithalamium illustr. Francisci Ferdinandi Davali 
+Piscariae Marchionis et illustriss. Isabellae Gonzagae, Venturino Ruffinelli, 
+Mantova 1554.<br>
+1555. GIOVIO PAOLO, Dialogo dell'Imprese Militari et Amorose, di Monsignor Paolo 
+Giovio, appresso Antonio Barre, Roma 1555.<br>
+1558. Initium a Domino. Pro Exc.mo Principe Don Ferdinando Gonzaga contra 
+fratres Marchos. Anno 1558, 29 Novembris, s.e., s.l., 1558.<br>
+1561. GABRIELI GIULIO DA GUBBIO, Laudatio Ferdinandi Gonzagae Melfictae 
+Principis et Arriani Ducis, Nicolò Bevilacqua, Venezia 1561.<br>
+1561. GABRIELI GIULIO DA GUBBIO, Plutarchi Libellus, Nicolò Bevilacqua, Venezia 
+1561.<br>
+1563. ULLOA ALFONSO DE, Vita del Valorosissimo e Gran Capitano Don Ferrante 
+Gonzaga, Principe di Molfetta, Nicolò Bevilacqua, Venezia 1563.<br>
+1564. SICURO A., Rime di diuersi eccel. autori in morte della illustriss. Sig. 
+D. Hippolita Gonzaga [Ippolita Gonzaga Caraffa, duchessa di Mondragone], I. M. 
+Scotto, Napoli 1564.<br>
+1566. MALASPINA LEONARDO, Oratio, in funere Francisci cardinalis Gonzagae, 
+Philoterpse e Clidano Philoponi, Mantova 1566<br>
+1568. GABRIELI GIULIO DA GUBBIO, Oratione funebre in Lode di Don Ferrando 
+Gonzaga, Gabriel Giolito de' Ferrari, Venezia 1568.<br>
+1574. GOSELLINI GIULIANO, Vita dello Illustrissimo et generosissimo signor Don 
+Ferrando Gonzaga, Principe di Molfetta, Paolo Gottardo Pontio, Milano 1574.<br>
+1575. BACCUSI POMPEO, Oratione funebre di Messer Pompeo Baccusi academico 
+Mantovano, nella morte dell'illustrissimo, et eccellentissimo sig. Cesare 
+Gonzaga protettore dell'Academia, Giacomo Ruffinello, Mantova 1575.<br>
+1589. ARRIVABENE LODOVICO, Della origine de' Cavaglieri del Tosone, et di altri 
+ordini, de' Simboli, et delle Imprese. Dialoghi due di Lodovico Arrivabene. 
+Dialogo primo. Al Serenisssimo Sig. Vincenzo Gonzaga Duca di Mantova, et di 
+Monferrato etc, Giacomo Ruffinello, Mantova 1589.<br>
+1609. SANSOVINO FRANCESCO, Della origine et de' fatti delle famiglie illustri 
+d'Italia, Altobello Salicato, Venezia 1609.<br>
+1610. RAVICIO DOMENICO, La grandezza dell'Huomo. Ragionamento di Domenico 
+Ravicio da Correggio, filosofo e medico insigne nella Casa de' Gonzaga di 
+Guastalla, Accademico Scioperato &quot;L'Improviso&quot;, Stamp. Giulian Cassiani, Modena 
+1610.<br>
+1632. FILIPPI GIROLAMO, Lagrime di Girolamo Filippi, protonotario Apostolico, in 
+morte dell'Ecc.mo Signor Don Cesare Gonzaga, duca del Sacro Impero Romano e di 
+Guastalla, Prencipe di Molfetta, e Cavagliere del Tosone d'oro, Lorenzo 
+Tagliaferro, Guastalla 1632.<br>
+1640. Copia di lettera scritta da Francesco Tolosa Archidiacono di Guastalla 
+all'Ill.mo Signor Don Vespasiano Gonzaga a Madrid, Bartolomeo Busetti, Guastalla 
+1640.<br>
+1641. CAZZATI MAURIZIO, Salmi e Messa a cinque voci e doi violini con letanie 
+della Madonna à quatro e doi violini, di Mauritio Cazzati, organista e maestro 
+di cappella dell'insigne et collegiata Chiesa di S. Andrea di Mantova, dedicati 
+all'ill.mo et Eccel.mo sig.r D. Ferrante Gonzaga Duca di Guastalla et Prencipe 
+di Molfetta, opera prima, B. Magni, Venezia 1641.<br>
+1661. Tasse delli Giudici, Avvocati..., Per Giovanni Erasmi, Guastalla 1661.<br>
+1670. MATTIOLI ERCOLE ANTONIO MARIA, Le virtù trionfanti per le faustissime 
+nozze delle altezze serenissime di Ferdinando Carlo duca di Mantova, Monferrato 
+ecc., e di Anna Isabella Gonzaga principessa primogenita di Guastalla ecc., 
+Fantasia epitalamica composta e dedicata alla sacra cesarea maestà 
+dell'imperatrice Eleonora Gonzaga, dal conte Ercole Antonio Maria Mattioli 
+bolognese nobile alemanno ecc., per Rossi, Venezia 1670.<br>
+1671. RICARDI FEDERICO DI ORTONA, Il Concerto delle Muse. Epitalamio delle nozze 
+delle Altezze serenissime di Ferdinando Carlo duca di Mantova e Monferrato, e 
+d'Anna Isabella principessa di Guastalla, pel Monti, Bologna 1671.<br>
+1673. GONZAGA MANRIQUE V., Ordinacions tocants a la custodia, y guarda de la 
+costa maritima del regne de Valencia... Manades fer y publicar per... Don V. 
+Manrique Gonzaga, Compte de Paredes, etc. [28 June, 1673.] G. Vilagrasa, 
+Valencia 1673.<br>
+1674. BENAMATI GIOVAN BATTISTA, L'istoria della città di Guastalla succintamente 
+narrata dal Padre Maestro Giovan Battista Benamati, servita, e consacrata alla 
+Altezza serenissima di Ferrante III Gonzaga, Vigna, Parma 1674.<br>
+1674. OLIVO SIMPLICIANO, Salmi per li vesperi di tutto l'anno con il cantico 
+della B.V. à otto voci correnti, e brevi, divisi in due chori con il basso 
+continuo per l'organo di Simpliciano Olivo ...: opera terza: dedicata all' 
+Altezza Serenissima di D. Ferrando Gonzaga Duca di Guastalla &amp;c., Giacomo Monti, 
+Bologna 1674.<br>
+1677. Dubij proposti e da risolversi nella causa Gonzagha e Capellaria sopra gli 
+errori del Calcolo prodotto dal già Signor Antonio Capellario, et fatti in danno 
+de' Creditori graduati in essecutione della Sentenza generale sopra il prezzo 
+della Corte di Sailetto per esso comprata dal Signor Dottor Lodovico Furga li 31 
+maggio 1635, (Vespasiano Gonzaga), Giavazzi, Guastalla 1677.<br>
+1677. Factum tale pro Exc. domino D. Vespasiano Gonzaga contra haeredes quondam 
+Domini Antonii Capellarii, Typis Alexandri Giavatij, Guastalla 1677.<br>
+1678. FORTI NICOLÒ, Oratione nei funerali di Ferdinando terzo Gonzaga Duca di 
+Guastalla, Guglielmo, Ludovico e Pietro Osanna, Mantova 1678.<br>
+1680. PIAZZI CARLO, Salmi per li vesperi di tutto l'anno con il cantico della 
+B.V. à otto voci correnti, e brevi, divisi in due chori con il basso continuo 
+per l'organo di Simpliciano Olivo ...: opera terza: dedicata all'Altezza 
+Serenissima di D. Ferrando Gonzaga Duca di Guastalla &amp;c., Giacomo Monti, Bologna 
+1680.<br>
+1682. Ordini e privilegi della Compagnia di militia de Carabini a' cavallo, per 
+Alessandro Giavazzi, Guastalla 1682.<br>
+1685. Esequie (Le) celebratesi nella chiesa Ducale di S. Barbara di comando del 
+Ser. Sig. Duca Ferdinando Carlo Duca di Mantova Monferrato e Guastalla, per la 
+morte della Seren. Signora Arciduchessa Maria di Lui madre, Guglielmo, Ludovico 
+e Pietro Osanna, Mantova 1685.<br>
+1685. ROSSI DOMENICO, Ombre poetiche d'improvviso rissorte dalla tomba 
+accademica degli Imperfetti e divotamente vaganti intorno al funerale della 
+serenissima Isabella Clara arciduchessa d'Austria duchessa di Mantova, celebrato 
+nella chiesa ducale di Santa Barbara li 14 maggio 1685, Verona 1685.<br>
+1686. ROSIGNOLI CARLO GREGORIO, Vita e virtù della contessa di Guastalla 
+Lodouica Torella nominata poi Paola Maria, fondatrice dell'insigne Monistero di 
+s. Paolo, e del Regio collegio di Maria Vergine detto della Guastalla / scritte 
+dal p. Carlo Gregorio Rosignoli della Compagnia di Giesu, nella Stampa di 
+Giuseppe Marelli, Milano 1686.<br>
+1688. Pompe (Le) della bellezza e del valore, introduzione alla nobilissima 
+mascherata con balletto a cavallo fatta dai Seren. Ferdinando Carlo et Anna 
+Isabella duchi di Mantova, Guglielmo, Ludovico e Pietro Osanna, Mantova 1688.<br>
+1692. Allegazioni in favore di Ferdinando Carlo Gonzaga duca di Mantova sui 
+diritti acquistati sulle terre di Luzzara e Reggio e ducato di Guastalla pel 
+matrimonio contratto con Anna Isabella, ed approvati da S. M. Cesarea, Typis A. 
+Giavatii, Guastalla 1692.<br>
+1692. CURTI FRANCESCO, Protesta de... sig. Francesco Curti, come procuratore 
+patrimoniale del ser. duca di Mantova [per il ducato di Guastalla], [testo 
+latino-italiano], s. e., s. l., 20 settembre 1692.<br>
+1692. FABIANIO SILVESTRO, Elegiacum carmen in redditu sereniss. Vincentii 
+Gonzagae ducis Guastallae, Luzzariae, et Reggioli auctore Silvestro Fabianio 
+eiusdem illustrissime civitatis Didascalo. Alexandri Giavatii, Guastallae 1692.<br>
+1692. LEOPOLDO I IMPERATORE D'AUSTRIA, Leopoldus... [Diploma dell'imperatore 
+Leopoldo, che dà al marchese Vincenzo Gonzaga il possesso di Guastalla, Reggiolo 
+e Luzzara, perché il duca di Mantova Ferdinando Carlo non eseguì mai i compensi 
+pattuiti], Typis A. Giavatij, Guastalla 1692.<br>
+1692. Veritatis Demonstratio... adversus praetensa per Serenissimum D. Ducem 
+Mantua super Dominijs Luzzariae, et Reggioli, nec non Guastallae Ducatum, et ab 
+eo propalata Iura, s.e., s.l., s.d. (1692?).<br>
+1693. Ordini e privilegi per le militie a piedi del ducato e stato di Guastalla, 
+per gli Eredi Giavazzi, Guastalla 1693.<br>
+1693. Tassa da osservarsi per l'avenire... dal Barigello di Guastalla, e suoi 
+Fanti, sotto le pene infrascritte, Eredi Giavazzi, Guastalla 1693.<br>
+1695. Coram excelsa Ducali Consulta Guastallae, s.e., s.l., 1695.<br>
+1696. Relazione fatta dal sig. marchese Pierluigi dalla Rosa subdelegato del 
+sereniss. Sig. Duca di Parma, delegato dalla sacra Cesarea Maestà 
+dell'Imperatore nella causa vertente tra li serenissimi signori duca e duchessa 
+di Mantova, ed il sig. prencipe don Vincenzo Gonzaga di Guastalla, per li feudi 
+di Guastalla, Luzzara e Reggiolo, Parma 1696.<br>
+1698. Decisione dell'auditore del Serenissimo Duca di Guastalla, s.e., s.l., 
+1698?<br>
+1698. Demonstratio veritatis, Andrea Heyinger, Vienna 1698.<br>
+1698. TRAVAGINI PIETRO, Epinycia sereniss. Ferdinando Carlo duci Mantuae 
+Montisferrati, apud Milochum, Venetiis 1698.<br>
+1699. DALLA ROSA PIER LUIGI, Relatione fatta... nella causa vertente tra li... 
+Signori duca, e duchessa di Mantova e il... principe don Vincenzo Gonzaga di 
+Guastalla per li feudi di Guastalla, Luzzara e Reggiolo, s. e., s. l., 1699.<br>
+1699. Privilegi (Da), Lettere, Patenti, s.e., s.l., 1699.<br>
+1701. Considerazioni Teologiche e Morali sopra le presenti emergenze militari 
+delle armi Austriache nello Stato e Dominio di Mantova. Per istruzione de' 
+popoli sudditi del Duca regnante Ferdinando Carlo Gonzaga, Duca di Mantova, 
+Monferrato, Carlovilla, Guastalla, s.e., s.l. 1701.<br>
+1703. Disegno delle ragioni del Ser. Principe e Signore Clementissimo Ferdinando 
+Carlo Gonzaga, Gio. Battista Grana, Mantova 1703.<br>
+1703. Graphis iurium Ser. Princip. et Domini Clementiss. Ferdinandi Caroli Dei 
+gratia ducis Mantuae etc., Gio. Battista Grana, Mantova 1703.<br>
+1703. PERRONI PAOLO FRANCESCO, Dissegno delle ragioni del S.mo Principe 
+Ferdinando Carlo Duca di Mantova, Carlovilla, Guastalla etc. contro gl'asserti 
+Decreti Imperiali del XX maggio 1701, (Testo e titolo in latino e in italiano), 
+Stamp. Grana, Mantova 1703.<br>
+1703. PERRONI PAOLO FRANCESCO, Graphis jurium... domini... Ferdinandi Caroli... 
+Mantuae... occasione receptionis in Mantuam armorum urtiusque regis... ad dietam 
+Ratisponensem... addictus Mantuae, (con albero genealogico stampato da Pazzoni 
+nel 1739), Grana, Mantova 1703.<br>
+1704. Anniversario per la fu Serenissima Anna Isabella duchessa di Mantova, 
+Alberto Pazzoni, Mantova 1704.<br>
+1704. BELLATI ANTONIO FRANCESCO, Orazione funebre per l'anniversario della 
+Seren. duchessa di Mantova Anna Isabella Gonzaga, Alberto Pazzoni, Mantova 1704.<br>
+1704. Trionfo (Il) virtuoso di morte rappresentato nella chiesa della 
+Nobilissima Confraternita della Morte di Mantova, nell'occasione delle Sontuose 
+Esequie Celebrate dalla medema Confraternita per l'Anima Grande della fu Ser. 
+Sig. Duchessa Anna Isabella Gonzaga... colla descrizione non meno del lugubre 
+Catafalco, A. Pazzoni, Mantova 1704.<br>
+1705. PEGOLOTTI ALESSANDRO, I Trionfi dell'Amor fecondo presagiti a conforto 
+dell'Italia, in occasione dell'accoppiamento nuziale delle SS. AA. di Ferdinando 
+Carlo Gonzaga duca di Mantova e Susanna Enrichetta di Lorena... espressi in 
+macchina di fuochi artificiati eretta dalla Comunità di Guastalla, G. Giavazzi, 
+Guastalla 1705.<br>
+1714. Poesie dedicate all'Altezza Serenissima di Antonio Ferdinando Gonzaga, 
+Duca di Guastalla e Sabioneta, Principe di Bozzolo, nella Stamperia di S. 
+Benedetto, Mantova 1714.<br>
+1726. Rime umiliate all'altezza Serenissima di Antonio Ferdinando Gonzaga, in 
+occasione della laurea in ambe le leggi conferita al Signor Claudio Filippi 
+Ferdinando, Guastallese, Giavazzi, Guastalla 1726.<br>
+1727. Gloriosissime (Per le) nozze dell'Altezza Serenissima di Antonio 
+Ferdinando Gonzaga, Duca di Guastalla, e Sabbioneta, Principe di Bozolo, ecc, 
+colla Serenissima Principessa Teodora Langravia d'Assia Darmstat, Gaetano 
+Giavazzi, Guastalla 1727.<br>
+1727. Inni consacrati alla gloria di S. Luigi Gonzaga nel solenne triduo per la 
+di lui canonizzazione nella Chiesa dei Chierici regolari di Guastalla, Gaetano 
+Giavazzi, Guastalla 1727.<br>
+1729. PEGOLOTTI ALESSANDRO, Nelle solenni esequie dell'altezza serenissima di 
+Antonio Ferdinando Gonzaga duca di Guastalla celebrate... li XV giugno MDCCXXIX. 
+G. Giavazzi, Guastalla 1729.<br>
+1730. RUIZ DE MONXARAZ FRANCISCO, Facti et juris consultatio pro... domino 
+Isidoro de la Cerda Manrique, et Gonzaga... contra... Eleonoram Ludovicam 
+Gonzagam... natam Guastallae circa jus eventualiter... successionis ad feudum 
+Guastallae, s. e., Vienna 1730.<br>
+1745. Per la duchessa di Guastalla, Maria Eleonora d'Holstein Weissemburg, in 
+nome del Duca di Guastalla Giuseppe Maria Gonzaga, suo marito, con L'ill. 
+Marchese d. Errico Imperiali, Banca di Rubino, Napoli 1745.<br>
+1747. NEGRI GIUSEPPE, Nelle solenni esequie dell'altezza serenissima Giuseppe 
+Maria Gonzaga duca di Guastalla... celebrate... li X febbraio MDCCXLVII. 
+Orazione del canonico don Giuseppe abate Negri, V. Gualdi, Guastalla 1747.<br>
+1747. Tributo di lagrime all'altezza serenissima di Giuseppe Maria Gonzaga Duca 
+di Guastalla, in occasione dei funerali celebrati nella Chiesa di Santa Croce il 
+19 Aprile 1747, Vincenzio Gualdi, Guastalla 1747.<br>
+1757. Parmensis seu Guastallensis, pro D. D. Princibus et Marchionibus Don 
+Basilio et Don Joanne fratribus Gonzaga cum R. Ducali fisco coram Regio Supremo 
+magistratu finantiarum Parmae, Tipografia Montiana, Parma 1757.<br>
+1762. GOSELLINI GIULIANO, La congiura di Piacenza contro Pier Luigi Farnese 
+descritta per Giuliano Gosellini, Rocchi, Lucca 1762.<br>
+1771. AFFÒ IRENEO, Antichità e pregi della chiesa guastallese, Stamperia Reale, 
+Parma 1771.<br>
+1776. BELLATI FRANCESCO, Serie dei Governatori di Milano dall'anno 1535 al 1776 
+con istoriche annotazioni, (Ferrante Gonzaga), G. R. Malatesta, Milano 1776.<br>
+1781. AFFÒ IRENEO, Memorie della vita di Donna Ippolita Gonzaga Duchessa di 
+Mondragone, raccolte dal P. Ireneo Affò, in «Raccolta ferrarese di opuscoli 
+scientifici e letterari», T. VI, Venezia 1780, Edizione seconda, R. D. stamp. di 
+S. Costa e c., Guastalla 1781.<br>
+1782. AFFÒ IRENEO, Delle zecche e monete di tutti i Principi di Casa Gonzaga, 
+che fuori di Mantova signoreggiarono... Pubblicata e di annotazioni, e medaglie 
+de' medesimi Principi corredata da Guid'Antonio Zanetti, Lelio dalla Volpe, 
+Bologna 1782.<br>
+1787. AFFÒ IRENEO, Istoria della città e ducato di Guastalla, 4 volumi, 
+Regio-Ducale Stamperia di Salvatore Costa e Compagno, Guastalla 1785-87.<br>
+1787. AFFÒ IRENEO, Memorie di tre celebri principesse della famiglia Gonzaga, 
+cioè di donna Emilia Gonzaga Colonna..., Lucrezia Gonzaga Manfrone..., Ippolita 
+Gonzaga Colonna, Filippo Carmignani, Parma 1787.<br>
+1832. GOSELLINI GIULIANO, Geste militari di don Ferrando Gonzaga principe di 
+Molfetta, Marietti, Torino 1832.<br>
+1835. LITTA POMPEO, Famiglie celebri italiane, fascicoli 48-51, I Gonzaga, 
+Luciano Basadonna, Milano 1835.<br>
+1838. VOLTA LEOPOLDO CAMILLO e continuatori, Compendio cronologico-critico della 
+storia di Mantova dalla sua fondazione sino ai nostri tempi, tomi 5, Francesco 
+Agazzi, Mantova 1807-38 (Il vol. II è di Giacomo Bignotti, il III, IV e V sono 
+di Giuseppe Arrivabene).<br>
+1855. CAMPORI GIUSEPPE, Domenico Giunti o Giuntalodi di Prato, in Gli artisti 
+degli Stati Estensi, Modena 1855, pp. 246-271.<br>
+1856. ODORICI FEDERICO, La Sicilia militarmente descritta nel 1545 da Ferrante 
+Gonzaga suo viceré. Relazione a Carlo V, Giuseppe Redaelli, Milano 1856.<br>
+1864. CAMPORI GIUSEPPE, Sebastiano del Piombo e Ferrante Gonzaga, in «Atti e 
+Memorie della Deputazione di Storia Patria delle Province di Modena e Parma», 
+vol. II, Carlo Vincenzi, Modena 1864, pp. 193-198.<br>
+1864. GOSELLINI GIULIANO, La congiura di Piacenza contro Pier Luigi Farnese 
+descritta per Giuliano Gosellini, Giacomo Molini, Firenze 1864.<br>
+1864. ODORICI FEDERICO, Pier Luigi Farnese e la congiura piacentina del 1547, 
+Milano 1864.<br>
+1864. PADIGLIONE CARLO, Le divise de' più illustri personaggi della casa Gonzaga 
+raccolte da Carlo Padiglione, Tip. Agrelli, Napoli 1864.<br>
+1864. RONCHINI AMADIO, Lettere di Muzio Girolamo a Ferrante Gonzaga, «Regia 
+Deputazione di Storia Patria per le Province di Modena e Parma», Parma 1864.<br>
+1865. AMARI MICHELE, Lettere di Muley-Hassen, re di Tunisi a Ferrante Gonzaga 
+viceré di Sicilia, in «Atti e memorie delle Regie Deputazioni di Storia Patria 
+per le province modenesi e parmensi», Vol. III, Modena 1865, pp. 139-192.<br>
+1865. ODORICI FEDERICO, Lettere di Muley-Hassen re di Tunisi a Ferrante Gonzaga 
+viceré di Sicilia (1537-1547). Cenni storici, in «Atti e memorie delle Regie 
+Deputazioni di Storia Patria per le province modenesi e parmensi», vol. III, 
+Modena 1865, pp. 115-138.<br>
+1865. RONCHINI AMADIO, Leone Leoni d'Arezzo, in «Atti e Memorie delle Regie 
+Deputazioni di Storia Patria per le Provincie modenesi e parmensi», III, 1865, 
+pp. 9-41.<br>
+1868. BRAGHIROLLI WILLELMO, Alcune lettere di San Carlo Borromeo tratte 
+dall'Archivio Gonzaga di Mantova, Tip. Boniardi-Pogliani, Mantova 1868.<br>
+1872. ZAMBONI F., Avvertimenti del Card. Ercole Gonzaga al nipote Cesare per 
+l'andata sua in corte di Roma (nozze Forini-Arrivabene), Tipografia del 
+Vocabolario, Firenze 1872.<br>
+1873. PAPADOPOLI NICOLÒ, Monete inedite delle zecche minori dei Gonzaga 
+esistenti nella raccolta Papadopoli, in «Periodico di Numismatica e Sfragistica 
+per la Storia d'Italia», a. V, fasc. 6, tav. XI, n. 10, Firenze 1873, p. 307.<br>
+1873. REGGIANI LORENZO, Ippolita Gonzaga. Novella storica, Tipografia Osvaldo 
+Lucchini, Guastalla 1873.<br>
+1878. GOSELLINI GIULIANO, Compendio storico della guerra di Parma e del Piemonte 
+[1548-53], a cura di Ceruti A.., in «Miscellanea di Storia Italiana», XVII, 
+1878.<br>
+1878. RONCHINI AMADIO, Bernardino Campi a Guastalla, in «Atti e Memorie delle 
+Regie Deputazioni di Storia Patria per le Provincie dell'Emilia», III, 1878.<br>
+1880. SOMMI PICENARDI GUIDO, Documenti intorno a Bernardino Campi, pittore 
+cremonese, in «Archivio Storico Lombardo», a. VII, fasc. I, 1880.<br>
+1881. Ritratto del Marchese Ottavio Gonzaga del Crescimbeni, in Strenna 
+Guastallese, tip. Economica, Guastalla 1881, pp. 11-12.<br>
+1881. ROSSI UMBERTO, Monete sconosciute di Guastalla, in «Gazzetta Numismatica», 
+a. I, 15 maggio 1881.<br>
+1884. AMBROSOLI SOLONE, Zecche minori dei Gonzaghi nella Raccolta Ambrosoli, in 
+«Gazzetta Numismatica», anno IV, n. 5-6, Como 1884, pp. 35-37.<br>
+1884. ARBOIT ANGELO, Documenti storici di Guastalla, in «Archivio Storico 
+Italiano»,serie IV, tomo XIV, Firenze 1884, pp. 100-107.<br>
+1884. ROSSI UMBERTO, Le ultime vicende della Zecca di Guastalla, in «Gazzetta 
+Numismatica», a. IV, nn. 3-4, Como 1884.<br>
+1885. GUASTI CESARE, Lettere di Torquato Tasso disposte per ordine di tempo ed 
+illustrate da Cesare Guasti, vol. V ed ultimo, Le Monnier, Firenze 1885.<br>
+1886. CARNEVALI LUIGI, Anna Isabella Gonzaga, in «Archivio Storico Lombardo», II 
+serie, vol. 3, 1886, pp. 379-394.<br>
+1887. CARNEVALI LUIGI, Cenni storici sull'Accademia Virgiliana. Parte I. 
+Invaghiti, Invitti e Timidi. Parte II. La R. Accademia, Maria Teresa ed il 
+Patriziato mantovano, in «Atti e Memorie della R. Accademia Virgiliana», 
+(1885-87), Mantova 1887, pp. 7-52.<br>
+1888. AMADUZZI L., Serie cronologica dei fatti più memorabili della storia di 
+Guastalla, Pecorini, Guastalla 1888.<br>
+1889. CASELLI CARLO, Luzzara, Tip. Artigianelli, Reggio Emilia 1889.<br>
+1889. COSTA EMILIO, Registri di lettere di Ferrante Gonzaga, viceré di Sicilia, 
+Regia Deputazione di Storia Patria, Parma 1889.<br>
+1889. GABRIELLI ANNIBALE, Un duca di Mantova (Ferdinando Carlo) a Roma, in 
+«Archivio Storico Lombardo», Seconda serie, vol. 6, fasc. I, Milano 1889, pp. 
+25-49.<br>
+1889. ZANELLI AGOSTINO, Registri di lettere di Ferrante Gonzaga, in «Archivio 
+Storico Italiano», serie V, tomo VI, Firenze 1889, pp. 507-510.<br>
+1890. GABRIELLI ANNIBALE, L'ultimo Duca di Mantova a Roma, Estratto da Atti del 
+III Congresso Naz. di Studi Romani, vol. II, Roma 1890, pp. 243-247.<br>
+1891. PENNA ANDREA, Pierluigi Farnese e la congiura di Piacenza, Tipografia R. 
+Pecorini, Guastalla 1891.<br>
+1892. ROMANO GIACINTO, Cronaca del soggiorno di Carlo V in Italia, Ed. U Hoepli, 
+Milano 1892.<br>
+1893. CHIESI LINO, Papa Giulio III e la guerra di Parma e della Mirandola 
+secondo il carteggio d'Ippolito Capilupi con Ferrante Gonzaga, in «Atti e 
+memorie della Regia Deputazione di storia patria per le provincie modenesi», IV, 
+Modena 1893, pp. 215-230.<br>
+1895. CAPASSO GAETANO, Don Ferrante Gonzaga all'impresa di Puglia del 1529, in 
+«Rivista Storica Italiana», vol. II, 1895.<br>
+1896. CARRERI FERRUCCIO CARLO, Relazione delle cose di Sicilia fatta da don 
+Ferrando Gonzaga all'imperatore Carlo V (1546), Lo Statuto, Palermo 1896.<br>
+1896. SEGRE ARTURO, Una questione tra Carlo III, duca di Savoia, e don Ferrante 
+Gonzaga, luogotenente imperiale in Italia, nel 1550, nota del Dott. Arturo 
+Segre, in «Atti della R. Accademia delle Scienze di Torino», Vol. XXXII, Torino 
+1896, pp. 170-185.<br>
+1897. BELTRAMI LUCA, Relazione di Don Ferrando Gonzaga in defesa delle 
+progettata cinta dei bastioni, Milano 1897.<br>
+1897. Relazione di Don Ferrante Gonzaga governatore di Milano inviata 
+all'Imperatore Carlo V nel 1552, a cura di Luca Beltrami, Milano 1897.<br>
+1899. CERETTI FELICE, Don Ferrante Gonzaga nella Corte di Spagna, in «Atti e 
+Memorie della Regia Deputazione di Storia Patria per le Province Modenesi», 
+Serie V, Volume II, Aprile 1899, pp. 135-147.<br>
+1900. SEGRE ARTURO, Un episodio della lotta tra Francia e Spagna a mezzo il 
+cinquecento. Carlo Duca di Savoia e le sue discordie con Ferrante Gonzaga, in 
+«Archivio Storico Lombardo», serie III, vol. XIII, anno XXVII, 1900, pp. 
+357-384.<br>
+1904. FERRARI G., Il monumento Gonzaga a Guastalla, in «Rassegna d'Arte», n. 4, 
+1904.<br>
+1904. GRILLO GUGLIELMO, Moneta inedita di Guastalla, in «Bollettino di 
+Numismatica e di Arte della Medaglia», 1904.<br>
+1904. NUVOLARI F., Intorno alle monete di Guastalla, in «Bollettino di 
+Numismatica e di Arte della Medaglia», 1904.<br>
+1904. SEGRE ARTURO, Il richiamo di don Ferrante Gonzaga dal governo di Milano e 
+sue conseguenze (1553-55), in «Memorie della Reale Accademia delle Scienze di 
+Torino», serie II, tomo LIV, Torino 1904, pp. 185-257.<br>
+1906. CAPASSO GAETANO, Il Governo di Don Ferrante Gonzaga in Sicilia dal 1535 al 
+1543, Scuola tip. Boccone del Povero, Palermo 1906.<br>
+1907. CIANI G., Monete inedite o corrette: Guastalla, in «Rivista Italiana di 
+Numismatica», 1907.<br>
+1910. ROZET A., L'invasion de la France et le Siège de Saint-Dizier par Charles 
+V en 1544, (Ferrante Gonzaga), Paris 1910.<br>
+1913. VALERANI FLAVIO, Viaggio da Casale a Parigi di Ferdinando Carlo Gonzaga 
+Duca di Mantova e di Monferrato nel 1704, Alessandria 1913.<br>
+1917. VAUCAIRE MAURICE, Fructus Belli, tapisseries d'aprés les cartons de Jules 
+Romain, in «Les Arts», 159, 1917, pp. 6-12.<br>
+1918. LUZIO ALESSANDRO, I carteggi dell'Archivio Gonzaga riflettenti 
+l'Inghilterra. La relazione Litolfi, in «Atti e Memorie della Regia Accademia 
+delle Scienze di Torino», vol. LIII, 1917-18, pp. 167-182, 209-222.<br>
+1922. LUZIO ALESSANDRO, L'Archivio Gonzaga di Mantova. La corrispondenza 
+familiare, amministrativa e diplomatica, vol. II, Accademia Virgiliana, 
+Mondadori, Mantova 1922.<br>
+1926. RE LUIGI, Città dei Gonzaga, Sonzogno, Milano 1926.<br>
+1928. CAGNOLATI TONINO, Il crepuscolo di Ferrante Gonzaga, Quaderni della 
+Provincia di Reggio, n. 16, Reggio Emilia 1928.<br>
+1930. BONGIOVANNI GIANNETTO, I Gonzaga. Profili e scorci di una grande casata, 
+Athena, Milano 1930.<br>
+1934. BIGNAMI LUIGI, Ferrante Gonzaga: il Principe condottiero (1507-1557), in 
+Sotto l'insegna del biscione. Condottieri Viscontei e Sforzeschi, Milano 1934, 
+pp. 519-582.<br>
+1934. CERLINI ALDO, La Biblioteca Maldottiana di Guastalla, tip. G. Torelli, 
+Guastalla 1934.<br>
+1936. MOSSINA ALDO, Storia di Guastalla, Editoriale Guastallese, Guastalla 1936.<br>
+1937. COCCONCELLI ANGELO, La rivalità dei Gonzaga coi Farnese e la 
+riconciliazione voluta da Pio IV a mezzo di San Carlo Borromeo e del cardinale 
+di Mantova, Tip. Mario Corsi, Reggio Emilia 1937.<br>
+1937. GIANNANTONI NINO, Mostra iconografica gonzaghesca nel palazzo ducale di 
+Mantova: Catalogo delle opere, Tip. L'Artistica, Mantova 1937.<br>
+1937. SORBELLI ALBANO, Inventari dei manoscritti delle Biblioteche d'Italia, 
+Guastalla, Voll. LXIII, LXIV, Leo S. Olschki, Firenze 1937.<br>
+1938. BARONI COSTANTINO, Domenico Giunti architetto di don Ferrante Gonzaga e le 
+sue opere in Milano, in «Archivio Storico Lombardo», LXIV, fasc. 3-4, 1938, pp. 
+327-357.<br>
+1941. DREI GIOVANNI, L'Archivio dei Gonzaga di Guastalla, in L'Archivio di Stato 
+di Parma, Roma 1941. (ASMN)<br>
+1950. BERTOLANI DEL RIO MARIA, La malattia mentale di Giuseppe Maria Gonzaga 
+ultimo duca di Guastalla, Aedes Muratoriana, Modena 1950.<br>
+1952. LAZZARI ALFONSO, Le ultime tre duchesse di Ferrara e la corte Estense ai 
+tempi di Torquato Tasso, Rovigo 1952.<br>
+1957. PECCHIAI PIO, Giulia e Ippolita Gonzaga, in Studi in onore di Carlo 
+Castiglioni Prefetto dell'Ambrosiana, Milano 1957.<br>
+1958. AMADEI FEDERIGO, Cronaca universale della città di Mantova, a cura di 
+Giuseppe Amadei, Ercolano Marani, Giovanni Praticò, 5 voll., Citem, Mantova 
+1954-1958.<br>
+1958. BONGIOVANNI GIANNETTO, Tragica fine di Antonio Ferdinando Gonzaga, in 
+Fiera di S. Caterina 1958, numero unico, Soncini, Guastalla 1958.<br>
+1959. CONIGLIO GIUSEPPE, L'impresa di Carlo V contro Tunisi nei dispacci 
+dell'oratore mantovano Agnelli, in «Bollettino storico mantovano», n. 15-16, 
+1959, pp. 235-239.<br>
+1960. BONGIOVANNI GIANNETTO, Isabella e Ferrante Gonzaga, in «Cultura 
+mantovana», supplemento a «Gazzetta di Mantova», 21 febbraio 1960.<br>
+1961. GENCARELLI ELVIRA, Anna Isabella Gonzaga, duchessa di Mantova, in 
+Dizionario Biografico degli Italiani, vol. III, Istituto della Enciclopedia 
+Italiana, Roma 1961.<br>
+1962. CANOVA ERMINIO, I Gonzaga nella storia di Guastalla, in «Guastalla 1962», 
+a. III, appendice, Guastalla 1962.<br>
+1966. SPIVAKOVSKY ERIKA, El «Vicariato de Siena» Correspondencia de Felipe II, 
+príncipe, con Diego Hurtado de Mendoza y Ferrante Gonzaga, Hispania, Madrid 
+1966.<br>
+1967. CONIGLIO GIUSEPPE, I Gonzaga, Dall'Oglio, Varese 1967.<br>
+1967. NANNINI MARCO CESARE, Vita e patologia di una principessa estense, 
+Margherita d'Este Gonzaga-Guastalla, Ed. Universo, Roma 1967.<br>
+1968. BELLOCCHI UGO, Una pagina di cronaca nera: la violazione del sepolcro dei 
+Gonzaga, in Atti e memorie del Convegno di studi storici della Città di 
+Guastalla. Città di Guastalla 4 giugno 1967, Aedes Muratoriana, Modena 1968, pp. 
+79-85.<br>
+1968. BERTOLANO DEL RIO MARIA, Il &quot;castrum&quot; medioevale e la rocca di Guastalla, 
+in Atti e memorie del Convegno di studi storici della Città di Guastalla. Città 
+di Guastalla 4 giugno 1967, Aedes Muratoriana, Modena 1968, pp. 87-99.<br>
+1968. CANOVA ERMINIO, Ferrante I Gonzaga, in Atti e memorie del Convegno di 
+studi storici della Città di Guastalla. Città di Guastalla 4 giugno 1967, Aedes 
+Muratoriana, Modena 1968, pp. 101-107.<br>
+1968. FALCONI ETTORE, L'autore della «Istoria di Guastalla» come editore di 
+fonti documentarie, in Atti e memorie del Convegno di studi storici della Città 
+di Guastalla. Città di Guastalla 4 giugno 1967, Aedes Muratoriana, Modena 1968, 
+pp. 109-113.<br>
+1968. FINZI RICCARDO, Guastalla, in Atti e memorie del Convegno di studi storici 
+della Città di Guastalla. Città di Guastalla 4 giugno 1967, Aedes Muratoriana, 
+Modena 1968, pp. 17-41.<br>
+1968. MERZI QUIRINO, Brevi note storiche intorno alle famiglie religiose in 
+Guastalla fino al 1810, in Atti e memorie del Convegno di studi storici della 
+Città di Guastalla. Città di Guastalla 4 giugno 1967, Aedes Muratoriana, Modena 
+1968, pp. 123-135.<br>
+1968. MORRETTA ROCCO, La fine di una piccola illustre capitale; Guastalla nel 
+reggiano dopo la battaglia del 19-9-1734 fra Gallo-Sardi e Austriaci, in Atti e 
+memorie del Convegno di studi storici della Città di Guastalla. Città di 
+Guastalla 4 giugno 1967, Aedes Muratoriana, Modena 1968, pp. 137-159.<br>
+1968. SPAGGIARI ALCIDE, L'illuminismo a Guastalla, in Atti e memorie del 
+Convegno di studi storici della Città di Guastalla. Città di Guastalla 4 giugno 
+1967, Aedes Muratoriana, Modena 1968, pp. 223-230.<br>
+1968. SPAGNI LOPEZ, Medaglia inedita di Cesare I Gonzaga secondo Signore di 
+Guastalla, in Atti e memorie del Convegno di studi storici della Città di 
+Guastalla. Città di Guastalla 4 giugno 1967, Aedes Muratoriana, Modena 1968, pp. 
+231-235.<br>
+1969. ARRÓNIZ OTHÓN, La influencia italiana en el nacimiento de la comedia 
+española, (Ferrante Gonzaga) Gredos, Madrid 1969.<br>
+1969. Bonavoglia Giovanni, in Dizionario biografico degli italiani, vol. XI, 
+Istituto della Enciclopedia Italiana, Roma 1969.<br>
+1971. CARRA GILBERTO, L'eruzione dell'Etna del 1537 descritta da Ferrante 
+Gonzaga, «Civiltà Mantovana», n. 28, 1971, pp. 263-268.<br>
+1972. HIRST MICHAEL, Sebastiano's Pietà for the Commendador Mayor, in «The 
+Burlington Magazine», vol. CXIV, n. 834, sept. 1972, pp. 585-595.<br>
+1972. MURGIA ADELAIDE, I Gonzaga, volume XI de Le Grandi Famiglie d'Europa, 
+Arnoldo Mondadori Editore, Verona 1972.<br>
+1974. CATTAFESTA MARIO, Mantovastoria: Come un romanzo, Citem, Mantova 1974.<br>
+1975. SPAGGIARI WILLIAM, Carlo Cantoni e l'Accademia degli Sconosciuti, in 
+«Bollettino Storico Reggiano», a. VIII, fasc. 30, ottobre 1975, pp. 62-100.<br>
+1976. AMOROSE GIUSEPPE, Per le strade di Puglia il corriere dei Gonzaga, Trani 
+1976.<br>
+1976. ZAGNI ALDO, Guastalla, Arti Grafiche Soncini, Guastalla 1976.<br>
+1978. AMADEI GIUSEPPE - MARANI ERCOLANO, I ritratti gonzagheschi della 
+collezione di Ambras, Banca Agricola Mantovana, Mantova 1978.<br>
+1978. BELLOCCHIO AMOROSO LISA, Guastalla 1614: lo zecchiere accusato di «tosare» 
+le monete, in «Bollettino Storico Reggiano», a. XI, fasc. 38, marzo 1978, pp. 
+69-73.<br>
+1978. MEDICI DOMENICO, Zenobia Gonzaga di Guastalla e una vertenza fra i Gonzaga 
+e gli Aragona, in «Bollettino Storico Reggiano», Anno XI, fasc. 38, marzo 1978, 
+pp. 89-95.<br>
+1978. ZAGNI ALDO, La madonna della Porta di Guastalla, Edizioni del Corno d'Oro, 
+Reggiolo 1978.<br>
+1980. CANOVA FRANCO, Reggiolo. La storia, Comune di Reggiolo, Reggiolo 1980.<br>
+1980. FABBRICI GABRIELE, Scandalo alla Zecca di Guastalla, in «Reggio Storia», 
+a. III, n. 5, settembre-ottobre 1980, pp. 64-66.<br>
+1982. AMADEI GIUSEPPE - MARANI ERCOLANO, Signorie Padane dei Gonzaga, Banca 
+Agricola Mantovana, Mantova 1982.<br>
+1982. BINOTTO SORAGNI MARGARET, Organizzazione urbana e territorio, architettura 
+fortificata. I feudi dei Gonzaga, in Lombardia. Il territorio, l'ambiente, il 
+paesaggio. Dal predominio spagnolo alla peste manzoniana, a cura di Carlo 
+Pirovano, Electa, Milano 1982, pp. 137-152.<br>
+1982. IACINTO F., La Battaglia di Guastalla, in «Reggio Storia», a. V, n. 4, 
+ottobre-dicembre 1982, pp. 28-39.<br>
+1982. STORCHI STEFANO, Guastalla: la città dei Gonzaga e dei Borboni, 
+Amministrazione Comunale di Guastalla, Guastalla 1982.<br>
+1982. TOCCI GIOVANNI, I ducati padani nell'età moderna. Problemi e metodi della 
+ricerca storica, in Storia, economia e cultura nella Guastalla del '700. Atti 
+del Convegno di studi storici (novembre 1982), Città di Guastalla, Guastalla 
+1982, pp. 5-29.<br>
+1982. Zecca (La) ducale a Guastalla, Amministrazione comunale di Guastalla - 
+Biblioteca Maldotti, Guastalla 1982.<br>
+1984. BADOLATO ANTONIO, Il crepuscolo dei Gonzaga I, in «Reggio Storia», a. VII, 
+nn. 2-4, aprile-dicembre 1984, pp. 24-32.<br>
+1984. BALIGAN MARIA GRAZIA, Il Clemente a Mantova, (Prospero Spani detto il 
+Clemente) in «Reggio Storia», n. 23, gennaio-marzo 1984, pp. 12-15.<br>
+1984. Battaglia di Guastalla (La), supplemento al n. 24 di «Reggio Storia», 
+aprile-giugno 1984.<br>
+1984. DELMARCEL GUY, Fructus Belli, une teinture bruxelloise pour Ferrante 
+Gonzaga, in «Bulletin de Liaison du Centre International d'Etude des Textiles 
+Anciens», 59-60, (I-II), 1984, pp. 42-53.<br>
+1984. STORCHI STEFANO, Guida a Guastalla, Dedalo, Bari 1984.<br>
+1985. ARCANGELI MARIA LETIZIA, Note per la storia della comunità di Guastalla 
+sotto i Gonzaga, in Il tempo dei Gonzaga, Comune di Guastalla, Guastalla 1985, 
+pp. 71-86.<br>
+1985. BADOLATO ANTONIO, Il crepuscolo dei Gonzaga II, in «Reggio Storia», a. 
+VII, n. 26, gennaio-marzo 1985, pp. 28-31.<br>
+1985. BARICCHI WALTER, Tipi cartografici del Guastallese tra XVI e XIX secolo, 
+in Storia, economia e cultura nella Guastalla del '700. Atti del Convegno di 
+studi storici (novembre 1982), Città di Guastalla, Guastalla 1985, pp. 105-111.<br>
+1985. BEGOTTI ELENA, Note sugli Ebrei nella Guastalla dei Gonzaga, in Il tempo 
+dei Gonzaga, Comune di Guastalla, Guastalla 1985, pp. 321-326.<br>
+1985. BROWN CLIFFORD M., Cesare Gonzaga a Roma (agosto 1560 - agosto 1561): gli 
+«avertimenti» del Cardinale Ercole Gonzaga, in Il tempo dei Gonzaga, Comune di 
+Guastalla, Guastalla 1985, pp. 49-58.<br>
+1985. BROWN CLIFFORD M., I carteggi di Cesare Gonzaga, signore di Guastalla 
+(1536-1575) e le raccolte d'antichità della seconda metà del Cinquecento, in 
+«Atti e Memorie dell'Accademia Nazionale Virgiliana», Nuova Serie, Vol. LIII, 
+Mantova 1985, pp. 105-126.<br>
+1985. CALORE MARINA, Dai trionfi di un vicerè al teatro pubblico. Feste e 
+spettacoli dei Gonzaga di Guastalla, in Il tempo dei Gonzaga, Comune di 
+Guastalla, Guastalla 1985, pp. 295-312.<br>
+1985. CALORE MARINA, Teatro e rappresentazioni accademiche a Guastalla nel XVIII 
+secolo, in Storia, economia e cultura nella Guastalla del '700. Atti del 
+Convegno di studi storici (novembre 1982), Città di Guastalla, Guastalla 1985, 
+pp. 185-203.<br>
+1985. CANOVA FRANCO, Esattori e finanzieri nel Settecento guastallese: i 
+Sartoretti, in Storia, economia e cultura nella Guastalla del '700. Atti del 
+Convegno di studi storici (novembre 1982), Città di Guastalla, Guastalla 1985, 
+pp. 53-81.<br>
+1985. DALL'ACQUA MARZIO, Appunti per una storia del territorio di Guastalla 
+(Cartografia dell'Archivio di Stato di Parma), in Storia, economia e cultura 
+nella Guastalla del '700. Atti del Convegno di studi storici (novembre 1982), 
+Città di Guastalla, Guastalla 1985, pp. 97-103.<br>
+1985. DALL'ACQUA MARZIO, Il dialogo con il Principe. Appunti per una cronaca dei 
+primi anni di governo gonzaghesco a Guastalla, in Il tempo dei Gonzaga, Comune 
+di Guastalla, Guastalla 1985, pp. 35-48.<br>
+1985. FABBRICI GABRIELE, Il diritto penale negli Statuti Guastallesi 
+nell'edizione dell'Affò, in Storia, economia e cultura nella Guastalla del '700. 
+Atti del Convegno di studi storici (novembre 1982), Città di Guastalla, 
+Guastalla 1985, pp. 145-162.<br>
+1985. MARMIROLI ANNA, L'intervento sulle acque e la bonifica, in Il tempo dei 
+Gonzaga, Comune di Guastalla, Guastalla 1985, pp. 149-158.<br>
+1985. MORARI ELVEZIO, Palazzo Ducale di Guastalla, in Il tempo dei Gonzaga, 
+Comune di Guastalla, Guastalla 1985, pp. 315-318.<br>
+1985. MOZZARELLI CESARE, I Gonzaga a Guastalla dalla cortigiania al principato, 
+e alla istituzione di una città conveniente, in Il tempo dei Gonzaga, Comune di 
+Guastalla, Guastalla 1985, pp. 11-33.<br>
+1985. MUSSINI MASSIMO, La cultura artistica nella Guastalla dei Gonzaga, in Il 
+tempo dei Gonzaga, Comune di Guastalla, Guastalla 1985, pp. 193-275.<br>
+1985. PEDERZANI GABRIELA, Il Po a Guastalla. Evoluzione di un territorio tra XVI 
+e XIX sec., in Il tempo dei Gonzaga, Comune di Guastalla, Guastalla 1985, pp. 
+139-148.<br>
+1985. PEDRAZZINI MARCO, Maurizio Cazzati un musico del XVII secolo, in Il tempo 
+dei Gonzaga, Comune di Guastalla, Guastalla 1985, pp. 327-329.<br>
+1985. SPAGGIARI WILLIAM, Le lettere a Corte, in Il tempo dei Gonzaga, Comune di 
+Guastalla, Guastalla 1985, pp. 279-293.<br>
+1985. STORCHI STEFANO, Struttura e immagine urbana all'epoca dei primi Gonzaga, 
+in Il tempo dei Gonzaga, Comune di Guastalla, Guastalla 1985, pp. 159-190.<br>
+1985. STORCHI STEFANO, Struttura e modi d'uso della città di Guastalla fra 
+Gonzaga e Borbone, in Storia, economia e cultura nella Guastalla del '700. Atti 
+del Convegno di studi storici (novembre 1982), Città di Guastalla, Guastalla 
+1985, pp. 113-127.<br>
+1985. ZANINONI ANNA, Origini dell'autonomia di Guastalla: problemi e 
+prospettive, in Il tempo dei Gonzaga, Comune di Guastalla, Guastalla 1985, pp. 
+59-70.<br>
+1985. ZANNONI MARIO, La guardia degli arcieri della duchessa vedova di 
+Guastalla, in Il tempo dei Gonzaga, Comune di Guastalla, Guastalla 1985, pp. 
+319-320.<br>
+1985. ZARRI GABRIELLA, Dalla Pieve alla chiesa cittadina: note sulle istituzioni 
+ecclesiastiche di Guastalla, in Il tempo dei Gonzaga, Comune di Guastalla, 
+Guastalla 1985, pp. 87-136.<br>
+1986. SPAGGIARI ALCIDE, Don Ferrante Gonzaga: soldato, politico e costruttore, 
+in «Bollettino Storico Reggiano», a. XIX, fasc. 63, marzo 1986, pp. 51-57.<br>
+1987. BENATI AMEDEO, La vertenza fra Don Ferrante Gonzaga e Don Francesco d'Este 
+(1553-1555), in «Atti e Memorie dell'Accademia Nazionale Virgiliana», N. S., 
+Vol. LV, Mantova 1987, pp. 33-45.<br>
+1987. DALL'ASTA CLAUDIO, La corte dei Principi di Guastalla, in «Quaderni 
+Guastallesi», a. II, n. 3, dicembre 1987, pp. 35-38.<br>
+1987. MIGLIOLI GIOVANNI, L'incomparabile tesoro di stucchi in Guastalla, in 
+«Quaderni Guastallesi», a. II, maggio 1987, pp. 52-60.<br>
+1987. MIGLIOLI GIOVANNI, ...Il fantasma gira, vaga, spazia ancora... fra i 
+ricordi dei più attempati, in «Quaderni Guastallesi», a. II, dic. 1987, pp. 
+40-45.<br>
+1987. MIGLIOLI GIOVANNI, Il palazzo dei Gonzaga, in «Quaderni Guastallesi», a. 
+II, n. 3, dicembre 1987.<br>
+1987. ZAGNI ALDO, La contessa di Guastalla, Ludovica Torello, Ed. del Corno 
+d'oro, Reggiolo 1987.<br>
+1988. BEGOTTI ELENA, La comunità ebraica di Guastalla, in «Quaderni 
+Guastallesi», Anno III, n. 4, giugno 1988.<br>
+1988. NAVARRINI ROBERTO, Un delitto di stato alla corte dei Gonzaga, in «Reggio 
+Storia», a. XI, n. 41, ottobre-dicembre 1988, pp. 30-39.<br>
+1988. STORCHI STEFANO, Alla ricerca delle antiche mura, in «Quaderni 
+Guastallesi», a. III, n. 5, dicembre 1988, pp. 22-28.<br>
+1988. TASSO TORQUATO, Casa Gonzaga, la genealogia della serenissima casa 
+Gonzaga, a cura di Marzio Pieri, aggiuntovi Il come della rosa, Series: Archivio 
+barocco, 2, Zara, Parma 1988.<br>
+1988. ZAGNI ALDO, Tagliata nella storia, Edizioni del Corno d'Oro, Reggiolo 
+1988.<br>
+1988. ZOPPÈ LEANDRO, Itinerari gonzagheschi, Itinera, Milano 1988.<br>
+1989. AGOSTA CLEMENTINA e BERTAZZONI ELISA, Affascinante cronaca di moda su otto 
+insoliti dipinti del '600, in «Quaderni Guastallesi», a. IV, n. 7, dicembre 
+1989, pp. 44-53.<br>
+1989. BESUTTI PAOLA, La corte musicale di Ferdinando Carlo Gonzaga ultimo duca 
+di Mantova. Musici, cantanti e teatro d'opera tra il 1655 e il 1707, Gianluigi 
+Arcari, Mantova 1989.<br>
+1989. BIGNOTTI LORENZO, Le zecche dei rami minori gonzagheschi: Novellara, 
+Sabbioneta, Pomponesco, Bozzolo, S. Martino Argine, Castiglione, Solferino, 
+Guastalla, Edizioni Numismatica Grigoli, Mantova s. d. ma 1988-1989.<br>
+1989. BROWN CLIFFORD M., Duke Ferdinando Carlo and the Dispersal from Venice of 
+the Gonzaga Collection of Greco-Roman Art, in «Notes in the History of Art», 
+VIII-IX, 1989.<br>
+1989. Città (Le) dei signori. 450° Anniversario dello Stato Gonzaghesco, in 
+occasione della mostra di Guastalla, novembre-dicembre 1989, Analisi, Bologna 
+1989.<br>
+1989. DALL'ASTA CLAUDIO, Opera d'arte e prodigi. Cronaca guastallese del secolo 
+XVII, in «Quaderni Guastallesi», a. IV, n. 7, dicembre 1989, pp. 66-70.<br>
+1989. DELMARCEL GUY, Fructus Belli: Brusselse wandtapijten en Italiaanse 
+Renaissance bij de Gonzaga's, in «Bulletin des Musées royaux d'Art et d'Histoire 
+Bruxelles», LX, 1989, 159-201.<br>
+1989. FABBRICI GABRIELE, Storia e presenze gonzaghesche nella Bassa Reggiana, in 
+«Quaderni Guastallesi», a. IV, n. 7, dicembre 1989, pp. 12-17.<br>
+1989. Guastalla. I monumenti e i luoghi della storia, Comune di Guastalla, 
+Guastalla 1989.<br>
+1989. IACINTO F., Le carte francesi della battaglia di Guastalla, in «Quaderni 
+Guastallesi», a. IV, n. 6, maggio 1989, pp. 22-25.<br>
+1989. LEYDI SILVIO, Le cavalcate dell'ingegnero. L'opera di Gianmaria Olgiati, 
+ingegnere militare di Carlo V, Ed. Panini, Modena 1989.<br>
+1989. SEVERGNINI SILVESTRO, Un leone a Milano. Vita e avventure di Leone Leoni 
+scultore cesareo, Mursia, Milano 1989.<br>
+1990. BISI LUCA - SORESINA TIZIANO, Guastalla: Venti secoli di storia, Città di 
+Guastalla, Guastalla 1990.<br>
+1990. DALL'ACQUA MARZIO, Grandi artisti per una piccola corte, in Grandi artisti 
+in una piccola corte dei Gonzaga. Per un museo della città, Comune di Guastalla, 
+Guastalla 1990.<br>
+1990. DALL'ACQUA MARZIO, Leone e Pompeo Leoni scultori, in Grandi artisti in una 
+piccola corte dei Gonzaga. Per un museo della città, Comune di Guastalla, 
+Guastalla 1990.<br>
+1990. DELMARCEL GUY, «Fructus Belli» un ciclo di arazzi di Bruxelles per 
+Ferrante Gonzaga, in Grandi artisti in una piccola corte dei Gonzaga. Per un 
+museo della città, Città di Guastalla, Guastalla 1990.<br>
+1990. HABERT JEAN, L'uomo dal guanto, in Tiziano, catalogo della mostra, 
+Marsilio Editori, Venezia 1990, pp. 190-193.<br>
+1990. LANDI ELISABETTA, La pittura emiliana e bolognese nel collezionismo dei 
+Gonzaga, in Grandi artisti in una piccola corte dei Gonzaga. Per un museo della 
+città, Comune di Guastalla, Guastalla 1990, pp. 49-54.<br>
+1990. LEHMANN JURGEN M., Ritratto di un capitano con amorino e cane, (Ferrante 
+Gonzaga?), in Tiziano, catalogo della mostra di Venezia, Marsilio Editori, 
+Venezia 1990, pp. 290-291.<br>
+1990. MARINI CALVANI MIRELLA, &quot;Anticaglie&quot; da Guastalla a Parma, in Grandi 
+artisti in una piccola corte dei Gonzaga. Per un museo della città, Comune di 
+Guastalla, Guastalla 1990, pp. 77-88.<br>
+1990. MIGLIOLI GIOVANNI - DAVANZO POLI DORETTA, Le collezioni della Biblioteca 
+Maldotti, in Grandi artisti in una piccola corte dei Gonzaga. Per un museo della 
+città, Comune di Guastalla, Guastalla 1990, pp. 89-96.<br>
+1990. Monete mantovane dal XII al XIX secolo, a cura di Rita Castagna - Giuseppe 
+Margini, Banca Agricola Mantovana, Mantova 1990.<br>
+1990. STORCHI STEFANO, Domenico Giunti e Francesco da Volterra architetti alla 
+corte dei primi Gonzaga, in Grandi artisti in una piccola corte dei Gonzaga. Per 
+un museo della città, Comune di Guastalla, Guastalla 1990, pp. 61-66.<br>
+1990. STORCHI STEFANO, Per un museo della città, in Grandi artisti in una 
+piccola corte dei Gonzaga. Per un museo della città, Comune di Guastalla, 
+Guastalla 1990, pp. 7-20.<br>
+1990. ZARRI GABRIELLA, Le sante vive: profezie di corte e devozione femminile 
+tra '400 e '500, Rosemberg e Sellier, Torino 1990.<br>
+1991. Cronache guastallesi tratte dagli Archivi della Biblioteca Maldotti, a 
+cura di Elisa Bertazzoni, Biblioteca Maldotti, Guastalla 1991.<br>
+1991. MARCUCCI LAURA, Francesco da Volterra, un protagonista dell'architettura 
+post-tridentina, Multigrafica Editrice, Roma 1991.<br>
+1991. SOLDINI NICOLA, Strategie del dominio: La cittadella nuova di Piacenza 
+(1545-1556), in «Bollettino Storico Piacentino», a. LXXXVI, fasc. 1°, 
+Gennaio-Giugno 1991, pp. 11-69.<br>
+1991. TAMALIO RAFFAELE, Ferrante Gonzaga alla corte spagnola di Carlo V nel 
+carteggio privato con Mantova (1523-1526). La formazione da «cortegiano» di un 
+generale dell'Impero, Gianluigi Arcari, Mantova 1991.<br>
+1992. Autour des Fructus Belli, une tapisserie de Bruxelles du XVIe siecle, 
+Musee national de la Renaissance, Chateau d'Ecouen, Val d'Oise, (auteurs du 
+catalogue, Guy Delmarcel ... et al.), Reunion des musees nationaux, Distribution 
+Seuil, Paris 1992.<br>
+1992. PASTORE GIUSE, La terra dei Gonzaga, Associazione fra i Comuni degli 
+Itinerari Gonzagheschi, Il Bulino, Modena 1992.<br>
+1992. TAGLIAVINI FIORELLO, Le nozze del Duca Antonio Ferdinando Gonzaga di 
+Guastalla e della principessa Teodora Langravia Darmstad: due ipotesi di 
+spettacolo. Ricerca iconografica teatrale di Fiorello Tagliavini, s.e., 
+Guastalla 1992.<br>
+1993. BROWN CLIFFORD M., with the collaboration of LORENZONI ANNA MARIA, Our 
+accustomed discourse on the antique. Cesare Gonzaga and Gerolamo Garimberto. Two 
+Renaissance Collectors of Greco-Roman Art, Garland Publishing, New York and 
+London 1993.<br>
+1993. GOZZI ALBERTO - MEDICI ANTONIO, Città dei Gonzaga: Sabbioneta, Guastalla, 
+Gualtieri, Pomponesco, Città Studi, Milano 1993.<br>
+1993. MOZZARELLI CESARE, Patrizi e governatori nello Stato di Milano a mezzo il 
+Cinquecento. Il caso di Ferrante Gonzaga, in L'Italia degli Austrias. Monarchia 
+cattolica e domini italiani nei secoli XVI e XVII, a cura di Gianvittorio 
+Signorotto, n. 17-18 di «Cheiron», anno IX, 1993, pp. 119-134.<br>
+1993. PILATI RENATA, I feudi Gonzagheschi nel Regno di Napoli, in Vespasiano 
+Gonzaga e il Ducato di Sabbioneta, a cura di Ugo Bazzotti - Daniela Ferrari - 
+Cesare Mozzarelli, Atti del Convegno, Sabbioneta-Mantova, 12-13 ottobre 1991, 
+Accademia Nazionale Virgiliana, Mantova 1993, pp. 327-355.<br>
+1993. SOLDINI NICOLA, La costruzione di Guastalla, in «Annali di Architettura», 
+nn. 4-5, 1992-1993, Electa, Milano 1993, pp. 57-87.<br>
+1993. SPAGGIARI WILLIAM, In mezzo a' lumi de' Gonzaghi heroi. Note e ricerche di 
+letteratura moderna, Pullano, Catanzaro 1993.<br>
+1993. STOCCHI SERGIO, Tangentopoli del XVI secolo, (Ferrante I di Guastalla) in 
+«Historia», n. 419, gennaio 1993, pp. 96-103.<br>
+1994. BARBIERI GIUSEPPE - OLIVATO LOREDANA, Itinerari d'arte nella terra dei 
+Gonzaga, Associazione fra Comuni degli itinerari Gonzagheschi- Banca Agricola 
+Mantovana, Mantova 1994.<br>
+1994. BENECCHI ELISABETTA, La terra dei Gonzaga, Associazione fra Comuni degli 
+Itinerari Gonzagheschi, Brescello 1994.<br>
+1994. EIDELBERG M. - ROWLAND E. W., The Dispersal of the Last Duke of Mantua's 
+Paintings, in «Gazette des Beaux-Arts», CXXIII, maggio-giugno 1994, pp. 207-294.<br>
+1994. MASELLI DOMENICO, Alla ricerca delle radici della Riforma protestante e 
+della Riforma Cattolica in Italia, con lo spoglio del carteggio di S. Carlo 
+Borromeo giacente negli archivi emiliani a cura di Elena Rotelli e di quello 
+giacente negli archivi toscani a cura di Paola Frateschi, (Rapporti tra i 
+Gonzaga di Guastalla e San Carlo Borromeo), Fedeltà edizioni, Firenze 1994.<br>
+1995. BELLESIA LORENZO, Guastalla und Novellara. Bemerkungen über einige 
+diskutierbare Züordnungen, in «Mitteilungen der Österreichischen Numismatischen 
+Gesellschaft», 1995.<br>
+1995. BELLESIA LORENZO, Ricerche su zecche emiliane, 1, Guastalla, Numismatica 
+Grigoli, Suzzara 1995.<br>
+1995. BENECCHI ELISABETTA, Artisti e opere nelle corti dei Gonzaga, Tipo-Lito 
+Valpadana, Brescello 1995.<br>
+1995. CASTAGNA RITA, Le zecche minori, in La collezione delle monete mantovane 
+dell'Ermitage, Electa, Milano 1995, pp. 95-106.<br>
+1995. CATTINI MARCO, Le zecche minori: orgoglio, prestigio e affari, in I 
+Gonzaga. Moneta Arte Storia, a cura di Silvana Balbi De Caro, Catalogo della 
+Mostra di Mantova (9 settembre - 10 dicembre 1995), Electa, Milano 1995, pp. 
+107-111.<br>
+1995. CONTI PAOLA BARBARA, Tra modellazione e incisione. Appunti e riflessioni 
+per un percorso nell'opera e nella vita di Leone Leoni, in I Gonzaga. Moneta 
+Arte Storia, a cura di Silvana Balbi De Caro, Catalogo della Mostra di Mantova 
+(9 settembre - 10 dicembre 1995), Electa, Milano 1995, pp. 388-393.<br>
+1995. RURALE FLAVIO, I cardinali di casa Gonzaga, in «Annali di storia moderna e 
+contemporanea», a. I, 1995, pp. 371-389.<br>
+1996. AGNOLONI MARINA, Camilla Borromeo Gonzaga nel suo epistolario, in Tra 
+Riforma e Controriforma: note biografiche e storiche, a cura di Domenico 
+Maselli, Fedeltà edizioni, Firenze 1996, pp. 107-122.<br>
+1996. BENZONI GINO, Ferdinando Carlo Gonzaga, in Dizionario Biografico degli 
+Italiani, vol. XLVI, Istituto della Enciclopedia Italiana, Roma 1996.<br>
+1996. BROWN CLIFFORD M. - DELMARCEL GUY, with the collaboration of LORENZONI 
+ANNA MARIA, Tapestries for the Courts of Federico II, Ercole and Ferrante 
+Gonzaga, 1522-63, College Art Association of America, Seattle (Washington) 1996.<br>
+1996. CANOVA FRANCO, Le corti reggiolesi dai Gonzaga al sec. 20, Coop. Muratori 
+Reggiolo, Reggiolo 1996.<br>
+1996. GAMBARELLI AUGUSTO, I due cardinali Gonzaga di Guastalla, in «Bollettino 
+Storico Reggiano», a. XXIX, fasc. n. 91, luglio 1996, pp. 17-22.<br>
+1996. ROTELLI ELENA, Il 'caso' dell'arciprete di Guastalla durante il governo di 
+Cesare Gonzaga, in Tra Riforma e Controriforma: note biografiche e storiche, a 
+cura di Domenico Maselli, Fedeltà edizioni, Firenze 1996, pp. 123-133.<br>
+1997. DELMARCEL GUY, Giulio Romano and Tapestry at the Court of Mantua, in La 
+corte di Mantova nell'età di Andrea Mantegna: 1450-1550, Atti del convegno 
+(Londra, 6-8 marzo 1992/Mantova, 28 marzo 1992), a cura di Cesare Mozzarelli - 
+Robert Oresko - Leandro Ventura, Bulzoni, Roma 1997, pp. 383-391.<br>
+1997. RUCCI VINCENZO, I Gonzaga di Guastalla Signori di Giovinazzo (1530-1639), 
+Centro Studi Meridionali, Collana Miscellanea di Puglia, n. 5, Giovinazzo 1997.<br>
+1997. TAMALIO RAFFAELE, Tra Parigi e Madrid. Strategie famigliari gonzaghesche 
+al principio del Cinquecento, in La corte di Mantova nell'età di Andrea 
+Mantegna: 1450-1550, Atti del convegno (Londra, 6-8 marzo 1992/Mantova, 28 marzo 
+1992), a cura di Cesare Mozzarelli - Robert Oresko - Leandro Ventura, Bulzoni, 
+Roma 1997, pp. 69-90.<br>
+1998. DAOLIO DANIELE, Guastalla città delle chiese. Passato e presente delle 
+chiese e degli Oratori guastallesi, Bioidea editrice, Guastalla 1998.<br>
+1998. Giorni (I) di Guastalla nel settecento, Ricerche a cura di Elisa 
+Bertazzoni, Biblioteca Maldotti, Guastalla 1998.<br>
+1999. B. E., La decisiva battaglia di Luzzara (15 agosto 1702), in «La Reggia», 
+a. VII, n. 4, dicembre 1999, p. 10.<br>
+1999. BARTOLI EUGENIO, Il Ducato di Guastalla. Stato, comunità, sovrani durante 
+la guerra di successione polacca, in La battaglia di Guastalla, Reggiolo 1999.<br>
+1999. RABE HORST, Brieflisten in der alphabetischen Folge der Empfänger, 2. 
+Teil: [Gonzaga] Fernando D. - Karl, in Karl V. Politische Korrespondenz: 
+Brieflisten und Register, vol. 15, Universität Konstanz, Konstanz 1999.<br>
+1999. RABE HORST, Brieflisten in der alphabetischen Folge des Absender, 1. Teil: 
+&quot;Archangel, Mercader&quot; - [Gonzaga Ferrante], in Karl V. Politische Korrespondenz: 
+Brieflisten und Register, vol. 10, Universität Konstanz, Konstanz 1999.<br>
+1999. RABE HORST, Brieflisten in der alphabetischen Folge des Absender, 2. Teil: 
+[Gonzaga Ferrante D] - Karl V, in Karl V. Politische Korrespondenz: Brieflisten 
+und Register, vol. 11, Universität Konstanz, Konstanz 1999.<br>
+1999. SULPIZI GIORGIO, Breve storia delle milizie del Ducato di Guastalla, in La 
+battaglia di Guastalla, Reggiolo 1999.<br>
+1999. TAMALIO RAFFAELE, Gazino Federico, in Dizionario Biografico degli 
+Italiani, vol. LII, Istituto della Enciclopedia Italiana, Roma 1999, pp. 
+748-750.<br>
+1999. TAMALIO RAFFAELE, Scoperti inediti affreschi quattro-cinquecenteschi nella 
+palazzina di Villabona di Goito, in «Civiltà Mantovana», anno XXXIV, n. 108, 
+1999, pp. 133-137.<br>
+<br>
+<br>
+&nbsp;
+
+</body>
+
+</html>
+</div></td>
+      <td width="16%" valign=top bgcolor="#344f85"><br><font color="#efefef">
+        <h5 align="center"><a class=menu href="index.php%3Fsez=convegni.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">CONVEGNI SVOLTI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=programmi.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">PROGRAMMI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=search&amp;query=all.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">BIBLIOTECA</a></h5>
+<h5 align="center"> <a class=menu href="index.php%3Fsez=iarda.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">  PROGETTO I.A.R.D.A  </a>  </h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=scambiolibrario.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">SCAMBIO LIBRARIO</a></h5>        
+        <h5 align="center"><a class=menu href="index.php%3Fsez=bibliografia.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">BIBLIOGRAFIA</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=links.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">LINK</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=contatti.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">CONTATTI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=conv_part.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">CONVENZIONI E PARTNERSHIP</a></h5>
+        <p>&nbsp;</p>
+        <br>
+        <p>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="16%" bgcolor="#344f85">
+</td>
+      <td width="60%"><br><br><br><br><br><p align="center"><center>
+  <br>
+<font size="3">Propriet&agrave; e Copyright del sito: Associazione Guastallese di Storia Patria<br>
+Copyright A.G.S.P. 2001 - 2005</font>
+  </center></td>
+      <td width="16%" bgcolor="#344f85"></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<div id="tipDiv" style="position:absolute; visibility:hidden; z-index:100"></div>
+</body>
+
+</html>

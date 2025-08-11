@@ -1,0 +1,1016 @@
+<html>
+
+<head>
+<title>A.G.S.P.</title>
+
+<META NAME="DESCRIPTION" CONTENT="Storiapatriaguastalla.it ï¿½ il sito entro il quale Guastalla, capitale dello Stato sovrano che tra i minori piï¿½ si addentrï¿½ nel XVIII secolo, sino alla ricostituzione napoleonica del 1806, trova le coordinate per una corretta lettura e collocazione storiografica">
+<META NAME="KEYWORDS" CONTENT="archivi, archivistica, biblioteca, archivio, archivio di stato, asmo, aspr, asre, asmn, asmi, soprintendenza archivistica, unipr, unimore, gonzaga, este, sforza, visconti, farnese, venezia, serenissima, superba, ducato, granducato, regno, repubblica, guastalla, parma, manova, modena, ferrara, reggio emilia, mirandola, pico, sabbioneta, bozzolo, novellara, carpi, pio, gualtieri, comune di guastalla, guastalla cultura, maldotti, biblioteca maldotti, genova, doria, molfetta, campobasso, orsini, di capua, vicere, viceregno, madrid, vienna, impero, sri, sacro romano impero, stato pontificio, lucca, stmoderna, storia moderna, storia contemporanea, deputazione, deputazione di storia patria, societï¿½ storica lombarda, milano, ferrante gonzaga, abbazia, diocesi di reggio guastalla, duca, principe, conte, gualtieri, brescello, po, fiume po, massa carrara, papa, pontefice, serviti, cappuccine, mantellate, gesuiti, francescani, cappuccini, agostiniane, correggio, maria luigia, parma piacenza e guastalla, borbone, mbac, peppone, don camillo, guareschi, smeg, gazzetta di reggio, gazzetta di mantova, gazzetta di parma">
+<META HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<link rel="StyleSheet" type="text/css" href="storiapatria.css">
+<link media="print" rel="stylesheet" href="stampa.css" type="text/css">
+<script type="text/javascript">
+
+/***********************************************
+* Disable select-text script- ï¿½ Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+//form tags to omit in NS6+:
+var omitformtags=["input", "textarea", "select"]
+
+omitformtags=omitformtags.join("|")
+
+function disableselect(e){
+if (omitformtags.indexOf(e.target.tagName.toLowerCase())==-1)
+return false
+}
+
+function reEnable(){
+return true
+}
+
+if (typeof document.onselectstart!="undefined")
+document.onselectstart=new Function ("return false")
+else{
+document.onmousedown=disableselect
+document.onmouseup=reEnable
+}
+
+</script>
+
+<script language="javascript" type="text/javascript">
+<!--
+
+/*
+Image w/ description tooltip- By Dynamic Web Coding (www.dyn-web.com)
+Copyright 2002 by Sharon Paine
+Visit http://www.dynamicdrive.com for this script
+*/
+
+/* IMPORTANT: Put script after tooltip div or 
+	 put tooltip div just before </BODY>. */
+
+var dom = (document.getElementById) ? true : false;
+var ns5 = ((navigator.userAgent.indexOf("Gecko")>-1) && dom) ? true: false;
+var ie5 = ((navigator.userAgent.indexOf("MSIE")>-1) && dom) ? true : false;
+var ns4 = (document.layers && !dom) ? true : false;
+var ie4 = (document.all && !dom) ? true : false;
+var nodyn = (!ns5 && !ns4 && !ie4 && !ie5) ? true : false;
+
+// resize fix for ns4
+var origWidth, origHeight;
+if (ns4) {
+	origWidth = window.innerWidth; origHeight = window.innerHeight;
+	window.onresize = function() { if (window.innerWidth != origWidth || window.innerHeight != origHeight) history.go(0); }
+}
+
+// avoid error of passing event object in older browsers
+if (nodyn) { event = "nope" }
+
+///////////////////////  CUSTOMIZE HERE   ////////////////////
+// settings for tooltip 
+// Do you want tip to move when mouse moves over link?
+var tipFollowMouse= true;	
+// Be sure to set tipWidth wide enough for widest image
+var tipWidth= 302;
+var offX= 20;	// how far from mouse to show tip
+var offY= 12; 
+var tipFontFamily= "Verdana, arial, helvetica, sans-serif";
+var tipFontSize= "8pt";
+// set default text color and background color for tooltip here
+// individual tooltips can have their own (set in messages arrays)
+// but don't have to
+var tipFontColor= "#000000";
+var tipBgColor= "#FFFFFF"; 
+var tipBorderColor= "#000080";
+var tipBorderWidth= 0;
+var tipBorderStyle= "ridge";
+var tipPadding= 0;
+
+// tooltip content goes here (image, description, optional bgColor, optional textcolor)
+var messages = new Array();
+// multi-dimensional arrays containing: 
+// image and text for tooltip
+// optional: bgColor and color to be sent to tooltip
+messages[0] = new Array('linkimg/paralupi.jpg','',"#FFFFFF");
+messages[1] = new Array('linkimg/micheli.jpg','',"#FFFFFF");
+messages[2] = new Array('linkimg/dutillot.jpg','');
+messages[3] = new Array('linkimg/tranmoss.jpg','');
+messages[4] = new Array('linkimg/patrioti.jpg','');
+messages[5] = new Array('linkimg/tirelli.jpg','');
+messages[6] = new Array('linkimg/mariotti.jpg','');
+messages[7] = new Array('linkimg/rerum.jpg','');
+messages[8] = new Array('linkimg/maldotti.jpg','');
+messages[9] = new Array('linkimg/affo.jpg','');
+messages[10] = new Array('linkimg/baldi.jpg','');
+messages[11] = new Array('linkimg/lbaldi.jpg','');
+messages[12] = new Array('linkimg/lteodora.jpg','');
+
+////////////////////  END OF CUSTOMIZATION AREA  ///////////////////
+
+// preload images that are to appear in tooltip
+// from arrays above
+if (document.images) {
+	var theImgs = new Array();
+	for (var i=0; i<messages.length; i++) {
+  	theImgs[i] = new Image();
+		theImgs[i].src = messages[i][0];
+  }
+}
+
+// to layout image and text, 2-row table, image centered in top cell
+// these go in var tip in doTooltip function
+// startStr goes before image, midStr goes between image and text
+var startStr = '<table width="' + tipWidth + '"><tr><td align="center" width="100%"><img src="';
+var midStr = '" border="0"></td></tr><tr><td valign="top">';
+var endStr = '</td></tr></table>';
+
+////////////////////////////////////////////////////////////
+//  initTip	- initialization for tooltip.
+//		Global variables for tooltip. 
+//		Set styles for all but ns4. 
+//		Set up mousemove capture if tipFollowMouse set true.
+////////////////////////////////////////////////////////////
+var tooltip, tipcss;
+function initTip() {
+	if (nodyn) return;
+	tooltip = (ns4)? document.tipDiv.document: (ie4)? document.all['tipDiv']: (ie5||ns5)? document.getElementById('tipDiv'): null;
+	tipcss = (ns4)? document.tipDiv: tooltip.style;
+	if (ie4||ie5||ns5) {	// ns4 would lose all this on rewrites
+		tipcss.width = tipWidth+"px";
+		tipcss.fontFamily = tipFontFamily;
+		tipcss.fontSize = tipFontSize;
+		tipcss.color = tipFontColor;
+		tipcss.backgroundColor = tipBgColor;
+		tipcss.borderColor = tipBorderColor;
+		tipcss.borderWidth = tipBorderWidth+"px";
+		tipcss.padding = tipPadding+"px";
+		tipcss.borderStyle = tipBorderStyle;
+	}
+	if (tooltip&&tipFollowMouse) {
+		if (ns4) document.captureEvents(Event.MOUSEMOVE);
+		document.onmousemove = trackMouse;
+	}
+}
+
+window.onload = initTip;
+
+/////////////////////////////////////////////////
+//  doTooltip function
+//			Assembles content for tooltip and writes 
+//			it to tipDiv
+/////////////////////////////////////////////////
+var t1,t2;	// for setTimeouts
+var tipOn = false;	// check if over tooltip link
+function doTooltip(evt,num) {
+	if (!tooltip) return;
+	if (t1) clearTimeout(t1);	if (t2) clearTimeout(t2);
+	tipOn = true;
+	// set colors if included in messages array
+	if (messages[num][2])	var curBgColor = messages[num][2];
+	else curBgColor = tipBgColor;
+	if (messages[num][3])	var curFontColor = messages[num][3];
+	else curFontColor = tipFontColor;
+	if (ns4) {
+		var tip = '<table bgcolor="' + tipBorderColor + '" width="' + tipWidth + '" cellspacing="0" cellpadding="' + tipBorderWidth + '" border="0"><tr><td><table bgcolor="' + curBgColor + '" width="100%" cellspacing="0" cellpadding="' + tipPadding + '" border="0"><tr><td>'+ startStr + messages[num][0] + midStr + '<span style="font-family:' + tipFontFamily + '; font-size:' + tipFontSize + '; color:' + curFontColor + ';">' + messages[num][1] + '</span>' + endStr + '</td></tr></table></td></tr></table>';
+		tooltip.write(tip);
+		tooltip.close();
+	} else if (ie4||ie5||ns5) {
+		var tip = startStr + messages[num][0] + midStr + '<span style="font-family:' + tipFontFamily + '; font-size:' + tipFontSize + '; color:' + curFontColor + ';">' + messages[num][1] + '</span>' + endStr;
+		tipcss.backgroundColor = curBgColor;
+	 	tooltip.innerHTML = tip;
+	}
+	if (!tipFollowMouse) positionTip(evt);
+	else t1=setTimeout("tipcss.visibility='visible'",100);
+}
+
+var mouseX, mouseY;
+function trackMouse(evt) {
+	mouseX = (ns4||ns5)? evt.pageX: window.event.clientX + document.body.scrollLeft;
+	mouseY = (ns4||ns5)? evt.pageY: window.event.clientY + document.body.scrollTop;
+	if (tipOn) positionTip(evt);
+}
+
+/////////////////////////////////////////////////////////////
+//  positionTip function
+//		If tipFollowMouse set false, so trackMouse function
+//		not being used, get position of mouseover event.
+//		Calculations use mouseover event position, 
+//		offset amounts and tooltip width to position
+//		tooltip within window.
+/////////////////////////////////////////////////////////////
+function positionTip(evt) {
+	if (!tipFollowMouse) {
+		mouseX = (ns4||ns5)? evt.pageX: window.event.clientX + document.body.scrollLeft;
+		mouseY = (ns4||ns5)? evt.pageY: window.event.clientY + document.body.scrollTop;
+	}
+	// tooltip width and height
+	var tpWd = (ns4)? tooltip.width: (ie4||ie5)? tooltip.clientWidth: tooltip.offsetWidth;
+	var tpHt = (ns4)? tooltip.height: (ie4||ie5)? tooltip.clientHeight: tooltip.offsetHeight;
+	// document area in view (subtract scrollbar width for ns)
+	var winWd = (ns4||ns5)? window.innerWidth-20+window.pageXOffset: document.body.clientWidth+document.body.scrollLeft;
+	var winHt = (ns4||ns5)? window.innerHeight-20+window.pageYOffset: document.body.clientHeight+document.body.scrollTop;
+	// check mouse position against tip and window dimensions
+	// and position the tooltip 
+	if ((mouseX+offX+tpWd)>winWd) 
+		tipcss.left = (ns4)? mouseX-(tpWd+offX): mouseX-(tpWd+offX)+"px";
+	else tipcss.left = (ns4)? mouseX+offX: mouseX+offX+"px";
+	if ((mouseY+offY+tpHt)>winHt) 
+		tipcss.top = (ns4)? winHt-(tpHt+offY): winHt-(tpHt+offY)+"px";
+	else tipcss.top = (ns4)? mouseY+offY: mouseY+offY+"px";
+	if (!tipFollowMouse) t1=setTimeout("tipcss.visibility='visible'",100);
+}
+
+function hideTip() {
+	if (!tooltip) return;
+	t2=setTimeout("tipcss.visibility='hidden'",100);
+	tipOn = false;
+}
+
+//-->
+</script>
+
+</head>
+
+<body oncontextmenu="return false" link="344f85" vlink="344f85" alink="dcdcdc">
+
+<SCRIPT LANGUAGE="JavaScript">
+if (window != top) top.location.href = location.href;
+</SCRIPT>
+
+
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td width="2%" rowspan="3" class=sx></td>
+      <td width="16%" bgcolor="#344f85"><div align="center"><a href="http://www.unesco.org/webworld/portal_archives" target="_top"><img src="grafica/archives_logo_sm.gif" width=98 height=44 alt="UNESCO Archives Portal" border="0"></a><br><br><a href="http://www.unesco.org/webworld/portal_bib" target="_top"><img src="grafica/logo_bib.gif" width=98 height=44 alt="UNESCO Libraries Portal" border="0"></a></div></td>
+      <td width="2%" rowspan="3" class=dx></td>
+      <td width="60%"><p align="center"><a href="index.php%3Fsez=home.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;"><img border="0" src="grafica/logo.jpg" width="186" height="179"></a></td>
+      <td width="2%" rowspan="3" class=sx></td>
+      <td width="16%" bgcolor="#344f85"> <div align="center"><a class=menu href="index.php%3Fsez=500enario.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;"><img border="0" src="grafica/ferranteId.jpg" width="100" height="180"></a></div></td>
+      <td width="2%" rowspan="3" class=dx></td>
+    </tr>
+    <tr>
+      <td width="16%" valign=top bgcolor="#344f85"><br><font color="#efefef">
+        <h5 align="center"><a class=menu href="index.php%3Fsez=sodalizio.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">STORIA DEL SODALIZIO</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=tradizione.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">TRADIZIONE STORIOGRAFICA</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=stato_di_guastalla.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">LO STATO DI GUASTALLA</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=erratacorrige.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">ERRATA CORRIGE</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=guastallarchivi.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">GUASTALLA <br>E GLI ARCHIVI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=guidaluoghistato.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">GUIDA AI LUOGHI<br> DELLO STATO</a></h5>
+        <h5 align="center">AUTORI & COLLABORATORI</h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=excerpta.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">EXCERPTA GUASTALLAE</a></h5></font>
+        <p>&nbsp;</p>
+        <br>
+        <p>&nbsp;</td>
+      <td valign=top width="60%"><div id="contenuto">
+              <br><html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="https://www.storiapatriaguastalla.it/bbliotecasezionespeciale1htm_files/filelist.xml">
+<title>ASSOCIAZIONE  GUASTALLESE</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Catalogo</o:Author>
+  <o:LastAuthor>Emanuele Bartoli</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>33</o:TotalTime>
+  <o:Created>2005-07-15T18:12:00Z</o:Created>
+  <o:LastSaved>2005-07-15T18:12:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>822</o:Words>
+  <o:Characters>4692</o:Characters>
+  <o:Company>Storiapatriaguastalla</o:Company>
+  <o:Lines>39</o:Lines>
+  <o:Paragraphs>11</o:Paragraphs>
+  <o:CharactersWithSpaces>5503</o:CharactersWithSpaces>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:HyphenationZone>14</w:HyphenationZone>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:SelectEntireFieldWithStartOrEnd/>
+   <w:UseWord2002TableStyleRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Decotura ICG";
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:131 0 0 0 9 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h4
+	{mso-style-next:Normal;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:22.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Decotura ICG";
+	font-weight:normal;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 2.0cm 2.0cm 2.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:245651523;
+	mso-list-type:simple;
+	mso-list-template-ids:68157441;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:315914043;
+	mso-list-type:simple;
+	mso-list-template-ids:68157441;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l2
+	{mso-list-id:380135390;
+	mso-list-type:simple;
+	mso-list-template-ids:68157441;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l3
+	{mso-list-id:409931790;
+	mso-list-type:simple;
+	mso-list-template-ids:68157441;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l4
+	{mso-list-id:841898311;
+	mso-list-type:simple;
+	mso-list-template-ids:68157441;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l5
+	{mso-list-id:854002919;
+	mso-list-type:simple;
+	mso-list-template-ids:68157441;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l6
+	{mso-list-id:1218784349;
+	mso-list-type:simple;
+	mso-list-template-ids:68157441;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l7
+	{mso-list-id:1232886904;
+	mso-list-type:simple;
+	mso-list-template-ids:68157441;}
+@list l7:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l8
+	{mso-list-id:1301761432;
+	mso-list-type:simple;
+	mso-list-template-ids:68157441;}
+@list l8:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l9
+	{mso-list-id:1936477099;
+	mso-list-type:simple;
+	mso-list-template-ids:68157441;}
+@list l9:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:18.0pt;
+	mso-level-number-position:left;
+	margin-left:18.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=IT style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<h4><b><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:
+"Times New Roman";color:maroon'>ASSOCIAZIONE<span style='mso-spacerun:yes'> 
+</span>GUASTALLESE<o:p></o:p></span></b></h4>
+
+<h4><b><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:
+"Times New Roman";color:maroon'>DI<span style='mso-spacerun:yes'> 
+</span>STORIA<span style='mso-spacerun:yes'>  </span>PATRIA<o:p></o:p></span></b></h4>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='color:maroon'>1933<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><u><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></u></p>
+
+<p class=MsoNormal align=center style='text-align:center'><u><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></u></p>
+
+<p class=MsoNormal align=center style='text-align:center'><u>Elenco dei volumi
+ricevuti in dono dall’Archivio di Stato di Reggio Emilia<o:p></o:p></u></p>
+
+<p class=MsoNormal align=center style='text-align:center'><u>24 giugno 2005<o:p></o:p></u></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;mso-list:l8 level1 lfo1;
+tab-stops:list 18.0pt'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>Guida generale degli Archivi di Stato italiani
+voll. I - II - III - IV</p>
+
+<p class=MsoNormal style='margin-left:2.25pt'><span style='font-size:8.0pt;
+mso-bidi-font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:20.25pt;text-indent:-18.0pt;mso-list:
+l3 level1 lfo2;tab-stops:list 20.25pt'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol;mso-bidi-font-weight:bold'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><b>Serie Sussidi<span style='mso-spacerun:yes'> 
+</span>:<o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:20.25pt'>vol. II: Governi alte cariche
+dello Stato alti magistrati e prefetti del Regno d’Italia</p>
+
+<p class=MsoNormal style='margin-left:20.25pt'><span lang=FR style='mso-ansi-language:
+FR'>vol. III: Vocabulaire international de la Sigillographie<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:20.25pt'>vol. VII: Legati e governatori
+dello stato pontificio (1550 – 1809)</p>
+
+<p class=MsoNormal style='margin-left:20.25pt'>vol. <span class=SpellE>VIII</span>:
+Le fonti archivistiche</p>
+
+<p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;mso-list:l1 level1 lfo3;
+tab-stops:list 18.0pt'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-bidi-font-weight:
+bold'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><b>Serie pubblicazioni degli archivi di stato:<o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>fonti <span class=SpellE>XIII</span>:
+vol. I/1: I libri <span class=SpellE>iurium</span> della Repubblica di Genova</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>fonti XIV: vol. II: Giulio Romano
+repertorio di fonti documentarie</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>fonti<span
+style='mso-spacerun:yes'>  </span>XVII: vol. I: L’istruzione normale dalla
+legge Casati all’età <span class=SpellE>giolittiana</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>fonti XVII: vol. II: Il Consiglio
+superiore<span style='mso-spacerun:yes'>  </span>della pubblica istruzione 1847
+– 1928</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>fonti XIX: L’<span class=SpellE>Armarium</span>
+<span class=SpellE>Comunis</span> della Camera <span class=SpellE>Actorum</span>
+di Bologna</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>fonti <span class=SpellE>XXIII</span>:
+vol. I/2: I Libri <span class=SpellE>Iurium</span> della Repubblica di Genova</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span style='font-size:8.0pt;
+mso-bidi-font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo4;
+tab-stops:list 18.0pt'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>PUBBLICAZIONI DEGLI ARCHIVI DI STATO:</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><b>Serie strumenti:<o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>vol. <span class=SpellE>CIII</span>:
+La Società dei notai di Bologna</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>vol. <span class=SpellE>CIV</span>:
+Notai ignoti – Frammenti notarili medioevali</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>vol. <span class=SpellE>CV</span>:
+Archivio delle Tratte</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>vol. <span class=SpellE>CXI</span>:
+Cartolari notarili genovesi </p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>vol. <span class=SpellE>CXVI</span>:
+Archivio Turati</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>vol. <span class=SpellE>CXVII</span>:
+Antichi inventari dell’archivio Gonzaga (n. copie 2)</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>vol. <span class=SpellE>CXXI</span>:
+Fonti per la storia artistica romana al tempo di Paolo V</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>vol. <span class=SpellE>CXXIV</span>:
+Volantini antifascisti nelle carte della Pubblica sicurezza (1926 – 1943)</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>vol. <span class=SpellE>CXXV</span>:
+Direzione generale della pubblica sicurezza – La stampa italiana nella serie F.
+1 (<span class=SpellE>1894-1926</span>) (n. copie 2)</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>vol. <span class=SpellE>CXXVIII</span>:
+Gli Archivi <span class=SpellE>Pallavicini</span> di Genova</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span style='font-size:8.0pt;
+mso-bidi-font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><b>Serie fonti e sussidi:<o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>vol. II: Libri dell’entrata<span
+style='mso-spacerun:yes'>  </span>e dell’uscita del comune di Siena </p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span class=SpellE>vol</span>.<span
+class=SpellE>XCVI</span>: Il <span class=SpellE>Cartulario</span> di Arnaldo <span
+class=SpellE>Cumano</span> e Giovanni di Donato</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span style='font-size:8.0pt;
+mso-bidi-font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><b>Serie saggi:<o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>vol. I: Studi in onore di
+Leopoldo <span class=SpellE>Sandri</span> </p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>vol. VI: Italia <span
+class=SpellE>Judaica</span> – “Gli ebrei in Italia tra Rinascimento ed Età
+barocca”</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>vol. <span class=SpellE>XIII</span>:
+I Giacobini piemontesi (1794 – 1814)</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>vol. XXVI: Italia <span
+class=SpellE>Judaica</span> – “Gli ebrei nell’Italia unita”</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>vol. <span class=SpellE>XXX</span>:
+Archivi e archivistica a Roma dopo l’unità</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>vol. <span class=SpellE>XXXI</span>:
+Istituzioni e società in Toscana nell’età moderna</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>vol. <span class=SpellE>XXXVI</span>:
+Gli archivi per la storia della scienza<span style='mso-spacerun:yes'> 
+</span>e della tecnica (n. copie 2)</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>vol. <span class=SpellE>XLVII</span>:
+Italia <span class=SpellE>Judaica</span> – “Gli ebrei nello Stato Pontificio
+fino al Ghetto (1555)</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span style='font-size:8.0pt;
+mso-bidi-font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><b>Serie quaderni della “rassegna
+degli archivi di stato”:<o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>n. 17: I <span class=SpellE>giusdicenti</span><span
+style='mso-spacerun:yes'>  </span>dell’antico Stato senese</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>n. 25: Titoli nobiliari pontifici
+riconosciuti in Italia</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>n. 33: L’Archivio notarile<span
+style='mso-spacerun:yes'>  </span>di Benevento (<span class=SpellE>1401-1860</span>)
+</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>n. 34: Il carteggio “Medici –
+Este” dal sec. XV al 1531 </p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>n. 55: Mandati della Reverenda Camera
+Apostolica (1418 – 1802)</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>n. 56: Le scienze applicate<span
+style='mso-spacerun:yes'>  </span>nella salvaguardia e nella riproduzione degli
+archivi</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>n. 61: Guida degli archivi
+diocesani d’Italia vol. I</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>n. 65: Archivio <span
+class=SpellE>Galimberti</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>n. 66: Archivio Vittorio <span
+class=SpellE>Bodini</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>n. 70: Scritture parrocchiali per
+la diocesi di Trento</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>n. 75: L’Archivio storico della
+Calcografia</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span style='font-size:8.0pt;
+mso-bidi-font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l7 level1 lfo5;
+tab-stops:list 18.0pt'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-bidi-font-weight:
+bold'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><b>Serie Ministero dell’interno:<o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>vol. II: Archivio Mediceo avanti
+il Principato vol. I</p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>vol. <span class=SpellE>XXIII</span>:
+Le sale della mostra</p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>vol. <span class=SpellE>XXXIX</span>:
+Guida inventario</p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>vol. <span class=SpellE>XLV</span>:
+Governi provvisori (1859 – 1861)</p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>vol. <span class=SpellE>XLVI</span>:
+Governi provvisori(1859 – 1861)</p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>vol. <span class=SpellE>XLIX</span>:
+Regesto delle Pergamene</p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>vol. <span class=SpellE>LV</span>:
+Aspetti della Riforma cattolica e del Concilio di Trento</p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>vol. <span class=SpellE>LIX</span>:
+Copialettere e corrispondenza gonzaghesca<span style='mso-spacerun:yes'> 
+</span>da Mantova e Paesi (n. copie 2)</p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>vol. <span class=SpellE>LXI</span>:
+Ragguagli <span class=SpellE>Borrominiani</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>vol. <span class=SpellE>LXII</span>:
+Gli archivi dei Regi Commissari nelle province<span style='mso-spacerun:yes'> 
+</span>del Veneto e di Mantova 1866</p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>vol. <span class=SpellE>LXIII</span>:
+Gli archivi dei Regi Commissari nelle province<span style='mso-spacerun:yes'> 
+</span>del Veneto e di Mantova 1866</p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>vol. <span class=SpellE>LXVII</span>:
+Libri dell’entrata e dell’uscita<span style='mso-spacerun:yes'>  </span>del
+Comune di Siena</p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>vol. <span class=SpellE>LXX</span>:
+L’Archivio arcivescovile di Siena </p>
+
+<p class=MsoNormal style='margin-left:36.0pt'>La legge sugli archivi</p>
+
+<p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;mso-list:l5 level1 lfo6;
+tab-stops:list 18.0pt'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-bidi-font-weight:
+bold'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><b>Cataloghi e mostre:<o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Il ciclo della vita</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Pane e Potere</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Il Mediterraneo i luoghi e la
+memoria</p>
+
+<p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;mso-list:l4 level1 lfo7;
+tab-stops:list 18.0pt'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-bidi-font-weight:
+bold'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><b>Serie Ministero per i beni e le attività
+culturali:<o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Estimi e catasti del territorio
+reggiano, </p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Il Territorio (1786 – 1972) –
+L’Unità d’Italia, Il Regno, La Repubblica (1864 – 1977)</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span class=SpellE>Administration</span>
+in <span class=SpellE>Ancient</span><span style='mso-spacerun:yes'>  </span><span
+class=SpellE>Societies</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>n. <span class=SpellE>XCII</span>:
+Guida A.S. Siena, vol. III</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Radio Londra, voll. I/II</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span class=SpellE>Securitas</span><span
+style='mso-spacerun:yes'>  </span>et <span class=SpellE>Tranquillitas</span> <span
+class=SpellE>Europae</span></p>
+
+<p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;mso-list:l6 level1 lfo8;
+tab-stops:list 18.0pt'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-bidi-font-weight:
+bold'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><b>Pubblicazioni reggiane<o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Gli oscuri padri della Patria:
+Vincenzo <span class=SpellE>Marmiroli</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Il carnevale in terra reggiana</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>La famiglia <span class=SpellE>Omozzoli</span>
+– <span class=SpellE>Parisetti</span>. Archivi e vita privata</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Il monastero di San Tommaso di
+Reggio</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>I miracoli di San Prospero</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Il Cinquecento reggiano</p>
+
+<p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;mso-list:l2 level1 lfo9;
+tab-stops:list 18.0pt'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-bidi-font-weight:
+bold'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><b>Rassegna degli Archivi di Stato:<o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Settembre-Dicembre 1955 </p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Settembre-Dicembre 1956</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Gennaio-Aprile 1957</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Gennaio-Aprile 1958</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Settembre-Dicembre 1963</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Gennaio-Aprile 1967 </p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Gennaio-Aprile 1968</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Maggio-Agosto 1968</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Settembre-Dicembre 1968</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Gennaio-Aprile 1969</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Maggio-Agosto 1969</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Settembre-Dicembre 1969</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Gennaio-Aprile 1972</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Maggio-Agosto 1972</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Settembre-Dicembre 1972</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Gennaio-Aprile 1973</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Maggio-Dicembre 1973</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Gennaio-Aprile 1974</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Maggio-Dicembre 1974</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Gennaio-Dicembre 1975 </p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Settembre-Dicembre 1976</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Gennaio-Dicembre 1977</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Gennaio-Dicembre 1978</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Gennaio-Dicembre 1979</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Gennaio-Dicembre 1981</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>INDICI <span class=SpellE>1955-1981</span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Gennaio-Aprile 1982</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Maggio-Dicembre 1982</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Gennaio-Aprile 1983</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Maggio-Dicembre 1984</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Gennaio-Agosto 1985</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Gennaio-Aprile 1986</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Maggio-Agosto 1986</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Settembre-Dicembre 1986</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Gennaio-Aprile 1987</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Gennaio-Agosto 1988</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Maggio-Agosto 1989</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Settembre-Dicembre 1989</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Gennaio-Agosto 1990</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Settembre-Dicembre 1990</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Gennaio-Aprile 1991</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Maggio-Agosto 1992</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Gennaio-Aprile 1993</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Gennaio-Aprile 1994</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Maggio-Agosto 1994</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Gennaio-Aprile 1995</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Maggio-Dicembre 1995</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Maggio-Agosto 1996</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Gennaio-Aprile 1997</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Maggio-Dicembre 1998</p>
+
+<p class=MsoNormal><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt;text-indent:-18.0pt;mso-list:l9 level1 lfo10;
+tab-stops:list 18.0pt'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;mso-bidi-font-weight:
+bold'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><b>Notizie degli Archivi di Stato:<o:p></o:p></b></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Luglio – Dicembre 1943</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Gennaio – Aprile 1948</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Maggio – Agosto 1954</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>INDICI 1941 – 1954</p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span
+style='mso-spacerun:yes'> </span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
+</div></td>
+      <td width="16%" valign=top bgcolor="#344f85"><br><font color="#efefef">
+        <h5 align="center"><a class=menu href="index.php%3Fsez=convegni.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">CONVEGNI SVOLTI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=programmi.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">PROGRAMMI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=search&amp;query=all.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">BIBLIOTECA</a></h5>
+<h5 align="center"> <a class=menu href="index.php%3Fsez=iarda.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">  PROGETTO I.A.R.D.A  </a>  </h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=scambiolibrario.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">SCAMBIO LIBRARIO</a></h5>        
+        <h5 align="center"><a class=menu href="index.php%3Fsez=bibliografia.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">BIBLIOGRAFIA</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=links.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">LINK</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=contatti.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">CONTATTI</a></h5>
+        <h5 align="center"><a class=menu href="index.php%3Fsez=conv_part.html" onMouseOver="window.status='www.storiapatriaguastalla.it';return true;">CONVENZIONI E PARTNERSHIP</a></h5>
+        <p>&nbsp;</p>
+        <br>
+        <p>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="16%" bgcolor="#344f85">
+</td>
+      <td width="60%"><br><br><br><br><br><p align="center"><center>
+  <br>
+<font size="3">Propriet&agrave; e Copyright del sito: Associazione Guastallese di Storia Patria<br>
+Copyright A.G.S.P. 2001 - 2005</font>
+  </center></td>
+      <td width="16%" bgcolor="#344f85"></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<div id="tipDiv" style="position:absolute; visibility:hidden; z-index:100"></div>
+</body>
+
+</html>
